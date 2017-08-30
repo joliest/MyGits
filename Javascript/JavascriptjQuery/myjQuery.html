@@ -25,16 +25,216 @@
 			
 			*/
 			$(document).ready(function() {
-				$("p").click(function() {
+				$("p#demo").click(function() {
 					$(this).hide();
 				});
 			})
 			
-			/* 2 - jQuery syntax
+			/* 2 - jQuery syntax: Selectors
 			
-				$()
-			
+				$(selector).action();
+				
+					List of selectors:
+					
+					1.) element selector
+						<p>
+						$("p")
+					2.) #id selector
+						<p id="demo></p>
+						$("p#demo")
+					3.) class selector
+						<p class="demo"></p>
+						$("p.demo")
+					4.) select all elements
+						$(*)
+					5.) select current HTML element
+						$(this)
+					6.) selects the first <p> element
+						$("p:first")
+					7.) selects the first <li> element of first <ul>
+						$("ul li:first")
+					8.) selects the first <li> of every <ul>
+						$("ul li:first-child")
+					9.) selects all the elements with "href" attribute
+						$("[href]")
+					10.) selects all the elements with an "target" attribute equal to "_blank"
+						$("[target='_blank']")
+					11.) selects all the elements with an "target" attribute that are NOT equal to "_blank"
+						$("[target!='_blank']")
+					12.) selects all <button> elements and <input> elements of type="button"
+						$(":button")
+					13.) select all evern <tr> elements
+						$("tr:even")
+					14.) selects all off <tr> elements
+						$("tr:odd")
+						
+					Others:
+					
+						$("#Lastname")
+						$(".intro")
+						$(".intro, #Lastname")
+						$("h1")
+						$("h1, p")
+						$("p:first")
+						$("p:last")
+						$("tr:even")
+						$("tr:odd")
+						$("p:first-child")
+						$("p:first-of-type")
+						$("p:last-child")
+						$("p:last-of-type")
+						$("li:nth-child(1)")
+						$("li:nth-last-child(1)")
+						$("li:nth-of-type(2)")
+						$("li:nth-last-of-type(2)")
+						$("b:only-child")
+						$("h3:only-of-type")
+						$("div > p")
+						$("div p")
+						$("ul + h3")
+						$("ul ~ table")
+						$("ul li:eq(0)")
+						$("ul li:gt(0)")
+						$("ul li:lt(2)")
+						$(":header")
+						$(":header:not(h1)")
+						$(":animated")
+						$(":focus")
+						$(":contains(Duck)")
+						$("div:has(p)")
+						$(":empty")
+						$(":parent")
+						$("p:hidden")
+						$("table:visible")
+						$(":root")
+						$("p:lang(it)")
+						$("[id]")
+						$("[id=my-Address]")
+						$("p[id!=my-Address]")
+						$("[id$=ess]")          //all elements with an id attribute value ending with 'ess'
+						$("[id|=my]")
+						$("[id^=L]")               //all elements with an if attribute that starts with 'L'
+						$("[title~=beautiful]") //all elements with a title attribute value containg word 'beautiful'
+						$("[id*=s]")     //all elements with an id attribute value containing 's'
+						$(":input")     //all form elements
+						$(":text")
+						$(":password")
+						$(":radio")
+						$(":checkbox")
+						$(":submit")
+						$(":reset")
+						$(":button")     
+						$(":image")     
+						$(":file")          //all elements with type=file
+						$(":enabled")   //all enabled elements
+						$(":disabled")  //all disabled elements
+						$(":selected") //all selected option from drop down list
+						$(":checked") //all checked elements
+						$("*")
+						
+				3 - Events: 
+					
+						$("selector").<insertHere>();
+				
+					A.) Mouse Events
+					
+						* click
+						* dblCLick
+						* mouseenter
+						* mouseleave
+						* mousedown
+						* mouseup
+						* hover
+
+					B.) Keyboard events
+						
+						* keypress
+						* keydown
+						* keyup
+
+					C.) Form events
+					
+						
+						* submit
+						* change
+						* focus
+						* blur
 			*/
+		</script>
+		<p id="cssDemo">This has CSS effects using css(property, value)</p>
+		<script>
+			$(function(){
+				$("p#cssDemo").hover(function(){
+					$(this).css("color", "blue");
+				});
+			});
+		</script>
+		<p id="onMethodDemo1">This has single action (click me)</p>
+		<p id="onMethodDemo2">This has multiple actions</p>
+		<script>
+			$(function(){
+			
+				$("p#onMethodDemo1").on("click", function(){
+					$(this).css("color", "red");
+				});		
+
+				$("p#onMethodDemo2").on({
+					click : function(){
+						$(this).css("color", "pink");
+					},
+					
+					mouseenter : function() {
+						$(this).css("font-size", "20");
+					},
+					
+					mouseleave : function() {
+						$(this).css("font-family", "tahoma");
+					}
+				});
+			});
+			
 		</script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
