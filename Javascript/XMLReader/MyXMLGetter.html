@@ -1,0 +1,25 @@
+<html>
+	<p id="demo"></p>
+	<button type="button" onclick="showList()" >Show List Of CDs</button>
+	<script>
+		function showList() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", "cd.xml", true);
+			xhttp.onreadystatechange = function () {
+				if(this.readyState == 4 && this.status == 200) {
+				var xmlFile = this.responseXML;
+					var cd = xmlFile.getElementsByTagName("CD");
+					var i;	
+					var result = "";
+					for(i=0; i < cd.length; i++) {
+						 result += i + " : " + cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + " - " +
+								cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + "<br>";
+					}
+					document.getElementById("demo").innerHTML = result
+				}
+			}
+			
+			xhttp.send();
+		}
+	</script>
+</html>

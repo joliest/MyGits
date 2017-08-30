@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<p id="demo"> </p>
+		<button type="button" onclick="loadDoc('message1.txt', message1)">Show Message</button>
+		<script>
+			//loadXML("message1.txt", message1);
+			function loadDoc(url, myMessage) {
+				var xhttp;
+				xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						myMessage(this);
+					}
+				}
+				xhttp.open("GET", url, true);
+				xhttp.send();
+			}
+			
+			function message1(xhttp) {
+				document.getElementById("demo").innerHTML = xhttp.responseText;
+			}
+		</script>
+	</body>
+</html>

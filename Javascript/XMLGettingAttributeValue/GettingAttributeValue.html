@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<p id="demo"></p>
+		<button type="button" onclick="loadDoc('GettingAttributeValue.xml', myFunction)">Click here</button>
+		<script>
+			function loadDoc(url, cFunction) {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						cFunction(this);
+					}
+				}
+				xhttp.open("GET", url, true);
+				xhttp.send();
+			}
+			
+			function myFunction(xhttp) {
+				var xmlFile = xhttp.responseXML;
+				var x = xmlFile.getElementsByTagName("book")[0].attributes;
+				var txt = x.getNamedItem("category").nodeValue + " " + x.length;
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script>
+	</body>
+</html>
