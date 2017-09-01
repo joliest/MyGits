@@ -1,0 +1,10 @@
+package com.project1.userandrole.controller;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class RoleController extends HttpServlet{
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		
+	}
+}

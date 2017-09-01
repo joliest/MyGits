@@ -1,0 +1,15 @@
+package com.project1.userandrole.model;
+
+public class Role {
+	
+	private String roleName;
+	
+	public void createRole(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	public ArrayList getRoleList(String keyword) {
+		
+	}
+
+}

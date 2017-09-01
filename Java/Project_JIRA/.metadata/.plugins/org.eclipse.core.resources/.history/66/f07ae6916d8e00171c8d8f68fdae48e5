@@ -1,0 +1,29 @@
+package com.project1.listeners;
+import javax.servlet.*;
+import com.project1.db.*;
+
+public class BugTrackerServletContextListener implements ServletContextListener{
+
+	public void contextDestroyed(ServletContextEvent event) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void contextInitialized(ServletContextEvent event) {
+		ServletContext dbDriverName = event.getServletContext();
+		String driverName = dbDriverName.getInitParameter("driverName");
+		
+		ServletContext dbConnectionName = event.getServletContext();
+		String connectionName = dbConnectionName.getInitParameter("connectionName");
+		
+		ServletContext dbUsername = event.getServletContext();
+		String username = dbUsername.getInitParameter("dbUsername");
+		
+		ServletContext dbPassword = event.getServletContext();
+		String password = dbPassword.getInitParameter("dbPassword");
+		
+		DBConnector dbConnector = new DBConnector()
+		
+	}
+
+}

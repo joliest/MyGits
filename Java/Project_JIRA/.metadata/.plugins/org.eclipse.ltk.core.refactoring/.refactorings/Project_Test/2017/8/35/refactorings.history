@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;com&apos; to &apos;classes&apos;" description="Move &apos;com&apos; to &apos;classes&apos;" destination="WebContent/WEB-INF/classes" element1="WebContent/WEB-INF/com" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1504189906276" updateReferences="true"/>
+</session>

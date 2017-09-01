@@ -1,0 +1,43 @@
+package com.project1.db;
+
+import java.sql.*;
+
+public class DBConnector {	
+	
+	private String driverName;
+	private String connectionName;
+	private String username;
+	private String password;
+	
+	public DBConnector(String driverName, String connectionName) {
+		this.driverName = driverName;
+		this.connectionName = connectionName;
+	}
+	
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public void connect() {
+		if(driverName != null && connectionName != null) {
+			if(username != null && password != null) {
+				try {
+					Class.forName(driverName);
+					Connection con = DriverManager.getConnection(connectionName, username, password);
+					System.out.println("Database connection is successfull.");			
+				} catch (Exception e) {
+					System.out.println(e);
+				}
+			} else {
+				System.out.println("Database username and password is required");
+			}
+		} else {
+			System.out.println("Database driver is missing");
+		}
+	}
+	
+}

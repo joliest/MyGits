@@ -1,0 +1,23 @@
+package com.project1.userandrole.model;
+
+public class User {
+	
+	private username;
+	private password;
+	
+	public User(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+	
+	public void setUser(String user) {
+		username = user;
+	}
+	public String getUser() {
+		return username;
+	}
+	public boolean isPasswordCorrect() {
+		
+	}
+
+}

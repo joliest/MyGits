@@ -1,0 +1,12 @@
+package com.project1.db;
+
+import java.sql.*;
+
+public class DBConnector {	
+	
+	public DBConnector(String driverName, String connectionName) {
+		
+	}
+	
+	
+}

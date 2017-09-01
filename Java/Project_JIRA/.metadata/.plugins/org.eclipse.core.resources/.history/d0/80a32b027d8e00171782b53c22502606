@@ -1,0 +1,29 @@
+package com.project1.userandrole.model;
+
+import java.sql.*;
+import java.servlet.*;
+
+public class Role {
+	
+	private String roleName;
+	private Connection conn;
+	
+	public Role() {
+		conn = 
+	}
+	
+	public void createRole(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	public void deleteRole(String roleName) {
+		
+	}
+	
+	//public ArrayList getRoleList(String keyword) {
+		
+	//}
+	
+	
+
+}

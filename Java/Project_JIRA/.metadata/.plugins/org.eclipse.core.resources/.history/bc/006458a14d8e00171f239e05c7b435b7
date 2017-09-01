@@ -1,0 +1,18 @@
+package com.project1.userandrole.model;
+
+public class Role {
+	
+	private String roleName;
+	
+	//creating new role
+	public Role(String newRole) {
+		this.roleName = newRole;
+	}
+	
+	public String getRoleName() {
+		return roleName;
+	}
+	
+	public  
+
+}
