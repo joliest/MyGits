@@ -4,6 +4,5 @@ INDEX VERSION 1.3+D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst
 3195849909.index
 3008578788.index
 85427326.index
-4087306534.index
 963060711.index
-87992941.index
+4087306534.index
