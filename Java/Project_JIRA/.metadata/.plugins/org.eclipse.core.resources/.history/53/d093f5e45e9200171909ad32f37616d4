@@ -1,0 +1,32 @@
+package com.project1.userandrole.controller;
+
+import javax.servlet.http.*;
+
+import com.project1.userandrole.model.User;
+
+import javax.servlet.*;
+import java.io.*;
+
+
+public class UserController extends HttpServlet {
+	
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		
+		private String username = "";
+		private String password;
+		private String emailAdd;
+		private String firstName;
+		private String mobile;
+		private int role;
+		
+		User user = new User();
+		user.setUsername(username);
+		user.setFirstName(firstName);
+		user.setEmailAdd(emailAdd);
+		user.setMobile(mobile);
+		user.setPassword(password);
+		user.setRole(role);
+		
+	}
+
+}

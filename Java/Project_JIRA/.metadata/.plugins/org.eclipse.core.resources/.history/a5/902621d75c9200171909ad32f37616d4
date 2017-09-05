@@ -1,0 +1,20 @@
+package com.project1.userandrole.controller;
+
+import javax.servlet.http.*;
+
+import com.project1.userandrole.model.User;
+
+import javax.servlet.*;
+import java.io.*;
+
+
+public class UserController extends HttpServlet {
+	
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		
+		User myUser = (User) req.getAttribute("user");
+		System.out.println("Username: " + myUser.getUsername());
+		System.out.println("Password: " + myUser.getPassword());
+	}
+
+}

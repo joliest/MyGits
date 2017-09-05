@@ -3,4 +3,8 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Response"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="com.project1.userandrole.controller.UserController"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.project1.db.DatabaseService"/>
+<fullyQualifiedTypeName name="com.project1.userandrole.model.User"/>
 </qualifiedTypeNameHistroy>

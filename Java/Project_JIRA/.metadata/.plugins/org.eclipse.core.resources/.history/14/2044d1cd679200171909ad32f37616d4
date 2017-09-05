@@ -1,0 +1,9 @@
+package com.project1.userandrole.model;
+
+public class UserDatabaseHelper {
+	private User user;
+	
+	public void addUser(User user) {
+		
+	}
+}

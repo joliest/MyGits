@@ -1,0 +1,15 @@
+
+Sep 05, 2017 20:53:24.11 NEW SESSION
+Sep 05, 2017 20:53:24.11 [5692:2732:0905/205324.109:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.249:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:26:08.93 [5692:2732:0905/212608.938:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -100
+Sep 05, 2017 21:50:45.78 [5692:2732:0905/215045.784:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+Sep 05, 2017 22:04:56.96 [5692:2732:0905/220456.963:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Sep 05, 2017 22:22:46.80 [5692:2732:0905/222246.803:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21

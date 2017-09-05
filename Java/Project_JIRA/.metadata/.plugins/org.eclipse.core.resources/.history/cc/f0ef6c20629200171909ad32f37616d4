@@ -1,0 +1,21 @@
+package com.project1.userandrole.model;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class User {
+	
+	private String username;
+	private String password;
+	private Stri
+	
+	private HttpServletRequest req;
+	
+	public User(HttpServletRequest req) {
+		this.req = req;
+		setUserDetails();
+	}
+
+	private void setUserDetails() {
+		
+	}
+}

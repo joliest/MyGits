@@ -1,0 +1,22 @@
+package com.project1.db;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.project1.userandrole.model.User;
+
+public class DatabaseService {
+
+	public static void addUserToDatabase(HttpServletRequest req) {
+		try {
+			Connection conn = (Connection) req.getServletContext().getAttribute("dbConnection"); 
+			PreparedStatement stmt = conn.prepareStatement("INSERT INTO JRA_USERS VALUES(?,?,?,?,?,?,?)");
+			
+		} catch(SQLException ex) {
+			System.out.println(ex);
+		}
+	}
+}
