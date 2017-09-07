@@ -1,0 +1,18 @@
+
+<html>
+	<head>
+		<title>Java and jQuery AJAX</title>
+		<style>
+			#div1 {
+				border: 25px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Java Servlet and jQuery AJAX</h2>
+		<div id="div1">
+		
+		</div>
+		
+	</body>
+</html>

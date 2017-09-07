@@ -1,8 +1,0 @@
-package com.bugtracker.web;
-
-import javax.servlet.*;
-import java.
-
-public class ReportBug {
-
-}

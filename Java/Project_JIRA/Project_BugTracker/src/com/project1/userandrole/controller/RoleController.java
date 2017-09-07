@@ -4,17 +4,20 @@ package com.project1.userandrole.controller;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+import com.project1.db.DatabaseFactory;
+
 import java.io.*;
 import java.sql.*;
-
+/*
+ * Bug 1: When window is refreshed, JDBC inserts another row
+ */
 public class RoleController extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
 		ServletContext sc = req.getServletContext();
 		Connection conn = (Connection) sc.getAttribute("databaseConnection");
 		
-		String idString = req.getParameter("roleID");
-		int id = Integer.parseInt(idString);
+		int id = DatabaseFactory.generateRoleId(req);
 		
 		String roleName = req.getParameter("roleName");
 		

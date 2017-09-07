@@ -1,0 +1,54 @@
+
+<html>
+	<head>
+		<title>Java and jQuery AJAX</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			div {
+				border : 1px solid black;
+				height : 250px;
+				width : 350px;
+				margin : 5px;
+			}
+			button {
+				width : 350px;
+				margin : 5px;
+			}
+		</style>
+		<script>
+			
+			$(document).ready(function(){
+				//$.get for java
+				$("#btn").click(function(){
+					$.get("/JavaServletAndAJAX/TestGet", function(data, status){
+						$("#div1").text("Data: " + data );
+					});
+				});
+				
+				//$.post for java
+				$("#btn2").click(function(){
+					$.post("/JavaServletAndAJAX/TestPost",
+							{name : "Joliver", age  : "25"},
+							function(data, status){
+								$("#div2").text("Data " + data);
+							}
+					)
+				});
+			});
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<h2>Java Servlet and jQuery AJAX</h2>
+		<div id="div1">
+			<p id="p1"></p>
+		</div>
+		<button type="button" id="btn">Get Data From Java Servlet thru GET</button>
+		<div id="div2">
+			<p id="p2"></p>
+		</div>
+		<button type="button" id="btn2">Get Data From Java Servlet thru POST</button>
+	</body>
+</html>

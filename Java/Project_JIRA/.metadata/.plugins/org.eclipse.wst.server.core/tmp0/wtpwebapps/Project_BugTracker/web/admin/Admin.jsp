@@ -7,12 +7,8 @@
 	</head>
 	<body>
 		<div id="role">
-			<form method="GET" action="/Project_BugTracker/Role.do">
+			<form method="GET" action="/Project_BugTracker/Role.do" target="_BLANK">
 				<table>
-					<tr>
-						<td>Role ID</td>
-						<td><input type="text" name="roleID"></td>
-					</tr>
 					<tr>
 						<td>Role Name</td>
 						<td><input type="text" name="roleName"></td>

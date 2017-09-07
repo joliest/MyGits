@@ -1,0 +1,11 @@
+package com.example;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+
+public class Test2 extends HttpServlet{
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		
+	}
+}

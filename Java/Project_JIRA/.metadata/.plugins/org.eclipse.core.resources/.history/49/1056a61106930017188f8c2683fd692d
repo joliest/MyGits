@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>My Home Page</title>
+	</head>
+	<body>
+		<form method="GET" action="ReportBug.do" >
+			<button type="button" > Report a bug</button>
+			<button type="button"  > Administration </button>
+		</form>
+	</body>
+</html>

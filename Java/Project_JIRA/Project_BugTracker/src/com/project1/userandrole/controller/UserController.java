@@ -15,8 +15,6 @@ public class UserController extends HttpServlet {
 		
 		User user = new User();
 		user.setUserDetails(req);
-		
-		DatabaseService.addToDatabase(req, user);
 	}
 
 }
