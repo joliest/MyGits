@@ -1,25 +1,32 @@
 package com.project1.userandrole.model;
 
-import java.sql.*;
+import javax.servlet.http.HttpServletRequest;
+
+import com.project1.db.DatabaseFactory;
 
 public class Role {
 	
+	private final String ROLE_NAME = "roleName";
+	
 	private String roleName;
-	private Connection conn;
+	private int id;
+	private HttpServletRequest req;
 	
-	
-	public void createRole(String roleName) {
-		this.roleName = roleName;
+	public void setRoleDetails(HttpServletRequest req) {
+		this.req = req;
+		roleName = req.getParameter(ROLE_NAME);
+		id = DatabaseFactory.generateRoleId(req);
 	}
 	
-	public void deleteRole(String roleName) {
-		
+	public int getId() {
+		return id;
 	}
 	
-	//public ArrayList getRoleList(String keyword) {
-		
-	//}
+	public HttpServletRequest getReq() {
+		return req;
+	}
 	
-	
-
+	public String getRoleName() {
+		return roleName;
+	}
 }

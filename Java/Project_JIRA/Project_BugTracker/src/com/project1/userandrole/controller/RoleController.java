@@ -5,6 +5,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 import com.project1.db.DatabaseFactory;
+import com.project1.userandrole.model.Role;
 
 import java.io.*;
 import java.sql.*;
@@ -12,26 +13,16 @@ import java.sql.*;
  * Bug 1: When window is refreshed, JDBC inserts another row
  */
 public class RoleController extends HttpServlet{
-	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
-		ServletContext sc = req.getServletContext();
-		Connection conn = (Connection) sc.getAttribute("databaseConnection");
+		String roleStatus;
 		
-		int id = DatabaseFactory.generateRoleId(req);
+		Role role = new Role();
+		role.setRoleDetails(req);
+		roleStatus = DatabaseFactory.addToDatabase(role);
 		
-		String roleName = req.getParameter("roleName");
-		
-		try {
-			PreparedStatement statement = conn.prepareStatement("insert into ROLE values(?,?)");
-			statement.setInt(1, id);
-			statement.setString(2, roleName);
-			statement.executeQuery();
-			System.out.println(id + " " + roleName + " is successfully inserted in Role table");
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-		
-		RequestDispatcher view = req.getRequestDispatcher("web/admin/Admin.jsp");
-		view.forward(req, res);
+		res.setContentType("text/html");
+		PrintWriter out = res.getWriter();
+		out.println(roleStatus);
 	}
 }

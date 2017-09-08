@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$("#addRole").click(function(){
+		$.post("/Role.do", 
+				{},
+				function(data, status) {
+			alert(data);
+		})
+	})
+})

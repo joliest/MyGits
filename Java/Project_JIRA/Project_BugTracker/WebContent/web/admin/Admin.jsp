@@ -2,29 +2,34 @@
     pageEncoding="ISO-8859-1"%>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Administrator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Admin.js"></script>
 	</head>
 	<body>
 		<div id="role">
-			<form method="GET" action="/Project_BugTracker/Role.do" target="_BLANK">
+			<form>
 				<table>
 					<tr>
 						<td>Role Name</td>
-						<td><input type="text" name="roleName"></td>
+						<td><input type="text" id="roleName"></td>
 					</tr>
 					<tr>
-						<td><button type="submit">Add Role</button></td>
+						<td></td>
+						<td><button id="addRole" type="button">Add Role</button></td>
 					</tr>
 				</table>
 			</form>		
 		</div>		
 		<div id="user">
-			<form method="POST" action="/Project_BugTracker/User.do">
+			<form>
 				<table>
 					<tr>
 						<td>Role</td>
-						<td><input type="text" name="role"></td>
+						<td>
+							<select id="role" type="text">
+							</select>
+						</td>
 					</tr>
 					<tr>
 						<td>Username </td>
@@ -57,11 +62,13 @@
 					<tr>
 						<td>
 						</td>
-						<td><input type="submit" value="Add User"></td>
+						<td><input id="addUser" type="button" value="Add User"></td>
 					</tr>
 				</table>
 			</form>
 		</div>	
+		
+		<p id="test">Test</p>
 		
 	</body>
 </html>

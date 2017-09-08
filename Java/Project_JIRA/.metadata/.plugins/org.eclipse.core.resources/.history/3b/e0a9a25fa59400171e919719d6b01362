@@ -1,0 +1,16 @@
+package com.project1.userandrole.model;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class Role {
+	
+	private String roleName;
+	private HttpServletRequest req;
+	
+	public void setRoleDetails(HttpServletRequest req) {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	
+	var roleController = "/Project_BugTracker/Role.do";
+	var roleNameValue = $("#roleName").val();
+	
+	$("#addRole").click(function(){
+		$.post(roleController, 
+			   {roleName : roleNameValue },
+				function(data, status) {
+					alert(data);
+					$("#roleName").text("");
+				})			
+	});
+
+	/*
+	$("#addRole").click(function() {
+		alert($("p#test").text());
+	})
+	*/
+});

@@ -2,8 +2,6 @@ package com.project1.userandrole.model;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.project1.db.DatabaseService;
-
 public class User {
 	
 	private String username;

@@ -1,0 +1,14 @@
+$(document).ready(function(){
+
+	$("#addRole").click(function(){
+		$.post("/Project_BugTracker/Role.do", { roleName : "roleName" },function(data, status) {
+					alert(data);
+				})
+	});
+
+	/*
+	$("#addRole").click(function() {
+		alert($("p#test").text());
+	})
+	*/
+});
