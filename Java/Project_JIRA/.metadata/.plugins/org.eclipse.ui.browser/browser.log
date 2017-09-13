@@ -13,3 +13,24 @@ Sep 05, 2017 21:26:08.93 [5692:2732:0905/212608.938:ERROR:ssl_client_socket_impl
 Sep 05, 2017 21:50:45.78 [5692:2732:0905/215045.784:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
 Sep 05, 2017 22:04:56.96 [5692:2732:0905/220456.963:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
 Sep 05, 2017 22:22:46.80 [5692:2732:0905/222246.803:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+
+Sep 13, 2017 15:59:26.12 NEW SESSION
+Sep 13, 2017 15:59:26.12 [6428:3864:0913/155926.121:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 15:59:46.50 [6428:3864:0913/155946.500:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 15:59:58.49 [6428:9772:0913/155958.492:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 13, 2017 15:59:58.49 [6428:9772:0913/155958.492:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 13, 2017 16:00:44.31 [6428:3864:0913/160044.314:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:02:06.86 [6428:3864:0913/160206.863:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:03:06.68 [6428:9772:0913/160306.680:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:03:32.12 [6428:9772:0913/160332.126:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:04:28.19 [6428:9772:0913/160428.196:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:05:46.54 [6428:3864:0913/160546.542:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:06:17.40 [6428:9772:0913/160617.407:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:10:12.54 [6428:9772:0913/161012.546:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:11:17.32 [6428:3864:0913/161117.328:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:17:41.03 [6428:9772:0913/161741.031:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:21:17.33 [6428:3864:0913/162117.330:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:53:10.56 [6428:3864:0913/165310.566:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:53:10.82 [6428:9772:0913/165310.827:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 17:03:10.56 [6428:3864:0913/170310.568:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 17:03:10.83 [6428:9772:0913/170310.835:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.

@@ -1,9 +1,0 @@
-package com.project1.userandrole.model;
-
-import java.sql.*;
-
-import javax.servlet.http.HttpServletRequest;
-
-public class UserDatabaseHelper {
-	
-}
