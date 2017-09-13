@@ -17,10 +17,10 @@ public class VeggiePizza extends Pizza {
 		
 		System.out.println("Tossing " + dough + " ...");
 		System.out.println("Adding " + sauce + " ...");
-		System.out.println("Adding " + cheese + " ...");
 		System.out.println("Toppings:");
 		for(int i=0; i < veggies.length; i++) {
-			System.out.println(i + ": " + veggies[i]);
+			int num = i+1;
+			System.out.println(num + ": " + veggies[i]);
 		}
 
 	}
