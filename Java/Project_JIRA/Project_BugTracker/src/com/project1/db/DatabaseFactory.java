@@ -15,6 +15,7 @@ public class DatabaseFactory {
 	static final String INSERT_JRA_USERS = "INSERT INTO JRA_USERS values(?,?,?,?,?,?,?)";
 	static final String INSERT_JRA_ROLE = "INSERT INTO JRA_ROLE values(?,?)";
 	static final String CURRENT_ROLEID = "SELECT ID FROM JRA_ROLE ORDER BY ID DESC";
+	static final String SELECT_ROLES = "SELECT * FROM JRA_ROLE";
 	
 	// overloaded method to add new USER in persistent store
 	public static String addToDatabase(User user) {
@@ -99,5 +100,20 @@ public class DatabaseFactory {
 		return 0;
 	}
 	
+	public static ArrayList getRowList(HttpServletRequest req) {
+		ArrayList roleList = new ArrayList();
+		try {
+			Connection conn = (Connection) req.getServletContext().getAttribute(DB_CONNECTION);
+			Statement stmt = conn.createStatement();
+			ResultSet roleRows = stmt.executeQuery(SELECT_ROLES);
+			while(roleRows.next()) {
+				roleList.add(roleRows.getString(2));
+			}
+		} catch(SQLException ex) {
+			System.out.println("Class : DatabaseFactory Method : ArrayList getRowList()");
+			System.out.println("Error : " + ex);
+		}
+		return roleList;
+	}
 	
 }

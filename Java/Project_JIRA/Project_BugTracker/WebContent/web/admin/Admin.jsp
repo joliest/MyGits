@@ -28,7 +28,8 @@
 						<td>Role</td>
 						<td>
 							<select id="role" type="text">
-							</select>
+								${roleList}
+							</select>															
 						</td>
 					</tr>
 					<tr>

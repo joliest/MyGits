@@ -8,7 +8,5 @@ public class PizzaDriveTester {
 		ChicagoPizzaStore chPizzaStore = new ChicagoPizzaStore();
 		chPizzaStore.orderPizza("clam");
 		chPizzaStore.orderPizza("veggie");
-		
-		
 	}
 }

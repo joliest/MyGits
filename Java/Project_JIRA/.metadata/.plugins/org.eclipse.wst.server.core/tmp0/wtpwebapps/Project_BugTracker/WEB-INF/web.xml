@@ -21,6 +21,14 @@
   		<servlet-name>User Controller</servlet-name>
   		<url-pattern>/User.do</url-pattern>
   	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.Administration</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<url-pattern>/Admin.do</url-pattern>
+  	</servlet-mapping>
   
   	<context-param>  		
   		<param-name>dbUsername</param-name>
