@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.widget.TextView;
 import android.support.v4.view.GestureDetectorCompat;
 
-public class MainActivity extends AppCompatActivity implements OnGestureListener, GestureDetector.OnDoubleTapListener{
+public class MainActivity extends AppCompatActivity implements OnGestureListener, OnDoubleTapListener{
 
     private TextView joliverMessage;
     private GestureDetectorCompat gestureDetector;
