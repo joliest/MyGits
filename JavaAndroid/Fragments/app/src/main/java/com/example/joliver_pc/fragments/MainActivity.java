@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements TopSectionListene
 
     @Override
     public void createMeme(String top, String bottom) {
-        //create a reference for BottomPictureFragment
+        //get a reference for BottomPictureFragment
         BottomPictureFragment bottomFragment = (BottomPictureFragment) getSupportFragmentManager().findFragmentById(R.id.fragment2);
         bottomFragment.setMemeText(top, bottom);
     }
