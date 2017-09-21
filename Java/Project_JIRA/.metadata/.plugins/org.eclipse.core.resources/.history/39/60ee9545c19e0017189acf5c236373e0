@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$("button#addAttribute").click(function(){
+		$.post("/Project_Bugtracker/Attribute.do",
+				{
+					selectAttributeGroup : $("#selectAttributeGroup").val(),
+					attributeName : $("#attributeName").val(),
+					attributeDescription : $("#attributeDescription").val(),
+					selectAttributeType : $("#selectAttributeType").val(),
+					attributeLength : $("#attributeLength").val
+				},
+				function(data, status) {
+					//alert(data);
+				}				
+				)
+	})
+});

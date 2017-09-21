@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1">
+  
+  	<servlet>
+  		<servlet-name>Role Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.RoleController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Role Controller</servlet-name>
+  		<url-pattern>/Role.do</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>User Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.UserController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>User Controller</servlet-name>
+  		<url-pattern>/User.do</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.Administration</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<url-pattern>/Admin.do</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<servlet-class>com.project1.attribute.controller.AttributeController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<url-pattern>Attribute.do</url-pattern>
+  	</servlet-mapping>
+  
+  	<context-param>  		
+  		<param-name>dbUsername</param-name>
+  		<param-value>system</param-value>
+  	</context-param>
+  	<context-param>
+  		<param-name>driverName</param-name>
+  		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  	</context-param>
+  	<context-param>
+  		<param-name>connectionName</param-name>
+  		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+  	</context-param>
+  	<context-param>  		
+  		<param-name>dbPassword</param-name>
+  		<param-value>Sql12345</param-value>  	
+  	</context-param>
+  	
+  	<listener>
+  		<listener-class>com.project1.listeners.BugTrackerServletContextListener</listener-class>
+  	</listener>
+  
+  </web-app>
