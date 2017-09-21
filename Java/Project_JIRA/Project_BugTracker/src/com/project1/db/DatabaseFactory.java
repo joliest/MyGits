@@ -74,14 +74,6 @@ public class DatabaseFactory {
 		return status;
 	}
 	
-	public ArrayList getRoleList() {
-		ArrayList roleList = new ArrayList();
-		
-		
-		
-		return roleList;
-	}
-	
 	//generate roleID using COUNT in SQL query
 	public static int generateRoleId(HttpServletRequest req) {
 		try {
@@ -100,7 +92,7 @@ public class DatabaseFactory {
 		return 0;
 	}
 	
-	public static ArrayList getRowList(HttpServletRequest req) {
+	public static ArrayList getRoleList(HttpServletRequest req) {
 		ArrayList roleList = new ArrayList();
 		try {
 			Connection conn = (Connection) req.getServletContext().getAttribute(DB_CONNECTION);

@@ -1,7 +1,14 @@
 $(document).ready(function(){
 	
 	var roleController = "/Project_BugTracker/Role.do";
+	var adminController = "/Project_BugTracker/Admin.do";
 	
+	//load Role select
+	$.get(adminController, function(data, status){
+		$("select#role").html(data);
+	})
+	
+	//add role
 	$("#addRole").click(function(){
 		$.post(roleController, 
 			   {roleName : $("#roleName").val()},
@@ -11,6 +18,18 @@ $(document).ready(function(){
 				})			
 	});
 	
+	
+	
+	
+	/*
+	
+	$("select#role").click(function() {
+		$.get(adminController, function(data, status){
+			$("select#role").html(data);
+		})
+	});
+	
+	*/
 	
 
 	/*
