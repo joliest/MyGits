@@ -29,6 +29,15 @@
   		<servlet-name>Admin Controller</servlet-name>
   		<url-pattern>/Admin.do</url-pattern>
   	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<servlet-class>com.project1.attribute.controller.AttributeController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<url-pattern>/Attribute.do</url-pattern>
+  	</servlet-mapping>
   
   	<context-param>  		
   		<param-name>dbUsername</param-name>

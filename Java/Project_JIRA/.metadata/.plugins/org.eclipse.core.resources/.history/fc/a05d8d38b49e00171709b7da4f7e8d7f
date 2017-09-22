@@ -1,0 +1,12 @@
+package com.project1.attribute.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class AttributeController {
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		
+	}
+}

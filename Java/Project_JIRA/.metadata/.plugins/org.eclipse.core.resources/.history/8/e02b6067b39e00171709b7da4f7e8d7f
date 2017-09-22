@@ -1,0 +1,9 @@
+package com.project1.attribute.model;
+
+public abstract class Attribute {
+	protected String group;
+	protected String name;
+	protected String description;
+	prtected String dataType;
+	protected int length;
+}

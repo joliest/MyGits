@@ -28,7 +28,7 @@
 						<td>Role</td>
 						<td>
 							<select id="role" type="text">
-								${roleList}
+								
 							</select>															
 						</td>
 					</tr>
@@ -69,7 +69,6 @@
 			</form>
 		</div>	
 		
-		<p id="test">Test</p>
 		
 	</body>
 </html>

@@ -5,6 +5,8 @@ import java.sql.*;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.project1.attribute.model.Attribute;
 import com.project1.userandrole.model.Role;
 import com.project1.userandrole.model.User;
 
@@ -14,7 +16,9 @@ public class DatabaseFactory {
 	static final String DB_CONNECTION = "databaseConnection";
 	static final String INSERT_JRA_USERS = "INSERT INTO JRA_USERS values(?,?,?,?,?,?,?)";
 	static final String INSERT_JRA_ROLE = "INSERT INTO JRA_ROLE values(?,?)";
+	static final String INSERT_JRA_ATTRIBUTE = "INSERT INTO JRA_ATTRIBUTE values(?,?,?,?,?,?)";
 	static final String CURRENT_ROLEID = "SELECT ID FROM JRA_ROLE ORDER BY ID DESC";
+	static final String CURRENT_ATTRIBUTEID = "select ID from JRA_ATTRIBUTE ORDER BY ID DESC";
 	static final String SELECT_ROLES = "SELECT * FROM JRA_ROLE";
 	
 	// overloaded method to add new USER in persistent store
@@ -74,14 +78,6 @@ public class DatabaseFactory {
 		return status;
 	}
 	
-	public ArrayList getRoleList() {
-		ArrayList roleList = new ArrayList();
-		
-		
-		
-		return roleList;
-	}
-	
 	//generate roleID using COUNT in SQL query
 	public static int generateRoleId(HttpServletRequest req) {
 		try {
@@ -91,7 +87,7 @@ public class DatabaseFactory {
 			currentRoleId.next();
 			
 			int newRoleID = (currentRoleId.getInt(1)) + 1;
-			
+			System.out.println("Role ID value: " + newRoleID + " is successfully generated");
 			return newRoleID;
 		} catch(SQLException ex) {
 			System.out.println("Class : DatabaseFactory Method : int generateRoleId()");
@@ -100,7 +96,7 @@ public class DatabaseFactory {
 		return 0;
 	}
 	
-	public static ArrayList getRowList(HttpServletRequest req) {
+	public static ArrayList getRoleList(HttpServletRequest req) {
 		ArrayList roleList = new ArrayList();
 		try {
 			Connection conn = (Connection) req.getServletContext().getAttribute(DB_CONNECTION);
@@ -109,11 +105,57 @@ public class DatabaseFactory {
 			while(roleRows.next()) {
 				roleList.add(roleRows.getString(2));
 			}
+			System.out.println("Role List ID is successfully generated");
 		} catch(SQLException ex) {
 			System.out.println("Class : DatabaseFactory Method : ArrayList getRowList()");
 			System.out.println("Error : " + ex);
 		}
 		return roleList;
 	}
+	
+	//add attribute in the database
+	public static String addToDatabase(Attribute attr) {
+		String status;
+		String attribName = attr.getName();
+		HttpServletRequest req = attr.getReq();
+		
+		try {
+			
+			Connection conn = (Connection) req.getServletContext().getAttribute(DB_CONNECTION);
+			PreparedStatement stmt = conn.prepareStatement(INSERT_JRA_ATTRIBUTE);
+			stmt.setInt(1, generateAttributeId(req));
+			stmt.setString(2, attr.getGroup());
+			stmt.setString(3, attr.getName());
+			stmt.setString(4, attr.getDescription());
+			stmt.setString(5, attr.getDataType());
+			stmt.setInt(6, attr.getLength());
+			
+			stmt.executeQuery();
+			status = attribName + " is successfully added";
+		}catch(SQLException ex) {
+			status = "Something went wrong, " + attribName + " is not added.";
+			System.out.println(ex);
+		}
+		return status;
+	}
+	
+	public static int generateAttributeId(HttpServletRequest req) {
+		int numberOfAttributes=0;
+		try {
+			Connection conn = (Connection) req.getServletContext().getAttribute(DB_CONNECTION);
+			Statement stmt = conn.createStatement();
+			ResultSet currentAttributeId = stmt.executeQuery(CURRENT_ATTRIBUTEID);
+			currentAttributeId.next();
+			
+			numberOfAttributes = (currentAttributeId.getInt(1)) + 1;
+			System.out.println("Attribute ID value: " + numberOfAttributes + " is successfully generated");
+		} catch(SQLException ex) {
+			System.out.println("Class : DatabaseFactory Method : int generateAttributeId()");
+			System.out.println("Error : " + ex);
+		}
+		return numberOfAttributes;
+	}
+	
+	
 	
 }

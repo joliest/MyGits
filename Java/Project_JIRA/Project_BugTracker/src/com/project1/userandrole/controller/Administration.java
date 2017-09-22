@@ -1,6 +1,6 @@
 package com.project1.userandrole.controller;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 import javax.servlet.*;
@@ -12,17 +12,17 @@ public class Administration extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
 		//get Role List
-		ArrayList roleList = DatabaseFactory.getRowList(req);
+		ArrayList roleList = DatabaseFactory.getRoleList(req);
 		String roleListReady = "";
 		for(int i = 0; i < roleList.size(); i++) {
 			String role =  roleList.get(i).toString();
 			roleListReady += "<option>" + role + "</option>";
 		}
 		
-		req.setAttribute("roleList", roleListReady);
+		res.setContentType("text/html");
+		PrintWriter out = res.getWriter();
+		out.println(roleListReady);
 		
-		RequestDispatcher view = req.getRequestDispatcher("/web/admin/Admin.jsp");
-		view.forward(req, res);
 	}
 
 }

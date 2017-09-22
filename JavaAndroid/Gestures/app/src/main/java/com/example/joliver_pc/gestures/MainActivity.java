@@ -6,9 +6,9 @@ import android.view.GestureDetector;
 import android.view.GestureDetector.*;
 import android.view.MotionEvent;
 import android.widget.TextView;
-import android.support.v4.view.GestureDetectorCompat
+import android.support.v4.view.GestureDetectorCompat;
 
-public class MainActivity extends AppCompatActivity implements OnGestureListener, GestureDetector.OnDoubleTapListener{
+public class MainActivity extends AppCompatActivity implements OnGestureListener, OnDoubleTapListener{
 
     private TextView joliverMessage;
     private GestureDetectorCompat gestureDetector;
@@ -24,54 +24,61 @@ public class MainActivity extends AppCompatActivity implements OnGestureListener
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        this.gestureDetector.onTouchEvent(event); //pass the event into GestureDetectorCompat
-        return super.onTouchEvent(event);
+    public boolean onTouchEvent(MotionEvent e) {
+        this.gestureDetector.onTouchEvent(e); //pass the event into  GestureDetectorCompat
+        return super.onTouchEvent(e);
     }
 
     @Override
     public boolean onDown(MotionEvent e) {
-        return false;
+        joliverMessage.setText("onDown");
+        return true; //set this to true to return to its pre-status
     }
 
     @Override
     public void onShowPress(MotionEvent e) {
-
+        joliverMessage.setText("onShowPress");
     }
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-        return false;
+        joliverMessage.setText("onSingleTapUp ");
+        return true;
     }
 
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        return false;
+        joliverMessage.setText("onScroll");
+        return true;
     }
 
     @Override
     public void onLongPress(MotionEvent e) {
-
+        joliverMessage.setText("onLongPress");
     }
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        return false;
+        joliverMessage.setText("onFling");
+        return true;
     }
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        return false;
+        joliverMessage.setText("onSingleTapConfirmed");
+        return true;
     }
 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
-        return false;
+        joliverMessage.setText("onDoubleTap");
+        return true;
     }
 
     @Override
     public boolean onDoubleTapEvent(MotionEvent e) {
-        return false;
+        joliverMessage.setText("onDoubleTapEvent");
+        return true;
     }
 //this is a comment
 }
