@@ -18,7 +18,7 @@ public class DatabaseFactory {
 	static final String INSERT_JRA_ROLE = "INSERT INTO JRA_ROLE values(?,?)";
 	static final String INSERT_JRA_ATTRIBUTE = "INSERT INTO JRA_ATTRIBUTE values(?,?,?,?,?,?)";
 	static final String CURRENT_ROLEID = "SELECT ID FROM JRA_ROLE ORDER BY ID DESC";
-	static final String CURRENT_ATTRIBUTEID = "select ID from JRA_ATTRIBUTE ORDER BY ID DESC";
+	static final String CURRENT_ATTRIBUTEID = "select id from JRA_ATTRIBUTE ORDER BY ID DESC";
 	static final String SELECT_ROLES = "SELECT * FROM JRA_ROLE";
 	
 	// overloaded method to add new USER in persistent store
