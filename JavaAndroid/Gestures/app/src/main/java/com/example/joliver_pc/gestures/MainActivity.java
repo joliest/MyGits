@@ -73,4 +73,5 @@ public class MainActivity extends AppCompatActivity implements OnGestureListener
     public boolean onDoubleTapEvent(MotionEvent e) {
         return false;
     }
+//this is a comment
 }
