@@ -1,6 +1,5 @@
 
 public class RemoteControl {
-	Command[] offCommand;	
 	private Command[] onCommand;
 	private Command[] offCommand;	
 	private Command undoCommand;
