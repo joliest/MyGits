@@ -1,7 +1,7 @@
 
 public class Light {
-	 String status = "off";
-	 String lightLocation = "";
+	 private String status = "off";
+	 private String lightLocation = "";
 	
 	public Light(String location) {
 		lightLocation = location;
