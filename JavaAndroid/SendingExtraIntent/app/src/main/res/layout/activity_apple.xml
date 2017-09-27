@@ -15,7 +15,7 @@
         android:text="Apples"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
-        android:layout_marginTop="246dp"
+        android:layout_marginTop="194dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -25,7 +25,17 @@
         android:layout_height="wrap_content"
         android:text="Go to bacon"
         android:onClick="onClick"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/applesText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/applesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/applesText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp" /> <!-- No need to make listener -->
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName" /> <!-- No need to make listener -->
 </RelativeLayout>
