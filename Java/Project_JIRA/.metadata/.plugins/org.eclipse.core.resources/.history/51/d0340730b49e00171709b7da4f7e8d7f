@@ -1,7 +1,0 @@
-package com.project1.attribute.controller;
-
-import javax.servlet.http.*;
-
-public class AttributeController {
-	public void doPost(HttpServletRequest req)
-}
