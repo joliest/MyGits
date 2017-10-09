@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 	
 	var roleController = "/Project_BugTracker/Role.do";
@@ -8,11 +10,14 @@ $(document).ready(function(){
 		$("select#role").html(data);
 	})
 	
+	
+	
 	//add role
 	$("#addRole").click(function(){
 		$.post(roleController, 
 			   {roleName : $("#roleName").val()},
 				function(data, status) {
+				   //erase data in add role name textbox
 				   $("input#roleName").val("");
 					alert(data);
 				})			

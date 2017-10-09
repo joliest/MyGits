@@ -1,0 +1,14 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.*;
+
+public class DatabaseHelper {
+	public DatabaseHelper(String driver, String ConnectionURL) {
+		try {
+			Class.forName(driver);
+			Connection connection = DriverManager.getConnection(ConnectionURL);
+		} catch(SQLException e) {
+			System.out.println("Database Connection Failerd");
+		}
+	}
+}
