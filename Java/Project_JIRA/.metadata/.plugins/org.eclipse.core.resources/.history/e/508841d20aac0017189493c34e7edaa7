@@ -1,0 +1,27 @@
+package com.tracker.Listener;
+
+import javax.servlet.*;
+import javax.servlet.ServletContextListener;
+import com.tracker.DatabaseHelper.*;
+
+public class TrackerContext implements ServletContextListener{
+
+	@Override
+	public void contextDestroyed(ServletContextEvent e) {
+		
+	}
+
+	@Override
+	public void contextInitialized(ServletContextEvent e) {
+		ServletContext servletContext = e.getServletContext();
+		
+		String driverName = servletContext.getInitParameter("DriverClass");
+		String connectionUrl = servletContext.getInitParameter("ConnectionURL");
+		
+		DatabaseHelper helper = new DatabaseHelper(driverName, connectionUrl);
+		Connection databaseConnection = helper.getConnection();
+		
+		servletContext.setAttribute("dbConnection", arg1);
+	}
+
+}

@@ -1,0 +1,4 @@
+function addAttribute(add) {
+	var buttonType = add;
+	
+}

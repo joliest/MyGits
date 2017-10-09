@@ -1,0 +1,8 @@
+package com.tracker.Attribute.web;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+
+public class AttributeServlet extends HttpServlet{
+
+}

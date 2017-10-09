@@ -7,6 +7,11 @@
 		<script src="Admin.js"></script>
 	</head>
 	<body>
+		<div>
+			<ol id="roleList">
+				<li>Value 1</li>
+			</ol>
+		</div>
 		<div id="role">
 			<form>
 				<table>

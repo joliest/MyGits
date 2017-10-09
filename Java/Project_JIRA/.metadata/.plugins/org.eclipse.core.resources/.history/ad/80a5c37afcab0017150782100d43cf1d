@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		<ul>
+			<li>Home</li>
+			<li>Attribute</li>
+		</ul>
+	</body>
+</html>

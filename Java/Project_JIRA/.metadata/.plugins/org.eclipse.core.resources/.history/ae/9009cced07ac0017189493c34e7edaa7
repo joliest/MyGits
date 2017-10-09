@@ -1,0 +1,7 @@
+package com.tracker.DatabaseHelper;
+
+public class DatabaseHelper {
+	public DatabaseHelper() {
+		
+	}
+}

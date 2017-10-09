@@ -1,0 +1,13 @@
+package com.tracker.Attribute.web;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+
+import java.io.IOException;
+
+public class AttributeServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String status = request.getParameter("status");
+	}
+}

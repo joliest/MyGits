@@ -1,0 +1,17 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.*;
+
+public class DatabaseHelper {
+	Connection connection;
+	private DatabaseHelper(String driver, String ConnectionURL) {
+		try {
+			Class.forName(driver);
+			connection = DriverManager.getConnection(ConnectionURL);
+		} catch(SQLException sEx) {
+			System.out.println("Database Connection Failed: " + sEx);
+		} catch(ClassNotFoundException cEx) {
+			System.out.println("Class name is not valid: " + cEx);
+		}
+	}
+}

@@ -1,0 +1,7 @@
+function addAttribute(value) {
+	var buttonType = value;
+	
+	var xhttp = new XMLHttpRequest();
+	
+	xhttp.
+}

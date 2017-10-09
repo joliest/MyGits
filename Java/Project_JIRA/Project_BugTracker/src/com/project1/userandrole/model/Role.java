@@ -1,5 +1,7 @@
 package com.project1.userandrole.model;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 
 import com.project1.db.DatabaseFactory;
@@ -29,4 +31,5 @@ public class Role {
 	public String getRoleName() {
 		return roleName;
 	}
+	
 }
