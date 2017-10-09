@@ -1,0 +1,12 @@
+package com.tracker.DatabaseHelper;
+
+import com.tracker.Module;
+
+public class AttributeDatabaseManager extends DatabaseManager{
+
+	public AttributeDatabaseManager(Module module) {
+		super(module);
+	}
+
+	
+}

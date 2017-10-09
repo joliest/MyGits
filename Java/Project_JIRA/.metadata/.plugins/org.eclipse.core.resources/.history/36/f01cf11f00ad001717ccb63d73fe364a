@@ -1,0 +1,8 @@
+package com.tracker.DatabaseHelper;
+
+public abstract class DatabaseManager {
+	
+	public void add();
+	public void update();
+	public void remove();
+}

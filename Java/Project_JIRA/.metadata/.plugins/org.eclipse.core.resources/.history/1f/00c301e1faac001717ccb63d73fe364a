@@ -1,0 +1,31 @@
+package com.tracker;
+
+import javax.servlet.http.HttpServletRequest;
+
+public abstract ModuleAbstract implements Module{
+	
+	protected HttpServletRequest request;
+	
+
+
+	public int createId() {
+		return 0;
+	}
+
+	public void setHttpRequest(HttpServletRequest request) {
+		this.request = request;
+	}
+
+	public void add() {
+		
+	}
+
+	public void update() {
+		
+	}
+
+	public void remove() {
+		
+	}
+
+}

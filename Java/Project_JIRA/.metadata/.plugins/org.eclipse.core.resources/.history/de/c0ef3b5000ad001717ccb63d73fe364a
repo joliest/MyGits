@@ -1,0 +1,22 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.Connection;
+
+import com.tracker.Module;
+
+public abstract class DatabaseManager {
+	
+	protected Connection connection;
+	protected HttpServletRequest request;
+	
+	public void getConnection() {
+		connection = 
+	}
+	
+	public void add(Module module) {
+		
+	}
+	
+	public void update();
+	public void remove();
+}

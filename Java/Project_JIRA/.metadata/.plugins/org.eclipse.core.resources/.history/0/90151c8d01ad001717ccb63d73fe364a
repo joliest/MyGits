@@ -1,0 +1,5 @@
+package com.tracker.DatabaseHelper;
+
+public class AttributeDatabaseManager {
+
+}

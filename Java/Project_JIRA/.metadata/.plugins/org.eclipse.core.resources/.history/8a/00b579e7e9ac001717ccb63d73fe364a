@@ -1,0 +1,10 @@
+package com.tracker;
+
+public interface Module {
+	int generateId();
+	void setHttpRequest(HttpRequest request);
+	void add();
+	void remove();
+	void modify();
+	void delete();
+}

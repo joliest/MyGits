@@ -1,0 +1,45 @@
+package com.tracker;
+
+public class ModuleAbstract implements Module {
+	
+	protected int id;
+	protected String name;
+
+	@Override
+	public int generateId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setHttpRequest() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modify() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

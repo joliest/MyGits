@@ -1,0 +1,42 @@
+package com.tracker.Attribute.model;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.tracker.Module;
+
+public class Attribute implements Module{
+	private int id;
+	private int groupId;
+	
+	@Override
+	public int generateId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public void setHttpRequest(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void modify() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,6 @@
+package com.tracker;
+
+public class ModuleAbstract implements Module {
+
+
+}

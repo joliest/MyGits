@@ -149,10 +149,10 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 	
-		<Context docBase="D:\MyGits_Apalit\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\MyGits_Apalit\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_BugTracker" path="/Project_BugTracker" reloadable="true" source="org.eclipse.jst.jee.server:Project_BugTracker"/>
-		<Context docBase="D:\MyGits_Apalit\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_Test" path="/Project_Test" reloadable="true" source="org.eclipse.jst.jee.server:Project_Test"/>
-		<Context docBase="D:\MyGits_Apalit\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JavaServletAndAJAX" path="/JavaServletAndAJAX" reloadable="true" source="org.eclipse.jst.jee.server:JavaServletAndAJAX"/>
-      <Context docBase="D:\MyGits_Apalit\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MiniTracker" path="/MiniTracker" reloadable="true" source="org.eclipse.jst.jee.server:MiniTracker"/></Host>
+		<Context docBase="D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_BugTracker" path="/Project_BugTracker" reloadable="true" source="org.eclipse.jst.jee.server:Project_BugTracker"/>
+		<Context docBase="D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Project_Test" path="/Project_Test" reloadable="true" source="org.eclipse.jst.jee.server:Project_Test"/>
+		<Context docBase="D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JavaServletAndAJAX" path="/JavaServletAndAJAX" reloadable="true" source="org.eclipse.jst.jee.server:JavaServletAndAJAX"/>
+      <Context docBase="D:\Github\Java\Project_JIRA\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MiniTracker" path="/MiniTracker" reloadable="true" source="org.eclipse.jst.jee.server:MiniTracker"/></Host>
     </Engine>
   </Service>
 </Server>

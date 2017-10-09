@@ -1,0 +1,39 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.*;
+
+import com.tracker.Module;
+
+public class AttributeDatabaseManager extends DatabaseManager{
+	
+	private final String UPDATE_SCRIPT = "UPDATE ATTRIBUTE VALUES(?,?,?,?,?)";
+
+	public AttributeDatabaseManager(Module module) {
+		super(module);
+	}
+
+	@Override
+	public void add() {
+		/*
+		 (	"ID" NUMBER, 
+		 	"GROUPID" NUMBER,
+  			"NAME" VARCHAR2(50), 
+  			"DATATYPE" VARCHAR2(20), 
+  			"LENGTH" NUMBER)
+
+		 */
+		PreparedStatement stmt = connection.prepareStatement();
+	}
+
+	@Override
+	public void update() {
+		
+	}
+
+	@Override
+	public void remove() {
+		
+	}
+
+	
+}

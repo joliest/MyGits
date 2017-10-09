@@ -1,0 +1,17 @@
+package com.tracker.DatabaseHelper;
+
+import com.tracker.Module;
+
+public abstract class DatabaseManager {
+	
+	public void getConnection() {
+		
+	}
+	
+	public void add(Module module) {
+		
+	}
+	
+	public void update();
+	public void remove();
+}
