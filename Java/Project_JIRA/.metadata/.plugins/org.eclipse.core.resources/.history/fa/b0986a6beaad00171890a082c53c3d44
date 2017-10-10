@@ -52,8 +52,5 @@ public class AttributeServlet extends HttpServlet{
 		
 		
 		out.print(alert);
-		
-		RequestDispatcher view = request.getRequestDispatcher("/Attribute.jsp");
-		view.forward(request, response);
 	}
 }
