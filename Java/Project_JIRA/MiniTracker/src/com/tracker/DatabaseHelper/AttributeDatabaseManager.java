@@ -10,13 +10,12 @@ import com.tracker.Attribute.model.Attribute;
 public class AttributeDatabaseManager extends DatabaseManager{
 	
 	private Attribute attribute;
-	private HttpServletRequest request;
 	
-	public static final int ID = 1;
-	public static final int GROUPID = 2;
-	public static final int NAME = 3;
-	public static final int DATATYPE = 4;
-	public static final int LENGTH = 5;
+	private static final int ID = 1;
+	private static final int GROUPID = 2;
+	private static final int NAME = 3;
+	private static final int DATATYPE = 4;
+	private static final int LENGTH = 5;
 	
 	private int id;
 	private int groupId;
@@ -25,27 +24,42 @@ public class AttributeDatabaseManager extends DatabaseManager{
 	private int length;
 	
 	private final String addQuery = "INSERT INTO ATTRIBUTE VALUES(?,?,?,?,?)";
+	private final String countRows = "SELECT * FROM ATTRIBUTE ORDER BY ID DESC";
 
 	public AttributeDatabaseManager(Module module) {
 		super(module);
 		attribute = (Attribute) module;
-		//id
+		id = generateId();
 		//groupId
 		name = attribute.getName();
 		dataType = attribute.getDataType();
 		length = attribute.getLength();
 	}
+	
+	@Override
+	protected int generateId() {
+		try {
+			statement = connection.createStatement();			
+			rowCount = statement.executeQuery(countRows);
+			rowCount.next();			
+			id = (rowCount.getInt(1)) + 1;	
+			System.out.println("AttributeDatabaseManager.generateId() value is " + id);
+		}  catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.generateId() : " + sEx);
+		}
+		return id;
+	}
 
 	@Override
 	public void add() {
 		try {
-			PreparedStatement stmt = connection.prepareStatement(addQuery);
-			stmt.setInt(ID, 0);
-			stmt.setInt(GROUPID, 0);
-			stmt.setString(NAME, name);
-			stmt.setString(DATATYPE, dataType);
-			stmt.setInt(LENGTH, length);
-			stmt.execute();
+			preparedStatement = connection.prepareStatement(addQuery);
+			preparedStatement.setInt(ID, id);
+			preparedStatement.setInt(GROUPID, 0);
+			preparedStatement.setString(NAME, name);
+			preparedStatement.setString(DATATYPE, dataType);
+			preparedStatement.setInt(LENGTH, length);
+			preparedStatement.execute();
 			System.out.println("New Attribute added " + name);
 		} catch (SQLException sEx) {
 			System.out.println("AttributeDatabaseManager.add() : " + sEx);
@@ -129,6 +143,8 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		
 		return updateQuery;
 	}
+
+	
 
 	
 }

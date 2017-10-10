@@ -1,0 +1,27 @@
+package com.tracker;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class GroupAbstract implements Group{
+
+	@Override
+	public void setHttpRequest(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public HttpServletRequest getHttpRequest() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList listMembers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

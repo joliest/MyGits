@@ -17,8 +17,15 @@ public abstract class ModuleAbstract implements Module{
 		setProperties();
 	}
 	
-	public int createId() {
-		return 0;
+	public HttpServletRequest getHttpRequest() {
+		return request;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getId() {
+		return id;
 	}
 	
 	protected abstract void setProperties();

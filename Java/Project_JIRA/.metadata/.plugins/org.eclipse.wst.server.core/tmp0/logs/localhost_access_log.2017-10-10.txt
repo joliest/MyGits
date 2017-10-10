@@ -25,3 +25,4 @@
 0:0:0:0:0:0:0:1 - - [10/Oct/2017:23:24:59 +0800] "GET /MiniTracker/Attribute.jsp HTTP/1.1" 200 949
 0:0:0:0:0:0:0:1 - - [10/Oct/2017:23:24:59 +0800] "GET /MiniTracker/js/Attribute.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [10/Oct/2017:23:25:04 +0800] "POST /MiniTracker/Attribute.do HTTP/1.1" 200 14
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:23:32:09 +0800] "POST /MiniTracker/Attribute.do HTTP/1.1" 500 1999

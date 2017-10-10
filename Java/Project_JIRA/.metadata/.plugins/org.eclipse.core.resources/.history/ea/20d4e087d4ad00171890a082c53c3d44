@@ -1,0 +1,8 @@
+package com.tracker;
+
+import java.util.ArrayList;
+
+public interface Group extends Module {
+	ArrayList listMembers();
+	
+}

@@ -14,7 +14,21 @@
 			
 		</div>
 		
-		<div id="AttributeTextFieldsBox">
+		<div id="AttributeGroupTextFieldBox">
+			<table>
+				<tr>
+					<td>Group Name</td>
+					<td><input type="text" id="attribGroupName"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="button" id="addAttributeGroup">Add Attribute Group</button>
+						<button type="button" id="cancel">Cancel</button></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="AttributeTextFieldBox">
 			<table>
 				<tr>
 					<td>Group</td>

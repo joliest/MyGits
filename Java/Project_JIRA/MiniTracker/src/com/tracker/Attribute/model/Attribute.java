@@ -9,33 +9,18 @@ public class Attribute extends ModuleAbstract{
 	public Attribute(HttpServletRequest request) {
 		super(request);
 	}
-
+	
 	private String group;
 	private String dataType;
 	private int length;
-
 	private int groupId;
-	
-	public int createId() {
-		
-		return 0;
-	}
 
 	protected void setProperties() {
-		group = request.getParameter("group");
+		String lengthString = request.getParameter("length");		
+		group = request.getParameter("groupName");
 		name = request.getParameter("name");
-		dataType = request.getParameter("dataType");
-		length = Integer.parseInt(request.getParameter("length"));
-		System.out.println("Following properties are added" + group + " " + name + " " +  dataType + " " +  length);
-	}
-
-	@Override
-	public HttpServletRequest getHttpRequest() {
-		return request;
-	}
-	
-	public String getName() {
-		return name;
+		dataType = request.getParameter("dataType");		
+		length = Integer.parseInt(lengthString);
 	}
 	
 	public String getDataType() {
@@ -44,10 +29,6 @@ public class Attribute extends ModuleAbstract{
 	
 	public int getLength() {
 		return length;
-	}
-	
-	public int getId() {
-		return id;
 	}
 	
 	public int getGroupId() {

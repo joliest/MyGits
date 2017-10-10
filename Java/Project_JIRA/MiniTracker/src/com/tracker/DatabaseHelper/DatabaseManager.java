@@ -9,6 +9,10 @@ import com.tracker.Module;
 
 public abstract class DatabaseManager {
 	
+	protected PreparedStatement preparedStatement;
+	protected Statement statement;
+	protected ResultSet rowCount;
+	
 	protected Connection connection;
 	protected HttpServletRequest request;
 	protected Module module;
@@ -25,4 +29,5 @@ public abstract class DatabaseManager {
 	public abstract void update();
 	public abstract void remove();
 	public abstract void view();
+	protected abstract int generateId();
 }

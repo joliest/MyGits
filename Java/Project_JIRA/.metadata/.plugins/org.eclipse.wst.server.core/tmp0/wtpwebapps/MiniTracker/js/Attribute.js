@@ -1,18 +1,34 @@
 
+/*
+ 	Add validation that detects blank values
+ */
+
 $(document).ready(function(){
 	$("#addAttribute").click(function(){
 		$.post("/MiniTracker/Attribute.do",
 				{
-					category : "add",
-					group : $("#attribGroup").val(),
+					category : "addAttribute",
+					groupName : $("#attribGroup").val(),
 					name : $("#attribName").val(),
-					dataType : $("#attribGroup").val(),
-					length : $("#attribGroup").val()
+					dataType : $("#attribDataType").val(),
+					length : $("#attribLength").val()
 				},
 				function(data, status) {
 					alert(data);
 				})				
 	})
+	
+	$("#addAttributeGroup").click(function(){
+		$.post("/MiniTracker/Attribute.do", 
+				{
+					category : "addAttributeGroup",
+					name : $("#attribGroupName").val()
+				},
+				function(data, status) {
+					alert(data);
+				})
+	})
+	
 })
 
 
