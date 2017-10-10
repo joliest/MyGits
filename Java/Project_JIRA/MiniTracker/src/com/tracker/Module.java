@@ -6,5 +6,4 @@ public interface Module {
 	int createId();
 	void setHttpRequest(HttpServletRequest request);
 	HttpServletRequest getHttpRequest();
-	void executeCommand();
 }

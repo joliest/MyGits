@@ -1,0 +1,106 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.*;
+
+import com.tracker.Module;
+import com.tracker.Attribute.model.Attribute;
+
+public class AttributeDatabaseManager extends DatabaseManager{
+	
+	private Attribute attribute;
+	
+	public static final int ID = 1;
+	public static final int GROUPID = 2;
+	public static final int NAME = 3;
+	public static final int DATATYPE = 4;
+	public static final int LENGTH = 5;
+	
+	private final String addQuery = "INSERT INTO ATTRIBUTE VALUES(?,?,?,?,?)";
+
+	public AttributeDatabaseManager(Module module) {
+		super(module);
+		this.attribute = (Attribute) module;
+	}
+
+	@Override
+	public void add() {
+		try {
+			PreparedStatement stmt = connection.prepareStatement(addQuery);
+			stmt.setInt(ID, 0);
+			stmt.setInt(GROUPID, 0);
+			stmt.setString(NAME, "Name");
+			stmt.setString(DATATYPE, "DataType");
+			stmt.setInt(LENGTH, 0);
+			stmt.execute();
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.add() : " + sEx);
+		}
+	}
+
+	@Override
+	public void update(int idNumber, int columnIndex, String value) {
+		
+		boolean isNumber = identifyColumnType(columnIndex);
+		String updateQuery =  setUpdateQuery(columnIndex);
+		
+		try {
+			PreparedStatement stmt = connection.prepareStatement(updateQuery);
+			
+			stmt.execute();
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.update() : " + sEx);
+		}
+	}
+
+	@Override
+	public void remove() {
+		
+	}
+	
+	private boolean identifyColumnType(int columnIndex) {
+		boolean isNumber = false;
+		
+		switch(columnIndex) {
+			case ID: isNumber = true;
+					break;
+			case GROUPID: isNumber = true;
+					break;
+			case NAME: isNumber = false;
+					break;
+			case DATATYPE: isNumber = false;
+					break;
+			case LENGTH: isNumber = true;
+					break;
+			default: isNumber = false;
+					break;
+		}
+		
+		return isNumber;
+	}
+
+	private String setUpdateQuery(int columnIndex) {
+		String updateQuery = "UPDATE ATTRIBUTE SET ";
+		
+		switch(columnIndex) {
+			case ID: updateQuery += "ID";
+					break;
+			case GROUPID: updateQuery += "GROUPID";
+					break;
+			case NAME: updateQuery += "NAME";
+					break;
+			case DATATYPE: updateQuery += "DATATYPE";
+					break;
+			case LENGTH: updateQuery += "LENGTH";
+					break;
+			default: updateQuery += "INVALID"; 
+					break;
+		}
+		
+		updateQuery += "=? WHERE ID=?";
+		
+		System.out.println("Generated updateQuery: " + updateQuery);
+		
+		return updateQuery;
+	}
+	
+}

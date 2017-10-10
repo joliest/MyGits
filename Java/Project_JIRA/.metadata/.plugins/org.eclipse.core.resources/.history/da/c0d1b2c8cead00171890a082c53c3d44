@@ -1,0 +1,23 @@
+package com.tracker.Command;
+
+import com.tracker.DatabaseHelper.DatabaseManager;
+
+public class AddAttributeCommand implements Command{
+	
+	DatabaseManager manager;
+	
+	public AddAttributeCommand(DatabaseManager manager){
+		this.manager = manager;
+	}
+
+	@Override
+	public void execute() {
+		manager.add();
+	}
+
+	@Override
+	public void undo() {
+		
+	}
+
+}

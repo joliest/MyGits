@@ -1,0 +1,9 @@
+package com.tracker.Command;
+
+public interface Command {
+	void add();
+	void update();
+	void remove();
+	void view();
+	void undo();
+}

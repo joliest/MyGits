@@ -1,0 +1,35 @@
+package com.tracker;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.tracker.Command.AddAttributeCommand;
+import com.tracker.Command.Command;
+import com.tracker.DatabaseHelper.DatabaseManager;
+
+public abstract class ModuleAbstract implements Module{
+	
+	protected HttpServletRequest request;
+	protected int id;
+	protected String name;
+	
+	public ModuleAbstract(HttpServletRequest request) {
+		setHttpRequest(request);
+	}
+	
+	public void setHttpRequest(HttpServletRequest request) {
+		this.request = request;
+		setProperties();
+	}
+	
+	public int createId() {
+		return 0;
+	}
+	
+	public DatabaseManager getDatabaseManager() {
+		return databaseManager;
+	}
+	
+	protected abstract void setProperties();
+	
+	
+}

@@ -1,0 +1,90 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.*;
+
+import com.tracker.Module;
+import com.tracker.Attribute.model.Attribute;
+
+public class AttributeDatabaseManager extends DatabaseManager{
+	
+	private Attribute attribute;
+	
+	public static final int ID = 1;
+	public static final int GROUPID = 2;
+	public static final int NAME = 3;
+	public static final int DATATYPE = 4;
+	public static final int LENGTH = 5;
+	
+	private final String addQuery = "INSERT INTO ATTRIBUTE VALUES(?,?,?,?,?)";
+
+	public AttributeDatabaseManager(Module module) {
+		super(module);
+		this.attribute = (Attribute) module;
+	}
+
+	@Override
+	public void add() {
+		try {
+			PreparedStatement stmt = connection.prepareStatement(addQuery);
+			stmt.setInt(ID, 0);
+			stmt.setInt(GROUPID, 0);
+			stmt.setString(NAME, "Name");
+			stmt.setString(DATATYPE, "DataType");
+			stmt.setInt(LENGTH, 0);
+			stmt.execute();
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.add() : " + sEx);
+		}
+	}
+
+	@Override
+	public void update(int idNumber, int columnIndex, String value) {
+		
+		String updateQuery =  setUpdateQuery(columnIndex);
+		
+		try {
+			PreparedStatement stmt = connection.prepareStatement(updateQuery);
+			stmt.setInt(1, 0);
+			stmt.setInt(2, 0);
+			stmt.setString(3, "Name");
+			stmt.setString(4, "DataType");
+			stmt.setInt(5, 0);
+			stmt.execute();
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.update() : " + sEx);
+		}
+	}
+
+	@Override
+	public void remove() {
+		
+	}
+
+	private String setUpdateQuery(int columnIndex) {
+		String updateQuery = "UPDATE ATTRIBUTE SET ";
+		
+		switch(columnIndex) {
+			case 1:
+				updateQuery += "ID";
+				break;
+			case 2:
+				updateQuery += "GROUPID";
+				break;
+			case 3:
+				updateQuery += "NAME";
+				break;
+			case 4:
+				updateQuery += "DATATYPE";
+				break;
+			case 5:
+				updateQuery += "LENGTH";
+				break;
+			default:
+				updateQuery += "ID";
+				break;
+		}
+		
+		return updateQuery;
+	}
+	
+}

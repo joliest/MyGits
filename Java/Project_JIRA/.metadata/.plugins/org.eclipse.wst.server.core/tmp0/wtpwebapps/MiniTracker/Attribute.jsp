@@ -18,19 +18,19 @@
 			<table>
 				<tr>
 					<td>Group</td>
-					<td><input type="text" name="group"></td>
+					<td><input type="text" id="attribGroup"></td>
 				</tr>
 				<tr>
 					<td>Name</td>
-					<td><input type="text" name="name"></td>
+					<td><input type="text" id="attribName"></td>
 				</tr>
 				<tr>
 					<td>Data Type</td>
-					<td><input type="text" name="dataType"></td>
+					<td><input type="text" id="attribDataType"></td>
 				</tr>
 				<tr>
 					<td>Length</td>
-					<td><input type="text" name="length"></td>
+					<td><input type="text" id="attribLength"></td>
 				</tr>
 				<tr>
 					<td></td>

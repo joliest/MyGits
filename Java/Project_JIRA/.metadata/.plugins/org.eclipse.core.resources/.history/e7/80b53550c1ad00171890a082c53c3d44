@@ -1,0 +1,71 @@
+package com.tracker.Attribute.model;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.tracker.Module;
+import com.tracker.ModuleAbstract;
+import com.tracker.DatabaseHelper.AttributeDatabaseManager;
+
+public class Attribute extends ModuleAbstract{
+	
+	public Attribute(HttpServletRequest request) {
+		super(request);
+		setProperties();
+		setDatabaseManager();
+		setCommand(new AddAttributeCommand());
+	}
+
+	private String dataType;
+	private int groupId;
+	private int length;
+	
+	private HttpServletRequest request;	
+	
+	public int createId() {
+		
+		return 0;
+	}
+
+	protected void setProperties() {
+		request.getParameter("group");
+		name = request.getParameter("name");
+		dataType = request.getParameter("dataType");
+		length = Integer.parseInt(request.getParameter("length"));
+	}
+
+	@Override
+	public HttpServletRequest getHttpRequest() {
+		return request;
+	}
+
+	@Override
+	protected void setDatabaseManager() {
+		databaseManager = new AttributeDatabaseManager(this);
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getDataType() {
+		return dataType;
+	}
+	
+	public int getLength() {
+		return length;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public int getGroupId() {
+		return groupId;
+	}
+
+}
+
+/*
+	Get Group's group id
+	Create GroupAttribute Module
+*/

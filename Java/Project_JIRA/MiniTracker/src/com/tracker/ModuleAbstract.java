@@ -5,14 +5,11 @@ import javax.servlet.http.HttpServletRequest;
 public abstract class ModuleAbstract implements Module{
 	
 	protected HttpServletRequest request;
-	protected Command command;
-	protected DatabaseManager databaseManager;
 	protected int id;
-	protected int name;
+	protected String name;
 	
 	public ModuleAbstract(HttpServletRequest request) {
-		this.request = request;
-		setProperties();
+		setHttpRequest(request);
 	}
 	
 	public void setHttpRequest(HttpServletRequest request) {
@@ -23,20 +20,8 @@ public abstract class ModuleAbstract implements Module{
 	public int createId() {
 		return 0;
 	}
-
-	public void setCommand(Command command) {
-		this.command = command;
-	}
-	
-	public void executeCommand() {
-		command.execute();
-	}
-	
-	public DatabaseManager getDatabaseManager() {
-		return databaseManager;
-	}
 	
 	protected abstract void setProperties();
-	protected abstract void setDatabaseManager();
-
+	
+	
 }

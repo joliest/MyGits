@@ -2,7 +2,13 @@
 $(document).ready(function(){
 	$("#addAttribute").click(function(){
 		$.post("/MiniTracker/Attribute.do",
-				{category : "add"},
+				{
+					category : "add",
+					group : $("#attribGroup").val(),
+					name : $("#attribName").val(),
+					dataType : $("#attribGroup").val(),
+					length : $("#attribGroup").val()
+				},
 				function(data, status) {
 					alert(data);
 				})				

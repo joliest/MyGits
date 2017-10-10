@@ -1,0 +1,43 @@
+package com.tracker.Command;
+
+import com.tracker.DatabaseHelper.DatabaseManager;
+
+public class AttributeCommands implements Command {
+	
+	private DatabaseManager manager;
+	
+	public AttributeCommands(DatabaseManager manager) {
+		this.manager = manager;
+	}
+
+	@Override
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void view() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

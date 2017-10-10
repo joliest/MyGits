@@ -24,4 +24,5 @@ public abstract class DatabaseManager {
 	public abstract void add();	
 	public abstract void update();
 	public abstract void remove();
+	public abstract void view();
 }
