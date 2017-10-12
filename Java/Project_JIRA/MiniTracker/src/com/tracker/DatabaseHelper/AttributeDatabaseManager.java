@@ -30,7 +30,7 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		super(module);
 		attribute = (Attribute) module;
 		id = generateId();
-		//groupId
+		groupId = attribute.getGroupId();
 		name = attribute.getName();
 		dataType = attribute.getDataType();
 		length = attribute.getLength();
@@ -55,7 +55,7 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		try {
 			preparedStatement = connection.prepareStatement(addQuery);
 			preparedStatement.setInt(ID, id);
-			preparedStatement.setInt(GROUPID, 0);
+			preparedStatement.setInt(GROUPID, groupId);
 			preparedStatement.setString(NAME, name);
 			preparedStatement.setString(DATATYPE, dataType);
 			preparedStatement.setInt(LENGTH, length);

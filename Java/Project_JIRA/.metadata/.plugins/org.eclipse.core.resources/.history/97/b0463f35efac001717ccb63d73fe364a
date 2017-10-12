@@ -1,7 +1,0 @@
-package com.tracker.Attribute.model;
-
-public class Attribute implements Module{
-	private int id;
-	private int groupId;
-	
-}

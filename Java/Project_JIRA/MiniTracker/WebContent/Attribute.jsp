@@ -32,7 +32,11 @@
 			<table>
 				<tr>
 					<td>Group</td>
-					<td><input type="text" id="attribGroup"></td>
+					<td>
+						<select id="selectAttributeGroup">
+							
+						</select>						
+					</td>
 				</tr>
 				<tr>
 					<td>Name</td>
@@ -40,7 +44,15 @@
 				</tr>
 				<tr>
 					<td>Data Type</td>
-					<td><input type="text" id="attribDataType"></td>
+					<td>
+						<select id="attribDataType">
+							<option>Alpha</option>
+							<option>AlphaNumeric</option>
+							<option>Numeric</option>
+							<option>Date</option>
+							<option>Selection</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>Length</td>
@@ -54,5 +66,7 @@
 				</tr>
 			</table>
 		</div>
+		
+		
 	</body>
 </html>

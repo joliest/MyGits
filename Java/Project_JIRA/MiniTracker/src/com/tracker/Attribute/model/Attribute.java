@@ -16,8 +16,12 @@ public class Attribute extends ModuleAbstract{
 	private int groupId;
 
 	protected void setProperties() {
-		String lengthString = request.getParameter("length");		
+		
+		String lengthString = request.getParameter("length");	
+		String groupIdString = request.getParameter("groupId");
+		
 		group = request.getParameter("groupName");
+		groupId = Integer.parseInt(groupIdString);
 		name = request.getParameter("name");
 		dataType = request.getParameter("dataType");		
 		length = Integer.parseInt(lengthString);

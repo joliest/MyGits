@@ -1,6 +1,8 @@
 package com.tracker.DatabaseHelper;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.tracker.Module;
 import com.tracker.Attribute.model.AttributeGroup;
@@ -16,6 +18,7 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 	private String name;
 	
 	private final String addQuery = "INSERT INTO ATTRIBUTEGROUP VALUES(?,?)";
+	private final String selectQuery = "SELECT * FROM ATTRIBUTEGROUP";
 	private final String countRows = "SELECT * FROM ATTRIBUTEGROUP ORDER BY ID DESC";
 
 	public AttributeGroupDatabaseManager(Module module) {
@@ -67,7 +70,29 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 		} catch(SQLException sEx) {
 			System.out.println("AttributeGroupDatabaseManager.generateId() : " + sEx);
 		}
-		return 0;
+		return id;
+	}
+	
+	public HashMap<Integer, String>  getAttributeGroups() {
+		HashMap<Integer, String> list = new HashMap<Integer, String>();
+		//ArrayList list = new ArrayList();
+		ResultSet attributeGroupRow;
+		try {
+			statement = connection.createStatement();
+			attributeGroupRow = statement.executeQuery(selectQuery);
+			while(attributeGroupRow.next()) {
+				
+				int rowId = attributeGroupRow.getInt(1);
+				String rowName = attributeGroupRow.getString(2);
+				
+				list.put(rowId, rowName);
+			}
+			System.out.println("AttributeGroupDatabaseManager.getAttributeGroups() value is " + list);
+		} catch(SQLException sEx) {
+			System.out.println("AttributeGroupDatabaseManager.getAttributeGroups() : " + sEx);
+		}
+		
+		return list;
 	}
 
 }

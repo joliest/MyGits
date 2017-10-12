@@ -19,9 +19,16 @@ public class Administration extends HttpServlet{
 			roleListReady += "<option>" + role + "</option>";
 		}
 		
+		/*
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 		out.println(roleListReady);
+		*/
+		
+		req.setAttribute("test", "<b>hellow world</p>");
+		
+		RequestDispatcher view = req.getRequestDispatcher("/web/admin/Admin.jsp");
+		view.forward(req, res);
 		
 	}
 

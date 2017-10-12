@@ -4,11 +4,20 @@
  */
 
 $(document).ready(function(){
+
+	$.post("/MiniTracker/Attribute.do", 
+			{category : ""},
+			function(data, status) {
+				$("#selectAttributeGroup").html(data);
+			})
+	
+	
 	$("#addAttribute").click(function(){
 		$.post("/MiniTracker/Attribute.do",
 				{
 					category : "addAttribute",
 					groupName : $("#attribGroup").val(),
+					groupId : $("option:selected").attr("attributeid"),
 					name : $("#attribName").val(),
 					dataType : $("#attribDataType").val(),
 					length : $("#attribLength").val()

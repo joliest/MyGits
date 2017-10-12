@@ -7,6 +7,7 @@
 		<script src="Admin.js"></script>
 	</head>
 	<body>
+		${requestScope["test"]} sdsddsd
 		<div>
 			<ol id="roleList">
 				<li>Value 1</li>

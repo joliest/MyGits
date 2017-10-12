@@ -4325,3 +4325,230 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2017-10-11 01:12:41.095
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-10-11 20:49:56.857 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-10-11 20:50:24.583
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Joliver-PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-11 21:15:21.010
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-11 21:15:21.011
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:01:22.139
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:01:22.141
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:16:53.521
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:16:53.521
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:16:53.556
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 00:16:53.557
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-10-12 20:15:24.519 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-10-12 20:19:45.300
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Joliver-PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 20:48:08.107
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 20:48:08.110
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:09:02.425
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:09:02.425
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-10-12 21:43:45.357 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-10-12 21:43:59.279
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Joliver-PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:45:14.002
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:45:14.003
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 2 2017-10-12 21:45:53.562
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.wst.jsdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: Invalid Expression : /Project_BugTracker/Admin
+	at org.eclipse.wst.jsdt.core.dom.RegularExpressionLiteral.setRegularExpression(RegularExpressionLiteral.java:180)
+	at org.eclipse.wst.jsdt.core.dom.AST.newRegularExpressionLiteral(AST.java:1976)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convertLiteral(DOMASTConverter.java:871)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.visit(DOMASTConverter.java:140)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.callVisit(EStreeVisitor.java:109)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.traverse(EStreeVisitor.java:63)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convert(DOMASTConverter.java:124)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.translate(EsprimaParser.java:204)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.parse(EsprimaParser.java:139)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:651)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy$1.run(JavascriptReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:129)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:99)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 0 2017-10-12 21:45:53.585
+!MESSAGE Error in JSDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException: Invalid Expression : /Project_BugTracker/Admin
+	at org.eclipse.wst.jsdt.core.dom.RegularExpressionLiteral.setRegularExpression(RegularExpressionLiteral.java:180)
+	at org.eclipse.wst.jsdt.core.dom.AST.newRegularExpressionLiteral(AST.java:1976)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convertLiteral(DOMASTConverter.java:871)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.visit(DOMASTConverter.java:140)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.callVisit(EStreeVisitor.java:109)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.traverse(EStreeVisitor.java:63)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convert(DOMASTConverter.java:124)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.translate(EsprimaParser.java:204)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.parse(EsprimaParser.java:139)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:651)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy$1.run(JavascriptReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:129)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:99)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 2 2017-10-12 21:45:53.681
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.wst.jsdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: Invalid Expression : /Project_BugTracker/Admin
+	at org.eclipse.wst.jsdt.core.dom.RegularExpressionLiteral.setRegularExpression(RegularExpressionLiteral.java:180)
+	at org.eclipse.wst.jsdt.core.dom.AST.newRegularExpressionLiteral(AST.java:1976)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convertLiteral(DOMASTConverter.java:871)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.visit(DOMASTConverter.java:140)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.callVisit(EStreeVisitor.java:109)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.traverse(EStreeVisitor.java:63)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convert(DOMASTConverter.java:124)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.translate(EsprimaParser.java:204)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.parse(EsprimaParser.java:139)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:651)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:499)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 0 2017-10-12 21:45:53.683
+!MESSAGE Error in JSDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException: Invalid Expression : /Project_BugTracker/Admin
+	at org.eclipse.wst.jsdt.core.dom.RegularExpressionLiteral.setRegularExpression(RegularExpressionLiteral.java:180)
+	at org.eclipse.wst.jsdt.core.dom.AST.newRegularExpressionLiteral(AST.java:1976)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convertLiteral(DOMASTConverter.java:871)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.visit(DOMASTConverter.java:140)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.callVisit(EStreeVisitor.java:109)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.traverse(EStreeVisitor.java:63)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convert(DOMASTConverter.java:124)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.translate(EsprimaParser.java:204)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.parse(EsprimaParser.java:139)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:651)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:499)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-10-12 21:45:53.732
+!MESSAGE Invalid Expression : /Project_BugTracker/Admin
+!STACK 0
+java.lang.IllegalArgumentException: Invalid Expression : /Project_BugTracker/Admin
+	at org.eclipse.wst.jsdt.core.dom.RegularExpressionLiteral.setRegularExpression(RegularExpressionLiteral.java:180)
+	at org.eclipse.wst.jsdt.core.dom.AST.newRegularExpressionLiteral(AST.java:1976)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convertLiteral(DOMASTConverter.java:871)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.visit(DOMASTConverter.java:140)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.callVisit(EStreeVisitor.java:109)
+	at org.eclipse.wst.jsdt.internal.esprima.EStreeVisitor.traverse(EStreeVisitor.java:63)
+	at org.eclipse.wst.jsdt.internal.esprima.DOMASTConverter.convert(DOMASTConverter.java:124)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.translate(EsprimaParser.java:204)
+	at org.eclipse.wst.jsdt.internal.esprima.EsprimaParser.parse(EsprimaParser.java:139)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:906)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:673)
+	at org.eclipse.wst.jsdt.internal.validation.JSDTSourceValidator.validateFile(JSDTSourceValidator.java:226)
+	at org.eclipse.wst.jsdt.internal.validation.JSDTSourceValidator.validateDelta(JSDTSourceValidator.java:204)
+	at org.eclipse.wst.jsdt.internal.validation.JSDTSourceValidator.validate(JSDTSourceValidator.java:100)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptValidationStrategy.reconcile(JavascriptValidationStrategy.java:101)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:99)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:52:16.739
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:52:16.740
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:52:16.780
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-12 21:52:16.782
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

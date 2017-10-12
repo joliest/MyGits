@@ -29,5 +29,8 @@ public abstract class DatabaseManager {
 	public abstract void update();
 	public abstract void remove();
 	public abstract void view();
+	
+	
+	
 	protected abstract int generateId();
 }

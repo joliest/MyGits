@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		<ul>
+			<li>Home</li>
+			<li><a href="/MiniTracker/Attribute.do">Attribute</a></li>
+			
+			<form method="POST" action="/MiniTracker/Attribute.do">
+				<input type="submit">
+			</form>
+		</ul>
+	</body>
+</html>
