@@ -1,6 +1,8 @@
 package com.tracker.DatabaseHelper;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -25,6 +27,8 @@ public class AttributeDatabaseManager extends DatabaseManager{
 	
 	private final String addQuery = "INSERT INTO ATTRIBUTE VALUES(?,?,?,?,?)";
 	private final String countRows = "SELECT * FROM ATTRIBUTE ORDER BY ID DESC";
+	private final String selectAllGroups = "SELECT * FROM ATTRIBUTEGROUP";
+	private final String selectAttributesByGroupId = "SELECT * FROM ATTRIBUTE WHERE GROUPID=";
 
 	public AttributeDatabaseManager(Module module) {
 		super(module);
@@ -34,6 +38,10 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		name = attribute.getName();
 		dataType = attribute.getDataType();
 		length = attribute.getLength();
+	}
+	
+	public AttributeDatabaseManager(HttpServletRequest request) {
+		super(request);
 	}
 	
 	@Override
@@ -98,6 +106,57 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		
 	}
 	
+	@Override
+	public HashMap<Integer, String> listGroups() {
+
+		int groupId;
+		String groupName;
+		
+		HashMap<Integer, String> list = new HashMap<Integer, String>();
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(selectAllGroups);
+			while(row.next()) {
+				groupId = row.getInt(1);
+				groupName = row.getString(2);
+				list.put(groupId, groupName);
+			}
+			System.out.println("Listed Attribute Groups ");
+		} catch(SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getGroups() : " + sEx);
+		}
+		return list;		
+	}
+
+	@Override
+	public HashMap<Integer, String> getMembersByGroupId(int groupId) {
+		
+		int attributeId;
+		String attributeName;
+		
+		HashMap<Integer, String> list = new HashMap<Integer, String>();	
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(selectAttributesByGroupId + groupId);
+			while(row.next()) {
+				attributeId = row.getInt(1);
+				attributeName = row.getString(3);
+				list.put(attributeId, attributeName);
+			}
+			System.out.println("Listed Attributes of Group ID: " + groupId);
+		}catch(SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getMembersByGroupId() : " + sEx);
+		}
+		
+		return list;		
+	}
+	
 	private boolean identifyColumnType(int columnIndex) {
 		boolean isNumber = false;
 		
@@ -143,6 +202,10 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		
 		return updateQuery;
 	}
+
+	
+
+	
 
 	
 

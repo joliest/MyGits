@@ -1,5 +1,0 @@
-package com.tracker;
-
-public interface Group extends Module {
-
-}

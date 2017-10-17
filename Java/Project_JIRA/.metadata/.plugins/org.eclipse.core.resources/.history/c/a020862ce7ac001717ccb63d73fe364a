@@ -1,6 +1,0 @@
-package com.tracker;
-
-public interface Module {
-	int generateId();
-	
-}

@@ -4,16 +4,17 @@
  */
 
 $(document).ready(function(){
-
-	$.post("/MiniTracker/Attribute.do", 
-			{category : ""},
-			function(data, status) {
-				$("#selectAttributeGroup").html(data);
-			})
 	
+	var controller = "/MiniTracker/Attribute.do";
+
+	loadAttributePage();
+	
+	$("li").click(function(){
+		$(this).css("background-color", "#ffff00");
+	})
 	
 	$("#addAttribute").click(function(){
-		$.post("/MiniTracker/Attribute.do",
+		$.post(controller,
 				{
 					category : "addAttribute",
 					groupName : $("#attribGroup").val(),
@@ -24,21 +25,44 @@ $(document).ready(function(){
 				},
 				function(data, status) {
 					alert(data);
+					loadAttributePage();
+					clearTextFields()
 				})				
 	})
 	
 	$("#addAttributeGroup").click(function(){
-		$.post("/MiniTracker/Attribute.do", 
+		$.post(controller, 
 				{
 					category : "addAttributeGroup",
 					name : $("#attribGroupName").val()
 				},
 				function(data, status) {
 					alert(data);
+					loadAttributePage();
+					clearTextFields()
 				})
 	})
+
+	function loadAttributePage() {
+	$.post(controller, 
+			{category : "loadAttributeGroups"},
+			function(data, status) {
+				$("#selectAttributeGroup").html(data);
+			})
+			
+	$.post(controller,
+			{category : "loadAttributesPanel"},
+			function(data, status){
+				$("#attributeGroupList").html(data);
+			})
+	}
 	
+	function clearTextFields() {
+		$(":text").val("");
+	}
 })
+
+
 
 
 /*

@@ -8,8 +8,13 @@
 	</head>
 	<body>
 		<div id="AttributeListBox">
-			<ul id="RoleList">
-				<li>Value 1</li>
+			<ul id="attributeGroupList">
+				<li>Value 1
+					<ul> 
+						<li> sub value 1</li>
+						<li> sub value 2</li>
+					</ul>
+				</li>
 			</ul>
 			
 		</div>

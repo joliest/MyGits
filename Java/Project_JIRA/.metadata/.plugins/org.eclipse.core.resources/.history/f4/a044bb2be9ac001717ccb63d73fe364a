@@ -1,9 +1,0 @@
-package com.tracker;
-
-public interface Module {
-	int generateId();
-	void add();
-	void remove();
-	void modify();
-	void delete();
-}

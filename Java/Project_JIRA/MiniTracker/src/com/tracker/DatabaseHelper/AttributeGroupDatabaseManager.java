@@ -95,4 +95,16 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 		return list;
 	}
 
+	@Override
+	public HashMap<Integer, String> listGroups() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public HashMap<Integer, String> getMembersByGroupId(int groupId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
