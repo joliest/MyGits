@@ -9,8 +9,8 @@ $(document).ready(function(){
 
 	loadAttributePage();
 	
-	$(document).on("click", "li", function(index) {
-		
+	$("li").click(function(){
+		alert("s");
 	})
 	
 	$("#addAttribute").click(function(){

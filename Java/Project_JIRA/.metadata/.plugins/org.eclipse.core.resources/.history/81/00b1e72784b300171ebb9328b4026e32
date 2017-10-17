@@ -9,8 +9,10 @@ $(document).ready(function(){
 
 	loadAttributePage();
 	
-	$(document).on("click", "li", function(index) {
-		
+	$(document).on("each", "li", function() {
+		$("li").each(function(index){
+			$(this).css("color", "#ffff00");
+		})
 	})
 	
 	$("#addAttribute").click(function(){

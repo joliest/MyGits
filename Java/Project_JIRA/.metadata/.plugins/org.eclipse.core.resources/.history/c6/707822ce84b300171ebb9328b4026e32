@@ -10,7 +10,9 @@ $(document).ready(function(){
 	loadAttributePage();
 	
 	$(document).on("click", "li", function(index) {
-		
+		$("li").each(function(i){
+			alert("a");
+		})
 	})
 	
 	$("#addAttribute").click(function(){
