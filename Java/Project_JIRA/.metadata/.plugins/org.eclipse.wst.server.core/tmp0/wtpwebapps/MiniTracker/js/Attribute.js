@@ -9,9 +9,26 @@ $(document).ready(function(){
 
 	loadAttributePage();
 	
-	$(document).on("click", "li", function(index) {
-		
+	/*
+	$(this).on("click", "#attributeListRow", function(index) {
+		$(this).css("color", "red");
+		$(this).css("border", "1px solid red");			
 	})
+	*/
+	
+	$(this).on("click", "#attributeListRow", function(index) {
+		$(this).on({
+			mouseenter : function() {
+				$(this).css("color", "blue");
+				$(this).css("border", "0px solid blue");	
+			},
+			click : function() {
+				$(this).css("color", "red");
+				$(this).css("border", "1px solid red");	
+			}			
+		})	
+	})
+	
 	
 	$("#addAttribute").click(function(){
 		$.post(controller,

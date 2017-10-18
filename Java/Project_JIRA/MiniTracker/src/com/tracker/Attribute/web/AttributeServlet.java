@@ -85,13 +85,13 @@ public class AttributeServlet extends HttpServlet{
 				//generates <li groupId="100">GroupName</li>
 				alert += "<li groupId=\"" + groupId + "\">";
 				alert += groupName;		
-				alert += "<ul id=\"attributeList\">";
+				alert += "<ul>";
 				for(Map.Entry<Integer, String> entry : attributes.entrySet()) {
 					String id = entry.getKey().toString();
 					String attributeName = entry.getValue().toString();
 					
 					//generates <li attributeId="1001">AttributeName</li>
-					alert += "<li class=\"meow\" attributeId=\"" + id + "\">";
+					alert += "<li id=\"attributeListRow\" attributeId=\"" + id + "\">";
 					alert += attributeName;
 					alert += "</li>";
 				}
