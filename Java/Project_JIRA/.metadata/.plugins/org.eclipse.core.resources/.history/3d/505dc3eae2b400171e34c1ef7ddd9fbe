@@ -21,7 +21,7 @@ $(document).ready(function(){
 	})
 	
 	$(this).on("mouseleave", "#attributeListRow", function(index) {
-		$(this).css("color", "black");
+		$(this).css("color", "blue");
 		$(this).css("border", "0px solid blue");	
 	})
 	

@@ -20,10 +20,6 @@ $(document).ready(function(){
 		$(this).css("border", "0px solid blue");	
 	})
 	
-	$(this).on("mouseleave", "#attributeListRow", function(index) {
-		$(this).css("color", "black");
-		$(this).css("border", "0px solid blue");	
-	})
 	
 	/*
 	$(this).on("click", "#attributeListRow", function(index) {

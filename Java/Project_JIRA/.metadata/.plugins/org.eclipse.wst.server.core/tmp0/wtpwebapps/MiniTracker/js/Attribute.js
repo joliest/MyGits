@@ -9,13 +9,23 @@ $(document).ready(function(){
 
 	loadAttributePage();
 	
-	/*
+	
 	$(this).on("click", "#attributeListRow", function(index) {
 		$(this).css("color", "red");
-		$(this).css("border", "1px solid red");			
+		$(this).css("border", "1px solid red");		
 	})
-	*/
 	
+	$(this).on("mouseenter", "#attributeListRow", function(index) {
+		$(this).css("color", "blue");
+		$(this).css("border", "0px solid blue");	
+	})
+	
+	$(this).on("mouseleave", "#attributeListRow", function(index) {
+		$(this).css("color", "black");
+		$(this).css("border", "0px solid blue");	
+	})
+	
+	/*
 	$(this).on("click", "#attributeListRow", function(index) {
 		$(this).on({
 			mouseenter : function() {
@@ -28,7 +38,7 @@ $(document).ready(function(){
 			}			
 		})	
 	})
-	
+	*/
 	
 	$("#addAttribute").click(function(){
 		$.post(controller,
