@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Tester {
 	public static void main(String[] args) {
@@ -5,7 +6,12 @@ public class Tester {
 		Menu lunch = new DinerMenu();
 		Menu dinner = new CafeMenu();
 		
-		Waitress waitress = new Waitress(breakfast, lunch, dinner);
+		ArrayList menus = new ArrayList();
+		menus.add(breakfast);
+		menus.add(lunch);
+		menus.add(dinner);
+		
+		Waitress waitress = new Waitress(menus);
 		waitress.printMenu();
 	}
 }

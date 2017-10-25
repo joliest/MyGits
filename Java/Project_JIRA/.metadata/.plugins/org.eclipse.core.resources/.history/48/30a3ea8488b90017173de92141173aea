@@ -67,7 +67,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><button type="button" id="addAttribute">Add</button>
+					<td><button type="button" id="addAttribute">Add Attribute</button>
 						<input type="button" value="Cancel">
 					</td>
 				</tr>

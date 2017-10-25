@@ -28,7 +28,6 @@
 				<tr>
 					<td></td>
 					<td><button type="button" id="addAttributeGroup">Add</button>
-					<button type="button" id="editAttributeGroup">Delete</button>
 					<button type="button" id="editAttributeGroup">Save Changes</button>
 						<button type="button" id="cancel">Cancel</button></td>
 				</tr>
@@ -67,7 +66,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><button type="button" id="addAttribute">Add</button>
+					<td><button type="button" id="addAttribute">Add Attribute</button>
 						<input type="button" value="Cancel">
 					</td>
 				</tr>
