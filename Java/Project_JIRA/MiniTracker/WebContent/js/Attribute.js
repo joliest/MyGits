@@ -20,6 +20,7 @@ $(document).ready(function(){
 	})
 	
 	$(this).on("click", "#attributeListRow", function(index) {
+		$("li").css("color", "black");
 		$(this).css("color", "red");
 		
 		//get attribute id
@@ -31,18 +32,16 @@ $(document).ready(function(){
 			$("option[attributeId='" + data + "']").prop('selected', true);
 		})
 		
-		$.post(controller, { category : "getAttributeName", attributeId : attributeId }, function(data, status){
-			$("#attribName").val(data);
-		})
-		
-		$.post(controller, { category : "getDataType", attributeId : attributeId }, function(data, status){
-			$("select#attribDataType").val(data);
-		})
-		
-		$.post(controller, { category : "getLength", attributeId : attributeId }, function(data, status){
-			$("#attribLength").val(data);
-		})	
+		getAttributeInfo("getAttributeName","#attribName");
+		getAttributeInfo("getDataType","select#attribDataType");
+		getAttributeInfo("getLength","#attribLength");
 	})
+	
+	function getAttributeInfo(category, elementId) {
+		$.post(controller, { category : category, attributeId : attributeId }, function(data, status){
+			$(elementId).val(data);
+		})	
+	}
 	
 	$(this).on("click", "#deleteAttribute", function(){
 		var confirmDelete = confirm("Are you sure you want to delete " + attributeName + " attribute?");
