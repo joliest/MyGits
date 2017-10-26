@@ -34,7 +34,7 @@ public abstract class DatabaseManager {
 	
 	public abstract void add();	
 	public abstract void update();
-	public abstract void remove();
+	public abstract String remove(int id);
 	public abstract void view();
 	public abstract HashMap<Integer, String> listGroups();
 	public abstract HashMap<Integer, String> getMembersByGroupId(int groupId);

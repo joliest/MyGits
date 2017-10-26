@@ -6,15 +6,25 @@
 $(document).ready(function(){
 	
 	var controller = "/MiniTracker/Attribute.do";
-
-	loadAttributePage();
+	var attributeName;
+	var attributeId;
 	
+	loadAttributePage();	
+	
+	$("#editAttributeGroup").click(function(){
+		disableTextFields();
+	})
+	
+	$("#editAttribute").click(function(){
+		enableTextFields();
+	})
 	
 	$(this).on("click", "#attributeListRow", function(index) {
 		$(this).css("color", "red");
 		
 		//get attribute id
-		var attributeId = $(this).attr("attributeId");
+		attributeId = $(this).attr("attributeId");
+		attributeName = $(this).text();
 		
 		$.post(controller, { category : "getAttributeGroup", attributeId : attributeId }, function(data, status){
 			//change the selected value in <option>
@@ -31,31 +41,18 @@ $(document).ready(function(){
 		
 		$.post(controller, { category : "getLength", attributeId : attributeId }, function(data, status){
 			$("#attribLength").val(data);
-		})
-	})
-	
-	/*
-	function getAttributeGroup() {
-		$.post(controller, { category : "getAttributeGroup" }, function(data, status){
-			return data;
-		})
-	}
-	*/
-	
-	/*
-	$(this).on("click", "#attributeListRow", function(index) {
-		$(this).on({
-			mouseenter : function() {
-				$(this).css("color", "blue");
-				$(this).css("border", "0px solid blue");	
-			},
-			click : function() {
-				$(this).css("color", "red");
-				$(this).css("border", "1px solid red");	
-			}			
 		})	
 	})
-	*/
+	
+	$(this).on("click", "#deleteAttribute", function(){
+		var confirmDelete = confirm("Are you sure you want to delete " + attributeName + " attribute?");
+		if(confirmDelete == true) {
+			$.post(controller, { category : "deleteAttribute", attributeId : attributeId }, function(data, status) {
+				alert(data);
+				loadAttributePage()
+			})
+		}		
+	})
 	
 	$("#addAttribute").click(function(){
 		$.post(controller,
@@ -75,16 +72,24 @@ $(document).ready(function(){
 	})
 	
 	$("#addAttributeGroup").click(function(){
-		$.post(controller, 
-				{
-					category : "addAttributeGroup",
-					name : $("#attribGroupName").val()
-				},
-				function(data, status) {
-					alert(data);
-					loadAttributePage();
-					clearTextFields()
-				})
+		
+		var attributeGroupName = $("#attribGroupName").val();
+		
+		if(attributeGroupName != '') {
+			$.post(controller, 
+					{
+						category : "addAttributeGroup",
+						name : attributeGroupName
+					},
+					function(data, status) {
+						alert(data);
+						loadAttributePage();
+						clearTextFields()
+					})			
+		} else {
+			alert("Unable to add empty value");
+		}
+		
 	})
 
 	function loadAttributePage() {
@@ -102,11 +107,24 @@ $(document).ready(function(){
 	}
 	
 	$("input#clear").click(function(){
+		loadAttributePage()
 		clearTextFields();
 	})
 	
 	function clearTextFields() {
 		$(":text").val("");
+	}
+	
+	function disableTextFields() {
+		$(":text").attr("readonly", true);
+		$("select").attr("disabled", "disabled");
+		$("select").css("color", "black");
+		
+	}
+	
+	function enableTextFields() {
+		$(":text").attr("readonly", false);
+		$("select").removeAttr("disabled");
 	}
 })
 

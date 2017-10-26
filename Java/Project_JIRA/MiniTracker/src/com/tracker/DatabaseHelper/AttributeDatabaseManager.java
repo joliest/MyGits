@@ -33,6 +33,7 @@ public class AttributeDatabaseManager extends DatabaseManager{
 	private final String getAttributeNameByAttributeId = "SELECT NAME FROM ATTRIBUTE WHERE ID=";
 	private final String getAttributeDataTypeByAttributeId = "SELECT DATATYPE FROM ATTRIBUTE WHERE ID=";
 	private final String getAttributeLengthByAttributeId = "SELECT LENGTH FROM ATTRIBUTE WHERE ID=";
+	private final String deleteAttributeByAttributeId = "DELETE FROM ATTRIBUTE WHERE ID=?";
 
 	public AttributeDatabaseManager(Module module) {
 		super(module);
@@ -100,8 +101,19 @@ public class AttributeDatabaseManager extends DatabaseManager{
 	}
 
 	@Override
-	public void remove() {
-		
+	public String remove(int id) {
+		String value = "";
+		try {
+			preparedStatement = connection.prepareStatement(deleteAttributeByAttributeId);
+			preparedStatement.setInt(1, id);
+			preparedStatement.execute();
+			value += "The attribute has been deleted";
+			System.out.println("Attribute deleted : id# " + value);
+		} catch(SQLException sEx) {
+			value += "Unable to delete the attribute, an error has been occured";
+			System.out.println("AttributeDatabaseManager.remove() : " + sEx);
+		}
+		return value;
 	}
 	
 

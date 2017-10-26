@@ -48,9 +48,9 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 	}
 
 	@Override
-	public void remove() {
+	public String remove(int id) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
