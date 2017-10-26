@@ -12,18 +12,35 @@ $(document).ready(function(){
 	
 	$(this).on("click", "#attributeListRow", function(index) {
 		$(this).css("color", "red");
-		$(this).css("border", "1px solid red");		
+		
+		//get attribute id
+		var attributeId = $(this).attr("attributeId");
+		
+		$.post(controller, { category : "getAttributeGroup", attributeId : attributeId }, function(data, status){
+			//change the selected value in <option>
+			$("option[attributeId='" + data + "']").prop('selected', true);
+		})
+		
+		$.post(controller, { category : "getAttributeName", attributeId : attributeId }, function(data, status){
+			$("#attribName").val(data);
+		})
+		
+		$.post(controller, { category : "getDataType", attributeId : attributeId }, function(data, status){
+			$("select#attribDataType").val(data);
+		})
+		
+		$.post(controller, { category : "getLength", attributeId : attributeId }, function(data, status){
+			$("#attribLength").val(data);
+		})
 	})
 	
-	$(this).on("mouseenter", "#attributeListRow", function(index) {
-		$(this).css("color", "blue");
-		$(this).css("border", "0px solid blue");	
-	})
-	
-	$(this).on("mouseleave", "#attributeListRow", function(index) {
-		$(this).css("color", "black");
-		$(this).css("border", "0px solid blue");	
-	})
+	/*
+	function getAttributeGroup() {
+		$.post(controller, { category : "getAttributeGroup" }, function(data, status){
+			return data;
+		})
+	}
+	*/
 	
 	/*
 	$(this).on("click", "#attributeListRow", function(index) {
@@ -83,6 +100,10 @@ $(document).ready(function(){
 				$("#attributeGroupList").html(data);
 			})
 	}
+	
+	$("input#clear").click(function(){
+		clearTextFields();
+	})
 	
 	function clearTextFields() {
 		$(":text").val("");

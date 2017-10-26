@@ -99,7 +99,48 @@ public class AttributeServlet extends HttpServlet{
 				alert += "</li>";
 			}
 			
-		} else {
+		} else if(category.equals("getAttributeGroup")) {
+			
+			managerTask = new AttributeDatabaseManager(request);
+			AttributeDatabaseManager attributeManagerTask = 
+					(AttributeDatabaseManager) managerTask;
+			
+			String attributeIdValue = request.getParameter("attributeId");
+			int attributeId = Integer.parseInt(attributeIdValue);
+			alert += attributeManagerTask.getAttributeGroupById(attributeId);
+			
+		} else if(category.equals("getAttributeName")) {
+			
+			managerTask = new AttributeDatabaseManager(request);
+			AttributeDatabaseManager attributeManagerTask = 
+					(AttributeDatabaseManager) managerTask;
+			
+			String attributeIdValue = request.getParameter("attributeId");
+			int attributeId = Integer.parseInt(attributeIdValue);
+			alert += attributeManagerTask.getAttributeNameById(attributeId);
+			
+		} else if(category.equals("getDataType")) {
+			
+			managerTask = new AttributeDatabaseManager(request);
+			AttributeDatabaseManager attributeManagerTask = 
+					(AttributeDatabaseManager) managerTask;
+			
+			String attributeIdValue = request.getParameter("attributeId");
+			int attributeId = Integer.parseInt(attributeIdValue);
+			alert += attributeManagerTask.getAttributeDataTypeById(attributeId);
+			
+		} else if(category.equals("getLength")) {
+			
+			managerTask = new AttributeDatabaseManager(request);
+			AttributeDatabaseManager attributeManagerTask = 
+					(AttributeDatabaseManager) managerTask;
+			
+			String attributeIdValue = request.getParameter("attributeId");
+			int attributeId = Integer.parseInt(attributeIdValue);
+			alert += attributeManagerTask.getAttributeLengthById(attributeId);
+			
+		}else {
+		
 			
 			
 			

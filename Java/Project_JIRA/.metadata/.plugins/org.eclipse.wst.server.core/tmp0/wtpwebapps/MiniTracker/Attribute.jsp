@@ -28,7 +28,7 @@
 				<tr>
 					<td></td>
 					<td><button type="button" id="addAttributeGroup">Add</button>
-					<button type="button" id="editAttributeGroup">Delete</button>
+					<button type="button" id="deleteAttributeGroup">Delete</button>
 					<button type="button" id="editAttributeGroup">Save Changes</button>
 						<button type="button" id="cancel">Cancel</button></td>
 				</tr>
@@ -53,11 +53,11 @@
 					<td>Data Type</td>
 					<td>
 						<select id="attribDataType">
-							<option>Alpha</option>
-							<option>AlphaNumeric</option>
-							<option>Numeric</option>
-							<option>Date</option>
-							<option>Selection</option>
+							<option attribDataTypeId="0" >Alpha</option>
+							<option attribDataTypeId="1" >AlphaNumeric</option>
+							<option attribDataTypeId="2" >Numeric</option>
+							<option attribDataTypeId="3" >Date</option>
+							<option attribDataTypeId="4" >Selection</option>
 						</select>
 					</td>
 				</tr>
@@ -68,7 +68,10 @@
 				<tr>
 					<td></td>
 					<td><button type="button" id="addAttribute">Add</button>
-						<input type="button" value="Cancel">
+					<button type="button" id="editAttribute">Edit</button>
+					<button type="button" id="deleteAttribute">Delete</button>
+					<button type="button" id="addAttribute">Save Changes</button>
+						<input type="button" id="clear" value="Cancel">
 					</td>
 				</tr>
 			</table>

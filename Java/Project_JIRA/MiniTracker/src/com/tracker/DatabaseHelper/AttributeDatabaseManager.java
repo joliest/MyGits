@@ -29,6 +29,10 @@ public class AttributeDatabaseManager extends DatabaseManager{
 	private final String countRows = "SELECT * FROM ATTRIBUTE ORDER BY ID DESC";
 	private final String selectAllGroups = "SELECT * FROM ATTRIBUTEGROUP";
 	private final String selectAttributesByGroupId = "SELECT * FROM ATTRIBUTE WHERE GROUPID=";
+	private final String getAttributeGroupByAttributeId = "SELECT GROUPID FROM ATTRIBUTE WHERE ID=";
+	private final String getAttributeNameByAttributeId = "SELECT NAME FROM ATTRIBUTE WHERE ID=";
+	private final String getAttributeDataTypeByAttributeId = "SELECT DATATYPE FROM ATTRIBUTE WHERE ID=";
+	private final String getAttributeLengthByAttributeId = "SELECT LENGTH FROM ATTRIBUTE WHERE ID=";
 
 	public AttributeDatabaseManager(Module module) {
 		super(module);
@@ -155,6 +159,76 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		}
 		
 		return list;		
+	}
+	
+	public String getAttributeGroupById(int id) {
+		String value = "";
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(getAttributeGroupByAttributeId + id);
+			row.next();
+			int valueInt =  row.getInt(1);
+			value += Integer.toString(valueInt);
+			System.out.println("Retrieved Attribute ID number: " + valueInt);
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getAttributeGroupById() : " + sEx);
+		}
+		return value;
+	}
+	
+	public String getAttributeNameById(int id) {
+		String value = "";
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(getAttributeNameByAttributeId + id);
+			row.next();
+			value += row.getString(1);
+			System.out.println("Retrieved Attribute Name: " + value);
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getAttributeNameById() : " + sEx);
+		}
+		return value;
+	}
+	
+	public String getAttributeDataTypeById(int id) {
+		String value = "";
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(getAttributeDataTypeByAttributeId + id);
+			row.next();
+			value += row.getString(1);
+			System.out.println("Retrieved Attribute DataType: " + value);
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getAttributeDataTypeById() : " + sEx);
+		}
+		return value;
+	}
+	
+	public String getAttributeLengthById(int id) {
+		String value = "";
+		
+		ResultSet row;
+		
+		try {
+			statement = connection.createStatement();
+			row = statement.executeQuery(getAttributeLengthByAttributeId + id);
+			row.next();
+			int attributeLength = row.getInt(1);
+			value += Integer.toString(attributeLength);
+			System.out.println("Retrieved Attribute Length: " + value);
+		} catch (SQLException sEx) {
+			System.out.println("AttributeDatabaseManager.getAttributeLengthById() : " + sEx);
+		}
+		return value;
 	}
 	
 	private boolean identifyColumnType(int columnIndex) {
