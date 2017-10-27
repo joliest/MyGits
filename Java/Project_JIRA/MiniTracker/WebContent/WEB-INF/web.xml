@@ -13,6 +13,15 @@
   	<url-pattern>/Attribute.do</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>AttributeGroupServlet</servlet-name>
+  	<servlet-class>com.tracker.Attribute.web.AttributeGroupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AttributeGroupServlet</servlet-name>
+  	<url-pattern>/AttributeGroup.do</url-pattern>
+  </servlet-mapping>
+  
   <listener>
   	<listener-class>
   		com.tracker.Listener.TrackerContext

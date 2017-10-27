@@ -5,18 +5,34 @@
 
 $(document).ready(function(){
 	
-	var controller = "/MiniTracker/Attribute.do";
+	var attributeController = "/MiniTracker/Attribute.do";
+	var attributeGroupController = "/MiniTracker/AttributeGroup.do";
 	var attributeName;
 	var attributeId;
 	
 	loadAttributePage();	
-	
-	$("#editAttributeGroup").click(function(){
-		disableTextFields();
-	})
+	disableTextFields();
 	
 	$("#editAttribute").click(function(){
 		enableTextFields();
+	})
+	
+	$(this).on("dblclick", "#attributeGroupListRow", function() {
+		var rowValue = $(this).text();
+		var rowId = $(this).attr("groupId");
+		
+		
+		$(this).html("<input type='text' value='" + rowValue + "'>" +
+					 "<button type='button' id='selectOk'>OK</button>" +
+					 "<button type='button' id='selectCancel'>Cancel</button>"
+		)
+		$(this).on("click", "#selectCancel", function(){
+			loadAttributePage();
+		})
+		$(this).on("click", "#selectOk", function(){
+			loadAttributePage();
+			alert("Row id " + rowId);
+		})
 	})
 	
 	$(this).on("click", "#attributeListRow", function(index) {
@@ -27,7 +43,7 @@ $(document).ready(function(){
 		attributeId = $(this).attr("attributeId");
 		attributeName = $(this).text();
 		
-		$.post(controller, { category : "getAttributeGroup", attributeId : attributeId }, function(data, status){
+		$.post(attributeController, { category : "getAttributeGroup", attributeId : attributeId }, function(data, status){
 			//change the selected value in <option>
 			$("option[attributeId='" + data + "']").prop('selected', true);
 		})
@@ -38,7 +54,7 @@ $(document).ready(function(){
 	})
 	
 	function getAttributeInfo(category, elementId) {
-		$.post(controller, { category : category, attributeId : attributeId }, function(data, status){
+		$.post(attributeController, { category : category, attributeId : attributeId }, function(data, status){
 			$(elementId).val(data);
 		})	
 	}
@@ -46,7 +62,7 @@ $(document).ready(function(){
 	$(this).on("click", "#deleteAttribute", function(){
 		var confirmDelete = confirm("Are you sure you want to delete " + attributeName + " attribute?");
 		if(confirmDelete == true) {
-			$.post(controller, { category : "deleteAttribute", attributeId : attributeId }, function(data, status) {
+			$.post(attributeController, { category : "deleteAttribute", attributeId : attributeId }, function(data, status) {
 				alert(data);
 				loadAttributePage()
 			})
@@ -54,7 +70,7 @@ $(document).ready(function(){
 	})
 	
 	$("#addAttribute").click(function(){
-		$.post(controller,
+		$.post(attributeController,
 				{
 					category : "addAttribute",
 					groupName : $("#attribGroup").val(),
@@ -75,7 +91,7 @@ $(document).ready(function(){
 		var attributeGroupName = $("#attribGroupName").val();
 		
 		if(attributeGroupName != '') {
-			$.post(controller, 
+			$.post(attributeGroupController, 
 					{
 						category : "addAttributeGroup",
 						name : attributeGroupName
@@ -92,13 +108,13 @@ $(document).ready(function(){
 	})
 
 	function loadAttributePage() {
-	$.post(controller, 
+	$.post(attributeGroupController, 
 			{category : "loadAttributeGroups"},
 			function(data, status) {
 				$("#selectAttributeGroup").html(data);
 			})
 			
-	$.post(controller,
+	$.post(attributeController,
 			{category : "loadAttributesPanel"},
 			function(data, status){
 				$("#attributeGroupList").html(data);

@@ -20,59 +20,23 @@ public class AttributeServlet extends HttpServlet{
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		List htmlTags = new ArrayList();
-		
 		String category = request.getParameter("category");
 		String alert = "";
 		
-		HashMap<Integer, String> attributeGroupList;
-		
-		Attribute attribute;
-		DatabaseManager managerTask;
-		
-		AttributeGroup attributeGroup;
+		DatabaseManager managerTask = new AttributeDatabaseManager(request);
+		AttributeDatabaseManager attributeManagerTask = (AttributeDatabaseManager) managerTask;
 		
 		if(category.equals("addAttribute")) {		
 			
-			attribute = new Attribute(request);
-			managerTask = new AttributeDatabaseManager(attribute);		
+			Attribute attributeAdder = new Attribute(request);
+			DatabaseManager addAttributeManager = new AttributeDatabaseManager(attributeAdder);				
+			addAttributeManager.add();
 			
-			managerTask.add();
-			
-			alert +=  attribute.getName() + " is added.";
-			
-		} else if(category.equals("addAttributeGroup")) {
-			
-			attributeGroup = new AttributeGroup(request);
-			managerTask = new AttributeGroupDatabaseManager(attributeGroup);
-			
-			managerTask.add();
-			
-			alert += attributeGroup.getName() + " is added.";
-			
-		}  else if(category.equals("loadAttributeGroups")) {
-			
-			attributeGroup = new AttributeGroup(request);
-			managerTask = new AttributeGroupDatabaseManager(attributeGroup);
-			
-			//String attributeGroupOptionTags = "";
-			
-			AttributeGroupDatabaseManager attributeGroupManagerTask = (AttributeGroupDatabaseManager) managerTask;
-			attributeGroupList = (HashMap<Integer, String>) attributeGroupManagerTask.getAttributeGroups();
-			for(Map.Entry row : attributeGroupList.entrySet()) {
-				//TODO: generates <option> tag with 'attributeid' attribute
-				String key = row.getKey().toString();
-				String value = row.getValue().toString();
-				alert += generateOptionTag(key, value);				
-			}	
+			alert +=  attributeAdder.getName() + " is added.";
 			
 		} else if(category.equals("loadAttributesPanel")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			
 			HashMap<Integer, String> attributeGroups = managerTask.listGroups();
 			HashMap<Integer, String> attributes;
-
 			
 			for(Map.Entry<Integer, String> groupEntry : attributeGroups.entrySet()) {
 				
@@ -83,8 +47,9 @@ public class AttributeServlet extends HttpServlet{
 				attributes = managerTask.getMembersByGroupId(attributeGroupId);
 				
 				//generates <li groupId="100">GroupName</li>
-				alert += "<li groupId=\"" + groupId + "\">";
-				alert += groupName;		
+				//alert += "<li groupId=\"" + groupId + "\">";
+				alert += "<li>";
+				alert +=  "<b groupId=\"" + groupId + "\" id=\"attributeGroupListRow\">" + groupName + "</b>";		
 				alert += "<ul>";
 				for(Map.Entry<Integer, String> entry : attributes.entrySet()) {
 					String id = entry.getKey().toString();
@@ -100,82 +65,34 @@ public class AttributeServlet extends HttpServlet{
 			}
 			
 		} else if(category.equals("getAttributeGroup")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			AttributeDatabaseManager attributeManagerTask = 
-					(AttributeDatabaseManager) managerTask;
-			
-			String attributeIdValue = request.getParameter("attributeId");
-			int attributeId = Integer.parseInt(attributeIdValue);
+			int attributeId = getAttributeId(request);
 			alert += attributeManagerTask.getAttributeGroupById(attributeId);
 			
 		} else if(category.equals("getAttributeName")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			AttributeDatabaseManager attributeManagerTask = 
-					(AttributeDatabaseManager) managerTask;
-			
-			String attributeIdValue = request.getParameter("attributeId");
-			int attributeId = Integer.parseInt(attributeIdValue);
+			int attributeId = getAttributeId(request);
 			alert += attributeManagerTask.getAttributeNameById(attributeId);
 			
 		} else if(category.equals("getDataType")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			AttributeDatabaseManager attributeManagerTask = 
-					(AttributeDatabaseManager) managerTask;
-			
-			String attributeIdValue = request.getParameter("attributeId");
-			int attributeId = Integer.parseInt(attributeIdValue);
+			int attributeId = getAttributeId(request);
 			alert += attributeManagerTask.getAttributeDataTypeById(attributeId);
 			
 		} else if(category.equals("getLength")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			AttributeDatabaseManager attributeManagerTask = 
-					(AttributeDatabaseManager) managerTask;
-			
-			String attributeIdValue = request.getParameter("attributeId");
-			int attributeId = Integer.parseInt(attributeIdValue);
+			int attributeId = getAttributeId(request);
 			alert += attributeManagerTask.getAttributeLengthById(attributeId);
 			
 		} else if(category.equals("deleteAttribute")) {
-			
-			managerTask = new AttributeDatabaseManager(request);
-			
-			String attributeIdValue = request.getParameter("attributeId");
-			int attributeId = Integer.parseInt(attributeIdValue);
+			int attributeId = getAttributeId(request);
 			alert += managerTask.remove(attributeId);
 			
 		}else {
-		
 			
-			
-			
-			/*
-			htmlTags.add("Hello World");
-			htmlTags.add("Hello World2");
-			request.setAttribute("htmlTags", htmlTags);
-
-			request.setAttribute("htmlTags", "htmlTags");
-			*/
 		}		
 		out.print(alert);
-		
-		/*
-		RequestDispatcher view = request.getRequestDispatcher("/Attribute.jsp");
-		view.forward(request, response);
-		*/
 	}
 	
-
-	private String generateOptionTag(String key, String value) {
-		String optionTag = "";
-		optionTag += "<option attributeid=\"";
-		optionTag += key;
-		optionTag += "\">";
-		optionTag += value;
-		optionTag += "</option>";	
-		return optionTag;
+	private int getAttributeId(HttpServletRequest request) {
+		String attributeIdValue = request.getParameter("attributeId");
+		int attributeId = Integer.parseInt(attributeIdValue);
+		return attributeId;
 	}
 }
