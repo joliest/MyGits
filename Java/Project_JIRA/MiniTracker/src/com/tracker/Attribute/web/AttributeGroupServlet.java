@@ -40,6 +40,19 @@ public class AttributeGroupServlet extends HttpServlet {
 				String value = row.getValue().toString();
 				alert += generateOptionTag(key, value);						
 			}
+		} else if (category.equals("renameGroupAttribute")) {
+			
+			String newName = request.getParameter("newName");
+			String id = request.getParameter("selectedGroupId");
+			
+			int newId = Integer.parseInt(id);
+			attributeGroupManagerTask.rename(newId, newName);
+		} else if (category.equals("deleteGroupAttribute")) {
+	
+			String id = request.getParameter("selectedGroupId");
+			int newId = Integer.parseInt(id);
+			
+			alert += managerTask.remove(newId);
 		}
 		
 		out.println(alert);		

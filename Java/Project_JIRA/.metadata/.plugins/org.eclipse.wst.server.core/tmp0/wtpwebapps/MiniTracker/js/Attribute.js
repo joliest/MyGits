@@ -17,21 +17,37 @@ $(document).ready(function(){
 		enableTextFields();
 	})
 	
+	//double clicking an Attribute group enables rename feature
 	$(this).on("dblclick", "#attributeGroupListRow", function() {
+		
 		var rowValue = $(this).text();
 		var rowId = $(this).attr("groupId");
 		
 		
-		$(this).html("<input type='text' value='" + rowValue + "'>" +
-					 "<button type='button' id='selectOk'>OK</button>" +
+		$(this).html("<input type='text' id='selectText' value='" + rowValue + "'>" +
+					  "<button type='button' id='selectOk'>OK</button>" +
+					  "<button type='button' id='selectDelete'>Delete</button>" +
 					 "<button type='button' id='selectCancel'>Cancel</button>"
 		)
 		$(this).on("click", "#selectCancel", function(){
 			loadAttributePage();
 		})
+		
 		$(this).on("click", "#selectOk", function(){
-			loadAttributePage();
-			alert("Row id " + rowId);
+			var currentValue = $("#selectText").val();			
+			$.post(attributeGroupController, { category : "renameGroupAttribute", selectedGroupId : rowId, newName : currentValue }, function(data, status) {
+				loadAttributePage();
+			})
+		})
+		
+		$(this).on("click", "#selectDelete", function(){
+			var confirmDelete = confirm("Are you sure you want to delete " + rowValue);
+			if (confirmDelete == true) {
+				$.post(attributeGroupController, { category : "deleteGroupAttribute", selectedGroupId : rowId}, function(data, status) {
+					alert(data);
+					loadAttributePage();
+				})
+			}
 		})
 	})
 	

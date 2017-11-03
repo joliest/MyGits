@@ -79,8 +79,8 @@ public class AttributeDatabaseManager extends DatabaseManager{
 		}
 	}
 
-	@Override
-	public void update() {
+	//@Override
+	//public void update() {
 		/*
 		boolean isNumber = identifyColumnType(columnIndex);
 		String updateQuery =  setUpdateQuery(columnIndex);
@@ -98,7 +98,7 @@ public class AttributeDatabaseManager extends DatabaseManager{
 			System.out.println("AttributeDatabaseManager.update() : " + sEx);
 		}
 		*/
-	}
+	//}
 
 	@Override
 	public String remove(int id) {

@@ -20,6 +20,8 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 	private final String addQuery = "INSERT INTO ATTRIBUTEGROUP VALUES(?,?)";
 	private final String selectQuery = "SELECT * FROM ATTRIBUTEGROUP";
 	private final String countRows = "SELECT * FROM ATTRIBUTEGROUP ORDER BY ID DESC";
+	private final String renameById = "UPDATE ATTRIBUTEGROUP SET NAME = ? WHERE ID = ?";
+	private final String deleteById = "DELETE ATTRIBUTEGROUP WHERE ID = ?";
 
 	public AttributeGroupDatabaseManager(Module module) {
 		super(module);
@@ -41,16 +43,41 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 		}
 	}
 
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
+	public void rename(int id, String newName) {
+		try {
+			preparedStatement = connection.prepareStatement(renameById);
+			preparedStatement.setString(1, newName);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();
+			System.out.println( id + " has been renamed to " + newName);
+		} catch(SQLException sEx) {
+			System.out.println("AttributeGroupDatabaseManager.rename() : " + sEx);
+		}
 	}
 
 	@Override
-	public String remove(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public String remove(int id) {		
+		
+		String message = "";
+		
+		AttributeDatabaseManager dbTaskManager = new AttributeDatabaseManager(attributeGroup.getHttpRequest());
+		HashMap<Integer, String> children =  dbTaskManager.getMembersByGroupId(id);
+		
+		int numberOfChildren = children.size();
+		
+		if(numberOfChildren > 0) {
+			message += "Attribute Group should be empty";
+		} else {
+			try {
+				preparedStatement = connection.prepareStatement(deleteById);
+				preparedStatement.setInt(1, id);
+				preparedStatement.executeQuery();
+				message += "Attribute Group has been deleted";
+			} catch(SQLException sEx) {
+				System.out.println("AttributeGroupDatabaseManager.remove() : " + sEx);
+			}
+		}
+		return message;
 	}
 
 	@Override
