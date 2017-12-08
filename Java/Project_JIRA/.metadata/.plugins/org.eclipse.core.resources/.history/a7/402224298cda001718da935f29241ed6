@@ -1,0 +1,15 @@
+package com.tracker.Template.model;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.tracker.ModuleAbstract;
+
+public class Template extends ModuleAbstract{
+
+	public Template(HttpServletRequest request) {
+		super(request);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

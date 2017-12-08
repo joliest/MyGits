@@ -1,0 +1,38 @@
+package com.tracker.Template.web;
+
+import javax.servlet.http.*;
+
+import com.tracker.Module;
+import com.tracker.DatabaseHelper.DatabaseManager;
+import com.tracker.DatabaseHelper.TemplateDatabaseManager;
+import com.tracker.Template.model.Template;
+
+import javax.servlet.*;
+import java.io.*;
+
+public class TemplateServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		String category = request.getParameter("category");
+		String message = "";
+		
+		if(category.equals("addTemplate")) {
+			Template template = new Template(request);
+			DatabaseManager databaseManager = new TemplateDatabaseManager(template);
+			databaseManager.add();
+			
+			message += "Successfully added"; 
+		} 
+
+		if(category.equals("loadTemplateList")) {
+			DatabaseManager managerTask = new TemplateDatabaseManager();
+		}
+		
+		
+		
+		
+		out.println(message);
+	}
+}

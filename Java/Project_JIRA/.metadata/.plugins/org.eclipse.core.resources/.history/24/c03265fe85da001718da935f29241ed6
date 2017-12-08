@@ -1,0 +1,36 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<p> All Templates </p>
+		<ul>
+			<li>Report a bug</li>
+			<li>Report an enhancement</li>
+			<li>New User</li>
+		</ul>
+		
+		<table>General
+			<tr> 
+				<td> ID </td>
+				<td><input type="text"></td>
+			</tr>
+			<tr> 
+				<td> Name </td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+		<table>Network
+			<tr> 
+				<td> Ip Address </td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+		
+		<input type="button" value="Add Attribute">
+		<input type="button" value="Delete Attribute">
+		<input type="button" value="Save Changes">
+		<input type="button" value="Cancel">
+		
+	</body>
+</html>

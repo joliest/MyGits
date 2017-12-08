@@ -21,15 +21,18 @@
 <fullyQualifiedTypeName name="com.tracker.Attribute.model.Attribute"/>
 <fullyQualifiedTypeName name="com.tracker.Command.AddAttributeCommand"/>
 <fullyQualifiedTypeName name="com.tracker.Command.AttributeCommands"/>
-<fullyQualifiedTypeName name="com.tracker.DatabaseHelper.DatabaseManager"/>
 <fullyQualifiedTypeName name="com.tracker.Command.Command"/>
-<fullyQualifiedTypeName name="com.tracker.ModuleAbstract"/>
-<fullyQualifiedTypeName name="com.tracker.Module"/>
 <fullyQualifiedTypeName name="com.tracker.Attribute.model.AttributeGroup"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.tracker.ModuleAbstract"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.tracker.Template.model.Template"/>
+<fullyQualifiedTypeName name="com.tracker.Module"/>
+<fullyQualifiedTypeName name="com.tracker.DatabaseHelper.DatabaseManager"/>
+<fullyQualifiedTypeName name="com.tracker.DatabaseHelper.TemplateDatabaseManager"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

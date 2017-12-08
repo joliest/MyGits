@@ -1,0 +1,14 @@
+$(document).ready(function() {
+	
+	var templateController = "/MiniTracker/Template.do";
+	
+	$("#addTemplateButton").click(function() {
+		var value = $("#templateName").val();
+		//var parent = $("option:selected").attr("templateId");
+		
+		$.post(templateController, { category : "addTemplate", templateName : value, parentTemplate : parent}, function(data, status){
+			alert(data);
+		})
+		
+	})
+})

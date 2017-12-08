@@ -1,0 +1,24 @@
+$(document).ready(function() {
+	
+	var templateController = "/MiniTracker/Template.do";
+	
+	loadTemplatePage();
+	
+	$("#addTemplateButton").click(function() {
+		var value = $("#templateName").val();
+		$.post(templateController, { category : "addTemplate", templateName : value }, function(data, status){
+			alert(data);
+			loadTemplatePage();
+		})		
+	})
+	
+	function loadTemplatePage() {
+		$.post(templateController, { category : "loadTemplateList" }, function(data, status) {
+			$("#templateList").html(data);
+		})		
+	}
+	
+	function clearFields() {
+		$("input").val("");
+	}
+})

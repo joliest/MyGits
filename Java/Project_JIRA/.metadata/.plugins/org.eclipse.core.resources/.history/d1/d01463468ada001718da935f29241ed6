@@ -1,0 +1,6 @@
+$(document).ready(function() {
+	$("#addTemplateButton").click(function() {
+		var value = $("#addTemplateText").val();
+		alert(value);
+	})
+})

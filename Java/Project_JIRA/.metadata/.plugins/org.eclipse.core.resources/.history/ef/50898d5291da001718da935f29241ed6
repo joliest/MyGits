@@ -1,0 +1,64 @@
+package com.tracker.DatabaseHelper;
+
+import java.sql.SQLException;
+import java.util.HashMap;
+import javax.servlet.http.HttpServletRequest;
+import com.tracker.Module;
+import com.tracker.Template.model.Template;
+
+public class TemplateDatabaseManager extends DatabaseManager{
+	
+	private int id;
+	private int parentTemplate;
+	private String name;
+	
+	private final String addTemplate = "INSERT INTO TEMPLATE VALUES(?,?,?,?,?)";
+
+	public TemplateDatabaseManager(Module module) {
+		super(module);
+		Template template = (Template) module;
+		name = template.getName();
+	}
+
+	@Override
+	public void add() {
+		try {
+			String name = modul
+			preparedStatement = connection.prepareStatement(addTemplate);
+			
+		} catch(SQLException sEx) {
+			System.out.println("TemplateDatabaseManager.add() : " + sEx);
+		}
+	}
+
+	@Override
+	public String remove(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void view() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public HashMap<Integer, String> listGroups() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public HashMap<Integer, String> getMembersByGroupId(int groupId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected int generateId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

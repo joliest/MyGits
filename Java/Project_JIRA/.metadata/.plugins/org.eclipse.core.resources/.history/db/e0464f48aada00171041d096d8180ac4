@@ -1,0 +1,16 @@
+$(document).ready(function() {
+	
+	var templateController = "/MiniTracker/Template.do";
+	
+	$("#addTemplateButton").click(function() {
+		var value = $("#addTemplateText").val();
+		var parent = $("#selectTemplateParent").val();
+		
+		alert(parent);
+		/*
+		$.post(templateController, { templateName : value}, function(data, status){
+			alert(data);
+		})
+		*/
+	})
+})

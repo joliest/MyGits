@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:33:23 +0800] "GET /MiniTracker/Template.jsp HTTP/1.1" 200 1542
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:33:23 +0800] "GET /MiniTracker/js/Template.js HTTP/1.1" 200 1851
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:33:23 +0800] "POST /MiniTracker/Template.do HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:33:23 +0800] "POST /MiniTracker/Template.do HTTP/1.1" 200 393
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:34:32 +0800] "GET /MiniTracker/Template.jsp HTTP/1.1" 200 1569
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:34:32 +0800] "GET /MiniTracker/js/Template.js HTTP/1.1" 200 1852
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:34:33 +0800] "POST /MiniTracker/Template.do HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [09/Dec/2017:00:34:33 +0800] "POST /MiniTracker/Template.do HTTP/1.1" 200 393

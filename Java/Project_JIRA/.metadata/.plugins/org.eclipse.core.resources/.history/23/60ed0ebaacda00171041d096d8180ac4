@@ -1,0 +1,14 @@
+package com.tracker.Template.web;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+
+public class TemplateServlet {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		
+	}
+}

@@ -1,0 +1,10 @@
+$(document).ready(function() {
+	
+	var templateController = "/MiniTracker/Attribute.do";
+	
+	$("#addTemplateButton").click(function() {
+		var value = $("#addTemplateText").val();
+		
+		$.post()
+	})
+})

@@ -1,0 +1,5 @@
+package com.tracker.Template.web;
+
+public class TemplateServlet {
+
+}

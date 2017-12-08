@@ -22,6 +22,15 @@
   	<url-pattern>/AttributeGroup.do</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>TemplateServlet</servlet-name>
+  	<servlet-class>com.tracker.Template.web.TemplateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TemplateServlet</servlet-name>
+  	<url-pattern>/Template.do</url-pattern>
+  </servlet-mapping>
+  
   <listener>
   	<listener-class>
   		com.tracker.Listener.TrackerContext

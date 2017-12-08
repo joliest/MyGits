@@ -1,0 +1,11 @@
+$(document).ready(function() {
+	
+	var templateController = "/MiniTracker/Attribute.do";
+	var templateGroupController = "/MiniTracker/AttributeGroup.do";
+	
+	$("#addTemplateButton").click(function() {
+		var value = $("#addTemplateText").val();
+		
+		$.post()
+	})
+})
