@@ -1,7 +1,0 @@
-package com.tracker.Template.web;
-
-public class TemplateServlet {
-	public void doPost(HttpServletRequest request, HttpServletResponse response) {
-		
-	}
-}

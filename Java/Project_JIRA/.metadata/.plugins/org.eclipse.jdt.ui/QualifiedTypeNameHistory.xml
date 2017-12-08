@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="com.tracker.DatabaseHelper.AttributeDatabaseManager"/>
 <fullyQualifiedTypeName name="com.tracker.Attribute.model.Attribute"/>
 <fullyQualifiedTypeName name="com.tracker.Command.AddAttributeCommand"/>
 <fullyQualifiedTypeName name="com.tracker.Command.AttributeCommands"/>
@@ -34,5 +33,6 @@
 <fullyQualifiedTypeName name="com.tracker.DatabaseHelper.TemplateDatabaseManager"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.tracker.DatabaseHelper.AttributeDatabaseManager"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

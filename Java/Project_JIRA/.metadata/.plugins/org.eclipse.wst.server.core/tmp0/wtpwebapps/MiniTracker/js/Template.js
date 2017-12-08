@@ -26,9 +26,14 @@ $(document).ready(function() {
 	})
 	
 	$("#deleteAttributeButton").click(function(){
-		$.each([ 52, 97 ], function(index, value){
-			alert(index + " : " + value);
+		var myObj = { 'checks[]' : [] };
+		/*
+		$(":checked").each(function() {
+			myObj['checks[]'].push($(this).val());
 		})
+		
+		alert(myObj);
+		*/
 	})
 	
 	//Shows the list of attributes when an Attribute Group gets clicked.
@@ -41,7 +46,6 @@ $(document).ready(function() {
 		})
 		$("div[attributeGroupId='" + id +"']").toggle();
 	})
-	
 	
 	//when you click one template row
 	$(this).on("click", "#templateListRow", function(){
