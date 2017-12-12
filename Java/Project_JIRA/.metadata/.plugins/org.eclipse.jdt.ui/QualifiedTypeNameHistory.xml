@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="com.tracker.Command.Command"/>
 <fullyQualifiedTypeName name="com.tracker.Attribute.model.AttributeGroup"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.tracker.ModuleAbstract"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
@@ -35,4 +34,5 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.tracker.DatabaseHelper.AttributeDatabaseManager"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

@@ -20,8 +20,29 @@
 		<input type="text" id="templateName">
 		<input type="button" id="addTemplateButton" value="Add Form">
 		
+		
+		
+		<div id = "attributeListBox">
+			<ul>
+				<li id="attributeGroupList" attributeGroupId="1"><b>General</b> 
+					<ul>
+						<li><input type="checkbox" attributeGroupId="12" attributeId="11"> Name </li>
+					</ul>
+				</li>
+				<li><input type="button" id="OkAdd" value="Ok"> 
+					<input type="button" id="CancelAdd" value="Cancel">
+				</li>
+			</ul>
+		</div>
+		
 		<br>
-		<fieldset>
+		
+		<input type="button" id="addAttributeButton" value="Save">
+		<input type="button" value="Clear">
+		
+		
+		<br>
+		<fieldset id="templateAttribute">
 		<legend>General</legend>
 		<table>
 			<tr> 
@@ -44,24 +65,5 @@
 			</tr>
 		</table>
 		</fieldset>
-		
-		<div id = "attributeListBox">
-			<ul>
-				<li id="attributeGroupList" attributeGroupId="1"><b>General</b> 
-					<ul>
-						<li><input type="checkbox" attributeGroupId="12" attributeId="11"> Name </li>
-					</ul>
-				</li>
-				<li><input type="button" id="OkAdd" value="Ok"> 
-					<input type="button" id="CancelAdd" value="Cancel">
-				</li>
-			</ul>
-		</div>
-		
-		<input type="button" id="addAttributeButton" value="Add Attributes">
-		<input type="button" id="deleteAttributeButton" value="Delete Attributes">
-		<input type="button" value="Save Changes">
-		<input type="button" value="Cancel">
-		
 	</body>
 </html>

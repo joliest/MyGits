@@ -1,6 +1,7 @@
 package com.tracker.DatabaseHelper;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import javax.servlet.http.HttpServletRequest;
 import com.tracker.Module;
@@ -14,6 +15,7 @@ public class TemplateDatabaseManager extends DatabaseManager{
 	
 	private final String countRows = "SELECT * FROM TEMPLATE ORDER BY ID DESC";
 	private final String addTemplate = "INSERT INTO TEMPLATE VALUES(?,?)";
+	private final String addTemplateAttribute = "INSERT INTO TEMPLATE_ATTRIB VALUES(?,?,?)";
 
 	public TemplateDatabaseManager(Module module) {
 		super(module);
@@ -38,6 +40,56 @@ public class TemplateDatabaseManager extends DatabaseManager{
 		} catch(SQLException sEx) {
 			System.out.println("TemplateDatabaseManager.add() : " + sEx);
 		}
+	}
+	
+	public void addTemplateAttributes(int templateId, ArrayList<String> attributes) {
+		ArrayList<String> filteredAttributeList = removeDuplicate(templateId, attributes);
+		String defaultValue = "";
+
+		for(int i = 0; i < filteredAttributeList.size(); i++) {
+			int attributeId = Integer.parseInt(filteredAttributeList.get(i));
+			try {
+				preparedStatement = connection.prepareStatement(addTemplateAttribute);
+				preparedStatement.setInt(1, templateId);
+				preparedStatement.setInt(2, attributeId);
+				preparedStatement.setString(3, defaultValue);
+				preparedStatement.executeQuery();
+				System.out.println("Successfully added attributeId " + attributeId + " in templateId " + templateId);
+			} catch(SQLException sEx) {
+				System.out.println("TemplateDatabaseManager.addTemplateAttributes() : " + sEx);
+			}
+		}
+	}
+	
+	//removes selected attributes that are already existing in the template
+	public ArrayList<String> removeDuplicate(int id, ArrayList<String> attributes) {
+		ArrayList<String> attributeList = new ArrayList<String>(); //to store the returning ArrayList
+		ArrayList<String> tableRows = new ArrayList<String>(); //store the data from TEMPLATE_ATTRIB table
+		String query = "SELECT * FROM TEMPLATE_ATTRIB WHERE TEMPLATE_ID = "  + id;
+		
+		try {			
+			statement = connection.createStatement();
+			rowCount = statement.executeQuery(query);
+			while(rowCount.next()) {
+				int row = rowCount.getInt(2);
+				String tableRow = Integer.toString(row);
+				tableRows.add(tableRow);
+				System.out.println("TemplateDatabaseManager.removeDuplicate() added " + tableRow);
+			}
+		} catch(SQLException sEx) {
+			System.out.println("TemplateDatabaseManager.removeDuplicate() : " + sEx);
+		}
+		
+		//combines attribute list and tableRow list without duplicate
+		//values are stored in attributeList list
+		for(String attribute : attributes) {
+			if (!tableRows.contains(attribute)) {
+				attributeList.add(attribute);
+				System.out.println("TemplateDatabaseManager.removeDuplicate() added " + attribute + " and has no duplicate");
+			}
+		}
+		
+		return attributeList;
 	}
 
 	@Override

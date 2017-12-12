@@ -1,20 +1,78 @@
+/*
+var TEMPLATE_ID = (function(id){
+	var _templateId = id;
+	
+	return function() {
+		return _templateId;
+	}
+});
+*/
+
+var TEMPLATE_ID = (function(id) {
+	var _templateId = id;
+	return {
+		getTemplateId : function() {
+			return _templateId;
+		}
+	}
+});
+
 $(document).ready(function() {
 	
 	var templateController = "/MiniTracker/Template.do";
+	var id = "";
 	
 	loadTemplatePage();
-	//$("#attributeListBox").hide();
+	$("#attributeListBox").hide();
 	
 	//automatically generates the list of Attribute Groups
 	$.post(templateController, { category : "loadAttributeGroups" } , function(data, status) {
 		$("#attributeListBox").html(data);
+		
 	})
 	
-	//clicking the Add Attribute button toggles the list of Attribute Groups.
+	//when you click one template row
+	$(this).on("click", "#templateListRow", function(){
+		
+		var templateId = $(this).attr("templateId");
+		
+		$("li").css("color", "black");
+		$(this).css("color", "red");
+		$("#attributeListBox").show();
+		
+		id = TEMPLATE_ID(templateId);
+		console.log(id.getTemplateId());
+		
+	})
+	
+	//adding checked boxes into the template
 	$("#addAttributeButton").click(function(){
-		$("#attributeListBox").toggle();
+		var myObj = { "attributeId[]" : [] };
+		var templateId = id.getTemplateId();
+		
+		//adding selected checkbox attributeId into the obj[] array
+		$(":checked").each(function(i) {
+			myObj["attributeId[]"].push($(this).attr("attributeId"));			
+		})
+		
+		//check if there are checkbox selected
+		if(myObj["attributeId[]"].length > 0) {
+			//check if templateId is true
+			if(templateId) {
+				//send request and get response from MiniTracker\TemplateServlet.java
+				$.post(templateController, { category : "addTemplateAttribute", selectedCheckboxes : myObj["attributeId[]"],  templateId : templateId}, function(data, status) {
+					//alert(data);
+				})
+			} 
+		} else {
+			alert("No attributes selected");
+		}
+		
+		
+		
+		
 	})
-	
+		
 	//adds new Template
 	$("#addTemplateButton").click(function() {
 		var value = $("#templateName").val();
@@ -25,16 +83,7 @@ $(document).ready(function() {
 		});		
 	})
 	
-	$("#deleteAttributeButton").click(function(){
-		var myObj = { 'checks[]' : [] };
-		/*
-		$(":checked").each(function() {
-			myObj['checks[]'].push($(this).val());
-		})
-		
-		alert(myObj);
-		*/
-	})
+	
 	
 	//Shows the list of attributes when an Attribute Group gets clicked.
 	$(this).on("click", "#attributeGroupList", function(){
@@ -47,16 +96,15 @@ $(document).ready(function() {
 		$("div[attributeGroupId='" + id +"']").toggle();
 	})
 	
-	//when you click one template row
-	$(this).on("click", "#templateListRow", function(){
-
-		
-	})
 	
-	//refreshes the page
+	
+	
+	//refreshes the page 
+	//generates the list of Templates
 	function loadTemplatePage() {
 		$.post(templateController, { category : "loadTemplateList" }, function(data, status) {
 			$("#templateList").html(data);
+
 		})		
 	}
 	

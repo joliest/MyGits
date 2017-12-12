@@ -10,6 +10,7 @@ import com.tracker.Template.model.Template;
 
 import javax.servlet.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -50,7 +51,7 @@ public class TemplateServlet extends HttpServlet{
 				int key = entry.getKey();
 				String value = entry.getValue();
 				
-				//generates <li id="attributeGroupList" attributeGroupId="1"><b>General</b> </li>
+				//generates <b id="attributeGroupList" attributeGroupId="1"> General </b>
 				message += "<b id=\"attributeGroupList\" attributeGroupId=\"" + key + "\">";
 				message += value;
 				message += "</b> <br>";
@@ -76,9 +77,51 @@ public class TemplateServlet extends HttpServlet{
 				message += "</tr>";
 			}
 			message += "</table> \n";	
+		} else if(category.equals("addTemplateAttribute")) {
+			//getting the array of attributeIds from selected checkboxes selectedCheckboxes[]
+			String[] attributes = request.getParameterValues("selectedCheckboxes[]");
+			String templateId = request.getParameter("templateId");
+			ArrayList<String> attributeList = new ArrayList<String>();
+			
+			int id = Integer.parseInt(templateId);
+			
+			for(int i = 0; i < attributes.length; i++) {
+				attributeList.add(attributes[i]);
+				System.out.println("TemplateServlet added " + attributes[i] + " in ArrayList");
+			}
+			
+			TemplateDatabaseManager databaseManager = new TemplateDatabaseManager(request);
+			databaseManager.addTemplateAttributes(id, attributeList);
 		}
 		
 		System.out.println(message);
 		out.println(message);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
