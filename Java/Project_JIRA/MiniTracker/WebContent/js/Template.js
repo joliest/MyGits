@@ -43,6 +43,11 @@ $(document).ready(function() {
 		id = TEMPLATE_ID(templateId);
 		console.log(id.getTemplateId());
 		
+		//generate template attribute
+		$.post(templateController, { category : "loadTemplateAttribute", templateId : id.getTemplateId() }, function(data, status) {
+			$("#templateAttribute").html(data);
+		})
+		
 	})
 	
 	//adding checked boxes into the template

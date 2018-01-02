@@ -92,6 +92,13 @@ public class TemplateServlet extends HttpServlet{
 			
 			TemplateDatabaseManager databaseManager = new TemplateDatabaseManager(request);
 			databaseManager.addTemplateAttributes(id, attributeList);
+		} else if(category.equals("loadTemplateAttribute")) {
+			String templateId = request.getParameter("templateId");
+			int id = Integer.parseInt(templateId);
+			TemplateDatabaseManager databaseManager = new TemplateDatabaseManager(request);
+			ArrayList<Integer> attributeList = databaseManager.getAttributesByTemplateId(id);
+			
+			
 		}
 		
 		System.out.println(message);

@@ -16,6 +16,8 @@ public class TemplateDatabaseManager extends DatabaseManager{
 	private final String countRows = "SELECT * FROM TEMPLATE ORDER BY ID DESC";
 	private final String addTemplate = "INSERT INTO TEMPLATE VALUES(?,?)";
 	private final String addTemplateAttribute = "INSERT INTO TEMPLATE_ATTRIB VALUES(?,?,?)";
+	private final String selectTemplateAttribute = "SELECT ATTRIBUTE_ID FROM TEMPLATE_ATTRIB WHERE TEMPLATE_ID =";
+	//private final String selectTemplateAttribute = "SELECT * FROM ATTRIBUTE Attr INNER JOIN TEMPLATE_ATTRIB tempAttr ON Attr.ID = tempAttr.ATTRIBUTE_ID WHERE tempAttr.TEMPLATE_ID =";
 
 	public TemplateDatabaseManager(Module module) {
 		super(module);
@@ -27,6 +29,22 @@ public class TemplateDatabaseManager extends DatabaseManager{
 	
 	public TemplateDatabaseManager(HttpServletRequest request) {
 		super(request);
+	}
+	
+	public ArrayList<Integer> getAttributesByTemplateId(int id) {
+		ArrayList<Integer> attributeList = new ArrayList<Integer>();
+		try {
+			statement = connection.createStatement();
+			rowCount = statement.executeQuery(selectTemplateAttribute + id);
+			while(rowCount.next()) {
+				int row = rowCount.getInt(1);
+				attributeList.add(row);
+			}
+			System.out.println("Successfully created attribute list");
+		} catch(SQLException sEx) {
+			System.out.println("TemplateDatabaseManager.getAttributesByTemplateId() : " + sEx);
+		}
+		return attributeList;
 	}
 
 	@Override
