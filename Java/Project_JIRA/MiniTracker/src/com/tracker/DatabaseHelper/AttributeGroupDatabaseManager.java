@@ -121,6 +121,8 @@ public class AttributeGroupDatabaseManager extends DatabaseManager{
 		
 		return list;
 	}
+	
+	//public String getAtrributeGroupNameById(a)
 
 	@Override
 	public HashMap<Integer, String> listGroups() {

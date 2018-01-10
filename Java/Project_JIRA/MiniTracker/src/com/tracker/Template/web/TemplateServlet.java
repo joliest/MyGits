@@ -95,9 +95,41 @@ public class TemplateServlet extends HttpServlet{
 		} else if(category.equals("loadTemplateAttribute")) {
 			String templateId = request.getParameter("templateId");
 			int id = Integer.parseInt(templateId);
-			TemplateDatabaseManager databaseManager = new TemplateDatabaseManager(request);
-			ArrayList<Integer> attributeList = databaseManager.getAttributesByTemplateId(id);
 			
+			TemplateDatabaseManager databaseManager = new TemplateDatabaseManager(request);
+			AttributeDatabaseManager attributeDatabaseManager = new AttributeDatabaseManager(request);
+			
+			HashMap<Integer, Integer> attributeList = databaseManager.getAttributesByTemplateId(id);
+			ArrayList<Integer> attributeGroupList = databaseManager.getAttributeGroupsByTemplateId(id);
+			
+			HashMap<Integer, String> 
+			
+			/*
+				 TODO: Create:
+				 <fieldset>
+					<legend>Network</legend>
+					<table>
+						<tr> 
+							<td> Ip Address </td>
+							<td><input type="text"></td>
+						</tr>
+					</table>
+				</fieldset> 			 
+			 */
+			for(int i = 0; i < attributeGroupList.size(); i++) {
+				
+				int currentAttributeGroup = attributeGroupList.get(i);
+				String currentAttributeGroupName = 
+				
+				for(Map.Entry<Integer, Integer> entry : attributeList.entrySet()){
+					int attributeId = entry.getKey();
+					int attributeGroupId = entry.getValue();					
+					
+					if(currentAttributeGroup == attributeGroupId) {
+						System.out.println(attributeId);
+					}
+				}				
+			}
 			
 		}
 		

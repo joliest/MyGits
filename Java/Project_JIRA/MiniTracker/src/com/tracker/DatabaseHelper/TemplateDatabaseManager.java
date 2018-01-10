@@ -16,8 +16,11 @@ public class TemplateDatabaseManager extends DatabaseManager{
 	private final String countRows = "SELECT * FROM TEMPLATE ORDER BY ID DESC";
 	private final String addTemplate = "INSERT INTO TEMPLATE VALUES(?,?)";
 	private final String addTemplateAttribute = "INSERT INTO TEMPLATE_ATTRIB VALUES(?,?,?)";
-	private final String selectTemplateAttribute = "SELECT ATTRIBUTE_ID FROM TEMPLATE_ATTRIB WHERE TEMPLATE_ID =";
-	//private final String selectTemplateAttribute = "SELECT * FROM ATTRIBUTE Attr INNER JOIN TEMPLATE_ATTRIB tempAttr ON Attr.ID = tempAttr.ATTRIBUTE_ID WHERE tempAttr.TEMPLATE_ID =";
+	//private final String selectTemplateAttribute = "SELECT ATTRIBUTE_ID FROM TEMPLATE_ATTRIB WHERE TEMPLATE_ID =";
+	private final String selectTemplateAttribute = "SELECT Attr.GROUPID, Attr.ID FROM ATTRIBUTE Attr INNER JOIN TEMPLATE_ATTRIB tempAttr ON Attr.ID = tempAttr.ATTRIBUTE_ID WHERE tempAttr.TEMPLATE_ID =";
+	private final String selectTemplateAttributeGroup = "SELECT GROUPID FROM ATTRIBUTE Attr INNER JOIN TEMPLATE_ATTRIB tempAttr ON Attr.ID = tempAttr.ATTRIBUTE_ID WHERE tempAttr.TEMPLATE_ID =";
+	private final String orderByGroupId = " ORDER BY GROUPID";
+	private final String groupByGroupId = " GROUP BY GROUPID";
 
 	public TemplateDatabaseManager(Module module) {
 		super(module);
@@ -31,20 +34,40 @@ public class TemplateDatabaseManager extends DatabaseManager{
 		super(request);
 	}
 	
-	public ArrayList<Integer> getAttributesByTemplateId(int id) {
-		ArrayList<Integer> attributeList = new ArrayList<Integer>();
+	//get a map of attributeIds and AttributeGroups 
+	public HashMap<Integer, Integer> getAttributesByTemplateId(int id) {
+		HashMap<Integer, Integer> attributeList = new HashMap<Integer, Integer>();
 		try {
 			statement = connection.createStatement();
-			rowCount = statement.executeQuery(selectTemplateAttribute + id);
+			rowCount = statement.executeQuery(selectTemplateAttribute + id + orderByGroupId);
 			while(rowCount.next()) {
-				int row = rowCount.getInt(1);
-				attributeList.add(row);
+				int attributeId = rowCount.getInt(2);
+				int attributeGroup = rowCount.getInt(1);
+				attributeList.put(attributeId, attributeGroup);
+				//System.out.println(attributeId + " : " + attributeGroup);
 			}
 			System.out.println("Successfully created attribute list");
 		} catch(SQLException sEx) {
 			System.out.println("TemplateDatabaseManager.getAttributesByTemplateId() : " + sEx);
 		}
 		return attributeList;
+	}
+	
+	//get the list of attribute groups available in the specified template id
+	public ArrayList<Integer> getAttributeGroupsByTemplateId(int id) {
+		ArrayList<Integer> attributeGroupList = new ArrayList<Integer>();
+		try {
+			statement = connection.createStatement();
+			rowCount = statement.executeQuery(selectTemplateAttributeGroup + id + groupByGroupId + orderByGroupId);
+			while(rowCount.next()) {
+				int row = rowCount.getInt(1);
+				attributeGroupList.add(row);
+			}
+			System.out.println("Successfully created attribute group list");
+		} catch(SQLException sEx) {
+			System.out.println("TemplateDatabaseManager.getAttributeGroupsByTemplateId() : " + sEx);
+		}
+		return attributeGroupList;
 	}
 
 	@Override
