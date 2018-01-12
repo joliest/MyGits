@@ -6,6 +6,7 @@ public class RedheadDuck implements Quackable {
 	public RedheadDuck() {
 		observable = new Observable(this);
 	}
+	
 	@Override
 	public void quack() {
 		System.out.println("Quack, Quack, Quack!");
