@@ -14,7 +14,7 @@ public class TestJunit {
 	
 	@Test
 	public void testPrintMessage() {
-		message = "New Word"; //uncomment this and you'll get failure
+		//message = "New Word"; //uncomment this and you'll get failure
 		assertEquals(message, messageUtil.printMessage());
 	}
 }
