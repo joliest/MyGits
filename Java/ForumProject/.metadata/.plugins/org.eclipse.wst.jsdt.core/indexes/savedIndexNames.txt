@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+D:\MyGits_Apalit\Java\ForumProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+116885596.index
+3445832285.index
+4257407655.index
+4052528341.index
+3641114423.index
+1370606077.index

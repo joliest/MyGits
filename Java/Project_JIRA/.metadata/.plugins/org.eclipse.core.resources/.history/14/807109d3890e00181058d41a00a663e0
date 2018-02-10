@@ -1,0 +1,19 @@
+package com.miforum.services;
+
+import com.miforum.components.Account;
+
+public class AccountServices {
+	private Account account;
+	
+	public AccountServices(Account account) {
+		this.account = account;
+	}
+	
+	public void addAccount() {
+		
+	}
+	
+	public boolean isValid(Account account) {
+		
+	}
+}

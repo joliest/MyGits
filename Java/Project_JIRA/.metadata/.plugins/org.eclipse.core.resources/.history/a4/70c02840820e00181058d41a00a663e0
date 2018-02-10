@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Mini_Reddit">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="Mini_Reddit"/>
+        <property name="java-output-path" value="/Mini_Reddit/build/classes"/>
+    </wb-module>
+</project-modules>
