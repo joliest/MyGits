@@ -1,0 +1,27 @@
+package com.miforum.database;
+
+import java.sql.*;
+
+import com.miforum.components.Component;
+
+public abstract class Database {
+	
+	protected Connection connection;
+	protected Statement statement;
+	protected PreparedStatement preparedStatement;
+	
+	public Database() {		 
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "System", "Sql12345");
+		} catch (Exception exception) {
+			System.out.println(exception);
+		}
+	}
+	
+	public abstract void insert(Component component);
+	public abstract String select(Component component);
+	public abstract void delete(Component component);
+	public abstract void update(Component oldComponent, Component newComponent);
+	//public abstract String select(Component component);
+}

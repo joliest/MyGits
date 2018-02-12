@@ -1,0 +1,7 @@
+package com.miforum.database;
+
+import java.sql.*;
+
+public class AccountDatabase extends Database{
+	
+}

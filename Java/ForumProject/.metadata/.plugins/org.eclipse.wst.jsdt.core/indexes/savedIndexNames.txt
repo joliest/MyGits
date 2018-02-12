@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.3+D:\Github\Java\ForumProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3225706426.index
 3444861668.index
@@ -5,3 +6,12 @@ INDEX VERSION 1.3+D:\Github\Java\ForumProject\.metadata\.plugins\org.eclipse.wst
 70929165.index
 3852691611.index
 2851832364.index
+=======
+INDEX VERSION 1.3+D:\MyGits_Apalit\Java\ForumProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+116885596.index
+3445832285.index
+4257407655.index
+4052528341.index
+3641114423.index
+1370606077.index
+>>>>>>> 6fbe0aa49666d049b18faff56096a52b5299c856
