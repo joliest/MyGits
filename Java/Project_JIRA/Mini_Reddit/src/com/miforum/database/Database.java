@@ -30,10 +30,9 @@ public abstract class Database {
 			if(statement instanceof PreparedStatement) {
 				PreparedStatement stmt = (PreparedStatement) statement;
 				stmt.execute();
-			}
-			
-			statement.execute(sqlQuery);
-			
+			} else {
+				statement.execute(sqlQuery);
+			}			
 			
 		} catch(SQLException ex) {
 			System.out.println(ex);

@@ -9,8 +9,10 @@
   <title>Register</title>
  </head>
  <body>
+ <form method="POST" action="/Mini_Reddit/register">
   	Username: <input type="text" id="register_username" /> <br />
   	Password: <input type="password" id="register_password" /> <br />
-  	<button id="register_button">Register</button>
+  	<button type="submit" value="Register" />
+  </form>
  </body>
 </html>

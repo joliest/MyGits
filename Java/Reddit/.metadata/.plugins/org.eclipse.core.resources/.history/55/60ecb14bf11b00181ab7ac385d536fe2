@@ -1,0 +1,12 @@
+package com.miforum.components;
+
+public class Post {
+	
+	private String title;
+	private String body;
+	private Account account;
+	
+	public Post(String title, String body, Account account) {
+		
+	}
+}

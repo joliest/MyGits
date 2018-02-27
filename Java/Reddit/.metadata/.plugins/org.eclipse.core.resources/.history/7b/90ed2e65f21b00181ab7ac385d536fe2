@@ -1,0 +1,8 @@
+package com.miforum.services;
+
+public class PostServices {
+	
+	public PostServices(Post post, PostDatabase database) {
+		
+	}
+}
