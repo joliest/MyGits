@@ -152,7 +152,7 @@
 		<Context docBase="Project_BugTracker" path="/Project_BugTracker" reloadable="true" source="org.eclipse.jst.jee.server:Project_BugTracker"/>
 		<Context docBase="Project_Test" path="/Project_Test" reloadable="true" source="org.eclipse.jst.jee.server:Project_Test"/>
 		<Context docBase="JavaServletAndAJAX" path="/JavaServletAndAJAX" reloadable="true" source="org.eclipse.jst.jee.server:JavaServletAndAJAX"/>
-      <Context docBase="MiniTracker" path="/MiniTracker" reloadable="true" source="org.eclipse.jst.jee.server:MiniTracker"/></Host>
+      <Context docBase="MiniTracker" path="/MiniTracker" reloadable="true" source="org.eclipse.jst.jee.server:MiniTracker"/><Context docBase="Mini_Reddit" path="/Mini_Reddit" reloadable="true" source="org.eclipse.jst.jee.server:Mini_Reddit"/></Host>
     </Engine>
   </Service>
 </Server>

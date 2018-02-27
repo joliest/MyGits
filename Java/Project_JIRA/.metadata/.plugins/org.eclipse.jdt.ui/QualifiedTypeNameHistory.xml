@@ -36,7 +36,8 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="com.miforum.database.AccountDatabase"/>
 <fullyQualifiedTypeName name="com.miforum.components.Account"/>
 <fullyQualifiedTypeName name="com.miforum.components.Component"/>
+<fullyQualifiedTypeName name="com.miforum.services.AccountServices"/>
+<fullyQualifiedTypeName name="com.miforum.database.AccountDatabase"/>
 </qualifiedTypeNameHistroy>

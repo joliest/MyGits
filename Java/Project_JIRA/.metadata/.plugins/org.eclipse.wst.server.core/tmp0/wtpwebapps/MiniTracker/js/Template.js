@@ -27,7 +27,7 @@ $(document).ready(function() {
 	
 	//automatically generates the list of Attribute Groups
 	$.post(templateController, { category : "loadAttributeGroups" } , function(data, status) {
-		$("#attributeListBox").html(data);ENtry
+		$("#attributeListBox").html(data);
 		
 	})
 	

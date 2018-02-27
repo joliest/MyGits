@@ -8,6 +8,9 @@ import com.miforum.components.Component;
 public class AccountDatabase extends Database{
 	
 	private Account account;
+	
+	private static final String INSERT = "INSERT INTO ACCOUNT VALUES(?, ?)";
+	private static final String SELECT = "SELECT * FROM ACCOUNT WHERE USERNAME=";
 
 	public AccountDatabase() {
 		super();
@@ -15,26 +18,54 @@ public class AccountDatabase extends Database{
 
 	@Override
 	public void insert(Component component) {
+		
 		account = (Account) component;
 		
+		String username = account.getUsername();
+		String password = account.getPassword();
+		
+		try {
+			preparedStatement = connection.prepareStatement(INSERT);
+			preparedStatement.setString(1, username);
+			preparedStatement.setString(2, password);
+			statement(preparedStatement);
+		} catch (SQLException e) {
+			System.out.println(e);
+		}
 	}
 
 	@Override
-	public String select(Component component) {
-		// TODO Auto-generated method stub
-		return null;
+	public String select(Component component){
+		
+		account = (Account) component;
+		
+		String username = account.getUsername();
+		
+	
+		return null; 
 	}
 
 	@Override
-	public void delete(Component component) {
+	public void delete(Component component){
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void update(Component oldComponent, Component newComponent) {
+	public void update(Component oldComponent, Component newComponent){
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public boolean isValid(Component component) {
+		
+		boolean isValid = false;
+		
+		account = (Account) component; 
+		
+		return isValid;
+	}
+	
+
 	
 }

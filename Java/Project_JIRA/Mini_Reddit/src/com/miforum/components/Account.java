@@ -19,6 +19,10 @@ public class Account implements Component{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public String getPassword() {
+		return password;
+	}
 
 	@Override
 	public String getUniqueId() {

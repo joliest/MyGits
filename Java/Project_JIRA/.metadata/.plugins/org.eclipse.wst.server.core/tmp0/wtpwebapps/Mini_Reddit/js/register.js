@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$("#register_button").click(function(){
+		
+		var controller = "/Mini_Reddit/register";
+		var username = $("#register_username").val();
+		var password = $("#register_password").val();
+		
+		$.post(controller,
+			   { username : username, password : password },
+			   function(data, status){
+					alert(data);
+				})
+	})
+})

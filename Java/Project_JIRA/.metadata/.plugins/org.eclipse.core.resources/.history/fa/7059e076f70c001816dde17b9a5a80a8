@@ -1,6 +1,0 @@
-package com.formu.Services;
-
-public interface Services {
-	void add();
-	void view();
-}

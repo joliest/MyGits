@@ -16,13 +16,14 @@ public class AccountServices {
 		this.database = database;
 	}
 	
-	public void addAccount() {
-		
+	public void registerAccount() {
+		database.insert(account);
 	}
 	
 	public boolean isValid(Account account) {
 		boolean isValid = false;
-		
+		String username = account.getUsername();
+		String password = account.getPassword();
 		return isValid;
 	}
 	

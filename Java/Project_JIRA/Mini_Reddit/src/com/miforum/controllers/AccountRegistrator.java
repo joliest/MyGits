@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.miforum.components.Account;
+import com.miforum.database.AccountDatabase;
+import com.miforum.services.AccountServices;
 
 public class AccountRegistrator extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,7 +21,11 @@ public class AccountRegistrator extends HttpServlet{
 		String password = request.getParameter("password");
 		
 		Account account = new Account(username, password);
+		AccountDatabase database = new AccountDatabase();
+		AccountServices services = new AccountServices(account, database);
 		
+		services.registerAccount();
 		
+		out.print("hi " + username);
 	}
 }
