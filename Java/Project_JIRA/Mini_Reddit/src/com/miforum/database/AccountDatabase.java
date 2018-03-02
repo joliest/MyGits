@@ -10,7 +10,7 @@ public class AccountDatabase extends Database{
 	private Account account;
 	
 	private static final String INSERT = "INSERT INTO ACCOUNT VALUES(?, ?)";
-	private static final String SELECT = "SELECT * FROM ACCOUNT WHERE USERNAME=";
+	private static final String SELECT_BY_USERNAME = "SELECT * FROM ACCOUNT WHERE USERNAME=";
 
 	public AccountDatabase() {
 		super();
@@ -29,8 +29,8 @@ public class AccountDatabase extends Database{
 			preparedStatement.setString(1, username);
 			preparedStatement.setString(2, password);
 			statement(preparedStatement);
-		} catch (SQLException e) {
-			System.out.println(e);
+		} catch (SQLException sEx) {
+			System.out.println("AccountDatabase.insert() : " + sEx);
 		}
 	}
 
@@ -62,6 +62,26 @@ public class AccountDatabase extends Database{
 		boolean isValid = false;
 		
 		account = (Account) component; 
+		
+		String accountUsername = account.getUsername();
+		String accountPassword = account.getPassword();
+		
+		String sqlUsername = "";
+		String sqlPassword = "";
+		
+		try{
+			statement = connection.createStatement();
+			resultSet = statement(statement, SELECT_BY_USERNAME + accountUsername);
+			resultSet.next();
+			sqlUsername = resultSet.getString(1);
+			sqlPassword = resultSet.getString(2);
+		} catch(SQLException sEx) {
+			System.out.println("AccountDatabase.isValid() : " + sEx);
+		}
+
+		if(accountUsername.equals(sqlUsername) && accountPassword.equals(sqlPassword)) {
+			isValid = true;
+		}
 		
 		return isValid;
 	}

@@ -8,7 +8,7 @@ public class Post implements Component{
 	private String title;
 	private String body;
 	private Account account;
-	//private Date date;
+	private Date date;
 	
 	public Post(String title, String body, Account account) {
 		this.title = title;

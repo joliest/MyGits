@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.miforum.components.Post"/>
 <fullyQualifiedTypeName name="com.miforum.database.PostDatabase"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

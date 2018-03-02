@@ -1,0 +1,12 @@
+<!-- Using directive -->
+<%@  page import="com.example.packages.*" %>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>My Standard Action JSP</title>
+ </head>
+ <body>
+	<jsp:useBean id="person" class="com.example.packages.Person" scope="request"/>
+	The name of the forwarded person is: <jsp:getProperty name="person" property="name" />
+ </body>
+</html>

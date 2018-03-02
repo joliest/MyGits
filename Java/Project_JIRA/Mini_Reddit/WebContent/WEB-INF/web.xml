@@ -6,10 +6,19 @@
   <servlet>
   	<servlet-name>Account Registrator</servlet-name>
   	<servlet-class>com.miforum.controllers.AccountRegistrator</servlet-class>
-  </servlet>
-  
+  </servlet>  
   <servlet-mapping>
   	<servlet-name>Account Registrator</servlet-name>
   	<url-pattern>/register</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Login Account</servlet-name>
+  	<servlet-class>com.miforum.controllers.LoginAccount</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>Login Account</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

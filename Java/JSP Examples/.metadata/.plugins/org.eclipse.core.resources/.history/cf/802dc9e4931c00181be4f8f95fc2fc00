@@ -1,0 +1,6 @@
+package com.example.packages;
+
+public class Person {
+	private String name;
+	
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.3+D:\Github\Java\JSP Examples\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1388324002.index
+3797474356.index
