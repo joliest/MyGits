@@ -25,17 +25,10 @@ public abstract class Database {
 	public abstract void delete(Component component);
 	public abstract void update(Component oldComponent, Component newComponent);
 	
-	protected ResultSet statement(Statement statement, String sqlQuery) {
+	protected void preparedStatement(PreparedStatement statement) {
 		try {
-			
-			if(statement instanceof PreparedStatement) {
-				PreparedStatement stmt = (PreparedStatement) statement;
-				stmt.execute();
-			} else {
-				ResultSet rs = statement.executeQuery(sqlQuery);
-				return rs;
-			}			
-			
+			PreparedStatement stmt = (PreparedStatement) statement;
+			stmt.execute();
 		} catch(SQLException ex) {
 			System.out.println(ex);
 		} finally {
@@ -54,10 +47,6 @@ public abstract class Database {
 			}		
 			
 			}
-		return null;
 	}
-
-	protected void statement(Statement statement) throws SQLException{
-		statement(statement, null);
-	}
+	
 }

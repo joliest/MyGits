@@ -28,7 +28,7 @@ public class AccountDatabase extends Database{
 			preparedStatement = connection.prepareStatement(INSERT);
 			preparedStatement.setString(1, username);
 			preparedStatement.setString(2, password);
-			statement(preparedStatement);
+			preparedStatement(preparedStatement);
 		} catch (SQLException sEx) {
 			System.out.println("AccountDatabase.insert() : " + sEx);
 		}
@@ -71,12 +71,20 @@ public class AccountDatabase extends Database{
 		
 		try{
 			statement = connection.createStatement();
-			resultSet = statement(statement, SELECT_BY_USERNAME + accountUsername);
-			resultSet.next();
-			sqlUsername = resultSet.getString(1);
-			sqlPassword = resultSet.getString(2);
+			resultSet = statement.executeQuery( SELECT_BY_USERNAME + "'" + accountUsername + "'");
+			if(resultSet.next()) {
+				sqlUsername = resultSet.getString(1);
+				sqlPassword = resultSet.getString(2);
+			}
 		} catch(SQLException sEx) {
 			System.out.println("AccountDatabase.isValid() : " + sEx);
+		} finally {
+			try {
+				statement.close();
+				connection.close();
+			} catch (SQLException sEx) {
+				System.out.println("AccountDatabase.isValid() : " + sEx);
+			}		
 		}
 
 		if(accountUsername.equals(sqlUsername) && accountPassword.equals(sqlPassword)) {

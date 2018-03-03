@@ -21,4 +21,22 @@
   	<url-pattern>/login</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>Logout Account</servlet-name>
+  	<servlet-class>com.miforum.controllers.LogoutAccount</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>Logout Account</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<servlet-class>com.miforum.controllers.HomeController</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

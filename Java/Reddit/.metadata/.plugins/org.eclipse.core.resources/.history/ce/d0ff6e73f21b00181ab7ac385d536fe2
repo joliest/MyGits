@@ -1,5 +1,0 @@
-package com.miforum.database;
-
-public class PostDatabase extends Database{
-
-}
