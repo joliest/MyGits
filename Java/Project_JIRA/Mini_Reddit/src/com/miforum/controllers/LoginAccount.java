@@ -25,14 +25,17 @@ public class LoginAccount extends HttpServlet{
 		Account account = new Account(username, password);
 		AccountDatabase database = new AccountDatabase();
 		AccountServices thisAccount = new AccountServices(account, database);
+		RequestDispatcher view;
+		
 		
 		if(thisAccount.isValid()) {
 			HttpSession session = request.getSession();
 			session.setAttribute("activeAccount", account);
-			RequestDispatcher view = request.getRequestDispatcher("/home");
-			view.forward(request, response);
+			view = request.getRequestDispatcher("home");
 		} else {
-			//view = request.getRequestDispatcher("/login.jsp");
+			view = request.getRequestDispatcher("/login.jsp");
 		}
+
+		view.forward(request, response);
 	}
 }

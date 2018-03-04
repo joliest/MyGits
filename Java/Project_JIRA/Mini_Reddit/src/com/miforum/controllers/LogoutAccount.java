@@ -22,10 +22,12 @@ public class LogoutAccount  extends HttpServlet{
 		HttpSession session = request.getSession();
 		session.invalidate();
 		
-		out.print("You have log out");
-		
 		RequestDispatcher view = request.getRequestDispatcher("/login");
 		view.include(request, response);
+		
+		out.print("You have log out");
+		
+		
 		
 	}
 }

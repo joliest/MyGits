@@ -51,3 +51,81 @@ Mar 02, 2018 01:30:55.74 [Child 5460, Chrome_ChildThread] WARNING: pipe error: 1
 Mar 02, 2018 01:30:55.90 
 Mar 02, 2018 01:30:55.90 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 Mar 02, 2018 01:30:55.91 
+
+Mar 04, 2018 02:54:49.90 NEW SESSION
+Mar 04, 2018 02:54:49.90 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:54:55.07 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:55:01.96 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:55:16.30 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:55:21.96 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:55:29.56 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 02:55:39.80 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:29:45.14 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:29:45.23 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:29:45.23 [Child 10656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:29:45.54 [Child 10656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chr[Child 16764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:37:11.13 [Child 16764, Chrome_ChildThread] W[Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:37:11.13 [Child 14656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:37:11.14 [Child 14656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:37:12.34 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:37:13.91 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:37:19.83 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:49:51.85 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:49:51.85 [Child 22952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:49:51.85 [Child 22952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/sr[Child 23224, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:49:51.86 [Child 23224, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 03:50:09.39 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:50:10.85 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 04, 2018 03:51:14.44 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:07.86 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:08.22 [Child 1380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:08.22 [Child 1380, Chrome_ChildThread] WARNING: pipe err[Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:08.22 [Child 33300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:08.22 [Parent 30684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Child][MessageChannel] Error: (msgtype=0x2C00F0,name=PContent::Msg_UnstoreAndBroadcastBlobURLUnregistration) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 ###!!! [Parent][MessageChannel] Error: (msgtype=0x150090,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.22 
+Mar 04, 2018 04:04:08.24 ###!!! [Parent][MessageChannel] Error: (msgtype=0x150084,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.24 
+Mar 04, 2018 04:04:08.24 
+Mar 04, 2018 04:04:08.24 ###!!! [Parent][MessageChannel] Error: (msgtype=0x150090,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.24 
+Mar 04, 2018 04:04:08.24 
+Mar 04, 2018 04:04:08.24 ###!!! [Parent][MessageChannel] Error: (msgtype=0x150084,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+Mar 04, 2018 04:04:08.24 
+Mar 04, 2018 04:04:08.24 [Child 832, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 04, 2018 04:04:18.13 [Child 832, Chrome_ChildThread] WARNING: pipe error: 109: file 
