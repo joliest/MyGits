@@ -13,7 +13,9 @@ public class PostServices {
 		this.database = database;
 	}
 	
-	public void newPost() {
+	public void addPost() {
 		database.insert(post);
 	}
+	
+	
 }

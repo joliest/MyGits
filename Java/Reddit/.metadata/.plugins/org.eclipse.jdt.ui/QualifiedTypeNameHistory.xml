@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.miforum.components.Post"/>
-<fullyQualifiedTypeName name="com.miforum.database.PostDatabase"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.miforum.components.Account"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.miforum.components.Post"/>
+<fullyQualifiedTypeName name="com.miforum.services.PostServices"/>
+<fullyQualifiedTypeName name="com.miforum.database.PostDatabase"/>
 </qualifiedTypeNameHistroy>

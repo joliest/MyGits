@@ -21,7 +21,8 @@ public abstract class Database {
 	}
 	
 	public abstract void insert(Component component);
-	public abstract String select(Component component);
+	public abstract String select(Component component, int numberOfRows);
+	public abstract String selectOne(Component component);
 	public abstract void delete(Component component);
 	public abstract void update(Component oldComponent, Component newComponent);
 	
@@ -47,6 +48,32 @@ public abstract class Database {
 			}		
 			
 			}
+	}
+	
+	protected int generateId(String countScript) {
+		
+		int id = 0;
+		
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			stmt = connection.createStatement();			
+			rs = stmt.executeQuery(countScript);
+			if(rs.next()) {
+				id = (rs.getInt(1)) + 1;	
+			} 
+		}  catch (SQLException sEx) {
+			System.out.println("Database.generateId() : " + sEx);
+		} finally {
+			try {
+				if(stmt != null) stmt.close();
+				if(rs != null) rs.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return id;
 	}
 	
 }

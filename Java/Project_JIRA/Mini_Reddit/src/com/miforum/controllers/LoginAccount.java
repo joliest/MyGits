@@ -17,7 +17,6 @@ import com.miforum.services.AccountServices;
 public class LoginAccount extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
 		
 		String username = request.getParameter("login_username");
 		String password = request.getParameter("login_password");
@@ -25,17 +24,16 @@ public class LoginAccount extends HttpServlet{
 		Account account = new Account(username, password);
 		AccountDatabase database = new AccountDatabase();
 		AccountServices thisAccount = new AccountServices(account, database);
-		RequestDispatcher view;
 		
+		RequestDispatcher view;		
 		
 		if(thisAccount.isValid()) {
 			HttpSession session = request.getSession();
 			session.setAttribute("activeAccount", account);
-			view = request.getRequestDispatcher("home");
+			response.sendRedirect("home");
 		} else {
-			view = request.getRequestDispatcher("/login.jsp");
-		}
-
-		view.forward(request, response);
+			view = request.getRequestDispatcher("/login.jsp");		
+			view.forward(request, response);
+		}		
 	}
 }

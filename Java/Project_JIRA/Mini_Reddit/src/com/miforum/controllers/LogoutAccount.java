@@ -17,17 +17,10 @@ import com.miforum.services.AccountServices;
 public class LogoutAccount  extends HttpServlet{
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
 		
 		HttpSession session = request.getSession();
 		session.invalidate();
 		
-		RequestDispatcher view = request.getRequestDispatcher("/login");
-		view.include(request, response);
-		
-		out.print("You have log out");
-		
-		
-		
+		response.sendRedirect("/Mini_Reddit/login.jsp");	
 	}
 }

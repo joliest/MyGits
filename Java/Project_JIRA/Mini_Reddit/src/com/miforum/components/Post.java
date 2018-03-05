@@ -7,10 +7,10 @@ public class Post implements Component{
 	private int id;
 	private String title;
 	private String body;
-	private Account account;
+	private String account;
 	private Date date;
 	
-	public Post(String title, String body, Account account) {
+	public Post(String title, String body, String account) {
 		this.title = title;
 		this.body = body;
 		this.account = account;
@@ -40,11 +40,11 @@ public class Post implements Component{
 		this.body = body;
 	}
 
-	public Account getAccount() {
+	public String getAccount() {
 		return account;
 	}
 
-	public void setAccount(Account account) {
+	public void setAccount(String account) {
 		this.account = account;
 	}
 

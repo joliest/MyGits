@@ -6,14 +6,17 @@
  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
  <title>Welcome ${activeAccount.username}</title>
  
-  Profile | 
+  <a href="/Mini_Reddit/profile"> Profile </a> | 
   <a href="/Mini_Reddit/logout"> Log out </a>
  
   <br />
+  
+  Explore: 
+  
+  <br />
+  
  
- 	Post: <br />
-   <textarea rows="2" cols="40"></textarea> <br />
-   <input type="button" value="Post" />
+ 	
  </head>
  <body>
   

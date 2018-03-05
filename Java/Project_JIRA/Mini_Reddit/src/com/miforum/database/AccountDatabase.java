@@ -34,16 +34,6 @@ public class AccountDatabase extends Database{
 		}
 	}
 
-	@Override
-	public String select(Component component){
-		
-		account = (Account) component;
-		
-		String username = account.getUsername();
-		
-	
-		return null; 
-	}
 
 	@Override
 	public void delete(Component component){
@@ -92,6 +82,18 @@ public class AccountDatabase extends Database{
 		}
 		
 		return isValid;
+	}
+
+	@Override
+	public String select(Component component, int numberOfRows) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String selectOne(Component component) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

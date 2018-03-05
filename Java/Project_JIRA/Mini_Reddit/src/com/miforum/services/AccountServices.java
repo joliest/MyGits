@@ -22,7 +22,9 @@ public class AccountServices {
 	
 	public boolean isValid() {
 		boolean isValid = false;
-		isValid = database.isValid(account);
+		if(account.getPassword() != null) {
+			isValid = database.isValid(account);
+		}
 		return isValid;
 	}
 	
