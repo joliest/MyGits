@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
+<%@ taglib uri="miforum-custom-tags" prefix="d"  %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -41,7 +43,7 @@
  	 
  	 Posts by ${activeAccount.username} :<br />
  	 <table id="profile_post">
- 	 
+ 	 	<d:displayUserPosts currentUser="${activeAccount.username}" numberOfRows="5"/>
  	 </table>
  	
  	<a href="/Mini_Reddit/home"> Home </a>

@@ -8,12 +8,22 @@ public class Post implements Component{
 	private String title;
 	private String body;
 	private String account;
-	private Date date;
-	
+	private String date;
+	private int downVotes;
+	private int upVotes;	
+
 	public Post(String title, String body, String account) {
 		this.title = title;
 		this.body = body;
 		this.account = account;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
 	}
 
 	public int getId() {
@@ -46,6 +56,22 @@ public class Post implements Component{
 
 	public void setAccount(String account) {
 		this.account = account;
+	}
+	
+	public int getDownVotes() {
+		return downVotes;
+	}
+
+	public void setDownVotes(int downVotes) {
+		this.downVotes = downVotes;
+	}
+
+	public int getUpVotes() {
+		return upVotes;
+	}
+
+	public void setUpVotes(int upVotes) {
+		this.upVotes = upVotes;
 	}
 
 	@Override

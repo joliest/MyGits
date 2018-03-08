@@ -31,7 +31,7 @@ public abstract class Database {
 			PreparedStatement stmt = (PreparedStatement) statement;
 			stmt.execute();
 		} catch(SQLException ex) {
-			System.out.println(ex);
+			System.out.println("Database.preparedStatement() : " + ex);
 		} finally {
 			try {
 				if (statement != null) {
@@ -43,8 +43,8 @@ public abstract class Database {
 				if (connection != null) {
 					connection.close();
 				}
-			} catch (SQLException ex) {
-				System.out.println(ex);
+			} catch(SQLException ex) {
+				System.out.println("Database.preparedStatement() : " + ex);
 			}		
 			
 			}
