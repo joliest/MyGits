@@ -14,7 +14,7 @@ public class PostDatabase extends Database{
 	private static final String COUNT_TABLE_ROWS = "SELECT MAX(ID) FROM POST";
 	private static final String INSERT = "INSERT INTO POST VALUES(?,?,?,?,?,?,?)";
 	private static final String SELECT_POSTS_BY_USERNAME = "SELECT * FROM POST WHERE USERNAME=? ORDER BY ID DESC";
-	private static final String SELECT_POSTS_BY_RANGE = "SELECT * FROM (SELECT P.*, ROWNUM R FROM POST P) WHERE R BETWEEN ? AND ?";
+	private static final String SELECT_POSTS_BY_RANGE = "";
 
 	@Override
 	public void insert(Component component) {

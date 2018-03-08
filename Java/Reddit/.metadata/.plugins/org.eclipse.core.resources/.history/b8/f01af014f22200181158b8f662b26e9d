@@ -54,11 +54,11 @@ public class UserPostsTag extends SimpleTagSupport{
 				sw.append(post.getTitle());
 				sw.append("<br />");
 				sw.append("by: " + post.getAccount());
-				sw.append("</td> </tr>");
+				sw.append("<td> </tr>");
 				
 				sw.append("<tr> <td colspan=\"2\">");
 				sw.append(post.getBody());
-				sw.append("</td> </tr>");
+				sw.append("<td> </tr>");
 				
 				sw.append("<tr>");
 				sw.append("<td>" + upVotes + "</td>");

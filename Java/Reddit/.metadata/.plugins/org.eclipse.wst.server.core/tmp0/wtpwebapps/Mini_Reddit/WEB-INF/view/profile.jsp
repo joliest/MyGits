@@ -42,7 +42,7 @@
  	 <br />
  	 
  	 Posts by ${activeAccount.username} :<br />
- 	 <table id="profile_post">
+ 	 <table id="profile_post" border="1">
  	 	<d:displayUserPosts currentUser="${activeAccount.username}" numberOfRows="5"/>
  	 </table>
  	

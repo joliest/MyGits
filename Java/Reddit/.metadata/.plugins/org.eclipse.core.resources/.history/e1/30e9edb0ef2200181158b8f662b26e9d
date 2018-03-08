@@ -26,7 +26,7 @@
   
   <servlet>
   	<servlet-name>Profile</servlet-name>
-  	<servlet-class>com.miforum.controllers.ProfileController</servlet-class>
+  	<jsp-file>/WEB-INF/view/profile.jsp</jsp-file>
   </servlet> 
   
    <servlet>

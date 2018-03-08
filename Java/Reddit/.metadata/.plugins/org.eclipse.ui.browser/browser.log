@@ -195,3 +195,13 @@ Mar 07, 2018 23:56:25.68 [[ChChild 6196, Chrome_ChildThread] WARNING: pipe error
 Mar 07, 2018 23:56:25.68 [Child 6196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 Mar 08, 2018 24:03:26.52 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
 Mar 08, 2018 24:03:28.44 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+
+Mar 09, 2018 24:39:58.34 NEW SESSION
+Mar 09, 2018 24:39:58.34 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:39:58.54 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:39:59.25 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:39:59.78 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:40:02.86 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:43:33.17 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:45:01.26 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 24:58:36.54 ??????????p: T??????????p: T??????????p: T[Child 14004, Chrome_ChildThread] WARNING:Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
