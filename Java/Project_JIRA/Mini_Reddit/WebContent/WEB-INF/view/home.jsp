@@ -4,8 +4,11 @@
 <html>
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="js/post.js"></script>
  <title>Welcome ${activeAccount.username}</title>
- 
+ </head>
+ <body>
   <a href="/Mini_Reddit/profile"> Profile </a> | 
   <a href="/Mini_Reddit/logout"> Log out </a>
  
@@ -13,12 +16,12 @@
   
   Explore: 
   
+   <table id="home_recent_posts" border="1">
+   
+   </table>
+    <input type="button" value="&lt;" id="home_previous_post" />
+   <input type="button" value="&gt;" id="home_next_post" />
+  
   <br />
-  
- 
- 	
- </head>
- <body>
-  
  </body>
 </html>

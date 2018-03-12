@@ -205,3 +205,31 @@ Mar 09, 2018 24:40:02.86 Unable to read VR Path Registry from C:\Users\Joliver-P
 Mar 09, 2018 24:43:33.17 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
 Mar 09, 2018 24:45:01.26 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
 Mar 09, 2018 24:58:36.54 ??????????p: T??????????p: T??????????p: T[Child 14004, Chrome_ChildThread] WARNING:Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+
+Mar 09, 2018 21:31:35.60 NEW SESSION
+Mar 09, 2018 21:31:35.60 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 21:31:36.25 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 21:31:36.93 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 21:31:37.19 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 09, 2018 21:31:47.41 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+
+Mar 11, 2018 01:12:07.18 NEW SESSION
+Mar 11, 2018 01:12:07.18 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:12:07.45 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:12:12.57 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:12:14.18 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:12:21.78 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:16:07.59 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:17:14.12 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:18:16.66 [Parent 6752, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 01:18:16.68 [Child 6716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 01:19:52.71 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:38:48.59 [Child 10284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome[Child 12644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 01:38:48.59 /[Child 12644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chrcommon/ipc_channel_win.cc, line 346
+Mar 11, 2018 01:38:48.59 [Child 10284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 01:43:27.76 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 01:43:29.18 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 11, 2018 02:32:21.39 [Parent 6752, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 02:32:21.39 [Parent 6752, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 02:32:21.39 [Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 11, 2018 02:32:21.39 [Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: fi[Child 18376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

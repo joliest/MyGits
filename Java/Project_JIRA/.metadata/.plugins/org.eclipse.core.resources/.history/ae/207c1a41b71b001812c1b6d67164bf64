@@ -1,9 +1,0 @@
-$document.ready(function(){
-	$("#register_button").click(function(){
-		$.post("/Mini_Reddit/register",
-				{},
-				funtion(){
-					
-				})
-	})
-})

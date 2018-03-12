@@ -1,0 +1,20 @@
+package com.miforum.viewresolver;
+
+import com.miforum.components.Post;
+
+public class PostView {
+	
+	private Post post;
+	
+	public PostView(Post post) {
+		this.post = post;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	
+}

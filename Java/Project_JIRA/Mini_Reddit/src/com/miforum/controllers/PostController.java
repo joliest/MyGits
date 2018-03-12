@@ -2,6 +2,7 @@ package com.miforum.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,6 +15,7 @@ import com.miforum.components.Account;
 import com.miforum.components.Post;
 import com.miforum.database.PostDatabase;
 import com.miforum.services.PostServices;
+import com.miforum.viewresolver.PostView;
 
 public class PostController extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,7 +23,7 @@ public class PostController extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		
 		final String ADD_POST = "add_post";
-		final String GET_TOP10_POST= "get_top10_post";
+		final String DISPLAY_RECENT_POSTS= "display_recent_posts";
 		
 		HttpSession session = request.getSession();
 		Account account = (Account) session.getAttribute("activeAccount");
@@ -35,6 +37,7 @@ public class PostController extends HttpServlet{
 		Post post = null;
 		PostServices services = null;
 		PostDatabase database = null;
+		PostView view = null;
 		
 		if(functionality.equals(ADD_POST)) {
 			post = new Post(title, body, username);
@@ -42,7 +45,31 @@ public class PostController extends HttpServlet{
 			services = new PostServices(post, database);
 			
 			services.addPost();
-		} 
+		} else if(functionality.equals(DISPLAY_RECENT_POSTS)) {
+			
+			PostServices displayServices = (PostServices) session.getAttribute("displayServices");
+			
+			if(displayServices == null) {
+				services = new PostServices(database);
+				session.setAttribute("displayServices", services);
+			} else {
+				services = displayServices;
+				services.setDatabase(new PostDatabase());
+			}
+			
+			ArrayList<Post> posts = services.getNextSetOfPosts(2);
+			
+			String output = "";
+			
+			for(int i = 0; i < posts.size(); i++) {
+				post = posts.get(i);
+				view= new PostView(post);
+				output += view;
+			}
+			
+			out.println(output);
+			System.out.println(output);
+		}
 		
 		out.close();
 		

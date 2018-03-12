@@ -7,13 +7,14 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.miforum.services.PostServices"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
-<fullyQualifiedTypeName name="com.miforum.components.Post"/>
 <fullyQualifiedTypeName name="com.miforum.database.PostDatabase"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspContext"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
-<fullyQualifiedTypeName name="java.io.StringWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.JspFragment"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.miforum.components.Post"/>
+<fullyQualifiedTypeName name="java.io.StringWriter"/>
+<fullyQualifiedTypeName name="com.miforum.viewresolver.PostView"/>
 </qualifiedTypeNameHistroy>

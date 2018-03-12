@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	
+	displayRecentPosts();
+			   
 	$("#post_button").click(function(){
 		
 		var controller = "/Mini_Reddit/post";
@@ -14,4 +17,20 @@ $(document).ready(function(){
 			   },
 			   function(data, status){})
 	})
+	
+	$("#home_next_post").click(function(){
+		displayRecentPosts();
+	})
+	
+	function displayRecentPosts() {
+		$.post("/Mini_Reddit/post",
+				   { 
+						functionality : "display_recent_posts"
+				   },
+				   function(data, status){
+					   $("#home_recent_posts").html(data)
+				   })
+	}
 })
+
+

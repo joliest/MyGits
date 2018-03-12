@@ -1,0 +1,87 @@
+package com.miforum.services;
+
+import java.util.ArrayList;
+
+import com.miforum.components.Post;
+import com.miforum.database.PostDatabase;
+
+public class PostServices {
+	
+	private Post post;
+	private PostDatabase database;
+	
+	private int currentRowNumber = 1;
+	
+	public PostServices(Post post, PostDatabase database) {
+		this.post = post;
+		this.database = database;
+	}
+	
+	public PostServices(PostDatabase database) {
+		this.database = database;
+	}
+	
+	public void addPost() {
+		if(post != null) {
+			database.insert(post);
+		} else {
+			throw new NullPointerException("Post object is not found");
+		}
+	}
+	
+	
+	
+	public void setDatabase(PostDatabase database) {
+		this.database = database;
+	}
+
+	public int getCurrentRowNumber() {
+		return currentRowNumber;
+	}
+
+	public void setCurrentRowNumber(int currentRowNumber) {
+		this.currentRowNumber = currentRowNumber;
+	}
+
+	public ArrayList<Post> getPostsByUsername(String username, int numberOfRows) {
+		ArrayList<Post> list = database.getPostsByUsername(username, numberOfRows);
+		return list;
+	}
+	
+	public ArrayList<Post> getNextSetOfPosts(int numberOfRowsToSelect) {
+		int rowNumberToEnd = currentRowNumber + numberOfRowsToSelect;
+		ArrayList<Post> list = database.getRecentPosts(currentRowNumber, rowNumberToEnd);
+		
+		int listSize = list.size();
+		
+		if( < numberOfRowsToSelect) {
+			currentRowNumber = currentRowNumber + list.size() + 1;
+		} else {
+			currentRowNumber = rowNumberToEnd + 1;
+		}
+		
+		System.out.println("getNextSetOfPosts: Current row value is " + currentRowNumber);
+		return list;
+	}
+	/*
+	public ArrayList<Post> getPreviousSetOfPosts(int numberOfRowsToSelect) {
+		currentRowNumber = currentRowNumber - numberOfRowsToSelect;
+		if(currentRowNumber < 0) {
+			currentRowNumber = 0;
+		}
+		ArrayList<Post> list = this.getRecentPosts(currentRowNumber, numberOfRowsToSelect);
+		return list;
+	}
+	
+	
+	public ArrayList<Post> getRecentPosts(int rowNumberToStart, int numberOfRowsToSelect) {
+		int rowNumberToEnd = rowNumberToStart + numberOfRowsToSelect;
+		ArrayList<Post> list = database.getRecentPosts(rowNumberToStart, rowNumberToEnd);
+		currentRowNumber += rowNumberToEnd + 1;
+		System.out.println("getRecentPosts: Current row value is " + currentRowNumber);
+		return list;
+	}
+	*/
+	
+	
+}
