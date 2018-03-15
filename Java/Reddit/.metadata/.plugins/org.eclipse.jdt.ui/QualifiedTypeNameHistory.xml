@@ -3,14 +3,12 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-<fullyQualifiedTypeName name="com.miforum.components.Account"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspContext"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.JspFragment"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.StringWriter"/>
 <fullyQualifiedTypeName name="com.miforum.viewresolver.PostView"/>
 <fullyQualifiedTypeName name="com.miforum.services.PostServices"/>
@@ -20,4 +18,7 @@
 <fullyQualifiedTypeName name="com.miforum.components.Comment"/>
 <fullyQualifiedTypeName name="com.miforum.database.CommentDatabase"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.miforum.components.Account"/>
+<fullyQualifiedTypeName name="com.miforum.viewresolver.CommentView"/>
 </qualifiedTypeNameHistroy>
