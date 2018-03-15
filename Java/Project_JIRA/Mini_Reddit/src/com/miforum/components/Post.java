@@ -25,11 +25,7 @@ public class Post implements Component{
 	public void setDate(String date) {
 		this.date = date;
 	}
-
-	public int getId() {
-		return id;
-	}
-
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -75,9 +71,9 @@ public class Post implements Component{
 	}
 
 	@Override
-	public String getUniqueId() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getId() {
+		String thisId = Integer.toString(this.id);
+		return thisId;
 	}
 	
 	

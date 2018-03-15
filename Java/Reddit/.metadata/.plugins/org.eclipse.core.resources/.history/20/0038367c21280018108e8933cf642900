@@ -1,0 +1,43 @@
+$(document).ready(function(){
+	
+	$("#add_comment").click(function() {
+		
+		var controller = "/Mini_Reddit//comments";
+		
+		$.post()
+	});
+	
+	
+	/*
+	$(this).on("click", "a", function() {
+		
+		var postId = $(this).attr("postId");
+		var url = "/Mini_Reddit/comment/" + postId;
+		
+		$.ajax({
+			url : url,
+			type : "get",
+			data : {
+				postId : postId
+			},
+			success : function(response) {
+				
+			},
+			error  : function(xhr) {
+				
+			}
+		});
+	})
+	
+	
+	$(this).on("click", "a", function() {
+		
+		var postId = $(this).attr("postId");
+		var url = "/Mini_Reddit/comment/" + postId;
+		
+		$.get(url, { postId : "hello" }, function(data) {
+			
+		})
+	});
+	*/
+})

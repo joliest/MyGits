@@ -22,7 +22,7 @@ public class Account implements Component{
 	}
 
 	@Override
-	public String getUniqueId() {
+	public String getId() {
 		return username;
 	}
 

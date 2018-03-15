@@ -5,7 +5,9 @@
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="js/post.js"></script>
+ <script src="js/comment.js"></script>
  <title>Welcome ${activeAccount.username}</title>
  </head>
  <body>
@@ -19,6 +21,7 @@
    <table id="home_recent_posts" border="1">
    
    </table>
+   
     <input type="button" value="&lt;" id="home_previous_post" />
    <input type="button" value="&gt;" id="home_next_post" />
   

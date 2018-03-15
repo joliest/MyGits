@@ -1,0 +1,7 @@
+package com.miforum.components;
+
+public class Comment {
+	private Account forumOwner;
+	private Account commentOwner;
+	private String comment;
+}

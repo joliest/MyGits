@@ -11,10 +11,13 @@ public class PostDatabase extends Database{
 	
 	private Post post;
 	
-	private static final String COUNT_TABLE_ROWS = "SELECT MAX(ID) FROM POST";
-	private static final String INSERT = "INSERT INTO POST VALUES(?,?,?,?,?,?,?)";
-	private static final String SELECT_POSTS_BY_USERNAME = "SELECT * FROM POST WHERE USERNAME=? ORDER BY ID DESC";
-	private static final String SELECT_POSTS_BY_ROW_RANGE = "SELECT * FROM (SELECT P.*, ROWNUM R FROM POST P) WHERE R BETWEEN ? AND ?";
+	private final String MAX_TABLE_ROW = "SELECT MAX(ID) FROM POST";
+	private final String COUNT_TABLE_ROW = "SELECT COUNT(USERNAME) FROM POST";
+	private final String INSERT = "INSERT INTO POST VALUES(?,?,?,?,?,?,?)";
+	private final String SELECT_POSTS_BY_USERNAME = "SELECT * FROM POST WHERE USERNAME=? ORDER BY ID DESC";
+	//private static final String SELECT_POSTS_BY_ROW_RANGE = "SELECT * FROM (SELECT P.*, ROWNUM R FROM POST P) WHERE R BETWEEN ? AND ?";
+	private final String SELECT_POSTS_BY_ID_DESC = "SELECT * FROM POST ORDER BY ID DESC";
+	private final String SELECT_POSTS_BY_ID = "SELECT * FROM POST WHERE ID=";
 
 	@Override
 	public void insert(Component component) {
@@ -26,7 +29,7 @@ public class PostDatabase extends Database{
 		String username = post.getAccount();
 		String date = "date";
 		
-		int id = generateId(COUNT_TABLE_ROWS);
+		int id = generateId(MAX_TABLE_ROW);
 		
 		try {
 			preparedStatement = connection.prepareStatement(INSERT);
@@ -124,8 +127,122 @@ public class PostDatabase extends Database{
 		
 		return list;
 	}
+	
+	public ArrayList<Post> getRecentPosts(int rowNumberToStart, int rowNumberToEnd) {
+		ArrayList<Post> list = new ArrayList<Post>();
+		ResultSet resultSet;
+				
+		try {
+			statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+														ResultSet.CONCUR_UPDATABLE);
+			resultSet = statement.executeQuery(SELECT_POSTS_BY_ID_DESC);
+			resultSet.relative(rowNumberToStart);
+			
+			while(resultSet.getRow() <= rowNumberToEnd) {
+				
+				int id = resultSet.getInt(1);		
+				String title = resultSet.getString(2);
+				String body = resultSet.getString(3);
+				String user = resultSet.getString(4);
+				String date = resultSet.getString(5);
+				int upVotes = resultSet.getInt(6);
+				int downVotes = resultSet.getInt(7);
+				
+				Post post = new Post(title, body, user);
+				post.setId(id);
+				post.setDate(date);
+				post.setUpVotes(upVotes);
+				post.setDownVotes(downVotes);
+				
+				list.add(post);
+				
+				if(!resultSet.next()) {
+					break;
+				}
+				
+			}
+		} catch (SQLException sEx) {
+			System.out.println("PostDatabase.getRecentPosts() : " + sEx);
+		} finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+		
+		return list;
+	}
 
 
+	public Post getPostById(int id) {
+		
+		Post post = null;
+		
+		try {
+			preparedStatement = connection.prepareStatement(SELECT_POSTS_BY_ID + id);
+			resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				
+				int postId = resultSet.getInt(1);			
+				String title = resultSet.getString(2);
+				String body = resultSet.getString(3);
+				String user = resultSet.getString(4);
+				String date = resultSet.getString(5);
+				int upVotes = resultSet.getInt(6);
+				int downVotes = resultSet.getInt(7);
+				
+				post = new Post(title, body, user);
+				post.setId(postId);
+				post.setDate(date);
+				post.setUpVotes(upVotes);
+				post.setDownVotes(downVotes);
+				
+			}
+		} catch (SQLException sEx) {
+			System.out.println("PostDatabase.getPostById() : " + sEx);
+		}
+		
+		return post;
+		
+	}
+	
+	public int countRows() {
+		int count = 0;
+		
+		try {
+			
+			statement = connection.createStatement();
+			resultSet = statement.executeQuery(COUNT_TABLE_ROW);
+			resultSet.next();
+			
+			count = resultSet.getInt(1);
+			
+		} catch (SQLException sEx) {
+			System.out.println("PostDatabase.countRows() : " + sEx);
+		} finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+		
+		return count;
+		
+	}
+
+	/*
 	public ArrayList<Post> getRecentPosts(int rowNumberToBegin, int rowNumberToEnd) {
 		ArrayList<Post> list = new ArrayList<Post>();
 		ResultSet resultSet;
@@ -171,5 +288,6 @@ public class PostDatabase extends Database{
 		
 		return list;
 	}
-
+	*/
+	
 }

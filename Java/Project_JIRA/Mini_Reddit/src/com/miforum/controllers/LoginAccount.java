@@ -29,7 +29,9 @@ public class LoginAccount extends HttpServlet{
 		
 		if(thisAccount.isValid()) {
 			HttpSession session = request.getSession();
-			session.setAttribute("activeAccount", account);
+			synchronized (session) {
+				session.setAttribute("activeAccount", account);
+			}
 			response.sendRedirect("home");
 		} else {
 			view = request.getRequestDispatcher("/login.jsp");		

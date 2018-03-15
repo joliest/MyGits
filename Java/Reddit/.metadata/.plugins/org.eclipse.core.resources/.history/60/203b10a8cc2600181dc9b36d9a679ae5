@@ -1,0 +1,17 @@
+$(document).ready(function(){
+	
+	$(this).on("click", "#post_row", function() {
+		
+		var postId = $(this).attr("postId");
+		var url = "/Mini_Reddit/comment/" + postId;
+		
+		$.ajax({
+			url : url,
+			type : "get",
+			data : {
+				
+			}
+		});
+	})
+	
+})

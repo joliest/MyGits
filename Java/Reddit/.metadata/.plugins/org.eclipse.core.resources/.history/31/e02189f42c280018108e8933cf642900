@@ -1,0 +1,53 @@
+$(document).ready(function(){
+	
+	$("#add_comment").click(function() {
+		
+		var controller = "/Mini_Reddit/commentController";
+		var functionality = "add_comment";
+		var comment = $("#new_comment").val();
+		var username = $("td#commentator").val();
+		
+		$.post(controller,
+				{
+					functionality : functionality,
+					comment : comment,
+					username : username
+				}, function(data, status) {
+					
+				});
+	});
+	
+	
+	/*
+	$(this).on("click", "a", function() {
+		
+		var postId = $(this).attr("postId");
+		var url = "/Mini_Reddit/comment/" + postId;
+		
+		$.ajax({
+			url : url,
+			type : "get",
+			data : {
+				postId : postId
+			},
+			success : function(response) {
+				
+			},
+			error  : function(xhr) {
+				
+			}
+		});
+	})
+	
+	
+	$(this).on("click", "a", function() {
+		
+		var postId = $(this).attr("postId");
+		var url = "/Mini_Reddit/comment/" + postId;
+		
+		$.get(url, { postId : "hello" }, function(data) {
+			
+		})
+	});
+	*/
+})

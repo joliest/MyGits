@@ -1,0 +1,27 @@
+package com.miforum.components;
+
+public class Comment implements Component{
+	
+	private Post post;
+	private Account commentOwner;
+	private String comment;
+	private int id;
+	private String date;
+	private int downVotes;
+	private int upVotes;
+	
+	public Comment(Post post, Account commentOwner, String comment) {
+		this.post = post;
+		this.commentOwner = commentOwner;
+		this.comment = comment;
+	}
+	
+	@Override
+	public String getUniqueId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

@@ -22,10 +22,24 @@ $(document).ready(function(){
 		displayRecentPosts();
 	})
 	
+	$("#home_previous_post").click(function(){
+		displayPreviousPosts();
+	})
+	
 	function displayRecentPosts() {
 		$.post("/Mini_Reddit/post",
 				   { 
 						functionality : "display_recent_posts"
+				   },
+				   function(data, status){
+					   $("#home_recent_posts").html(data)
+				   })
+	}
+	
+	function displayPreviousPosts() {
+		$.post("/Mini_Reddit/post",
+				   { 
+						functionality : "display_previous_posts"
 				   },
 				   function(data, status){
 					   $("#home_recent_posts").html(data)

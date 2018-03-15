@@ -21,7 +21,7 @@
   
   <servlet>
   	<servlet-name>Home</servlet-name>
-  	<servlet-class>com.miforum.controllers.HomeController</servlet-class>
+  	<jsp-file>/WEB-INF/view/home.jsp</jsp-file>
   </servlet>  
   
   <servlet>
@@ -32,6 +32,15 @@
    <servlet>
   	<servlet-name>Post</servlet-name>
   	<servlet-class>com.miforum.controllers.PostController</servlet-class>
+   </servlet> 
+   
+   <servlet>
+  	<servlet-name>CommentGet</servlet-name>
+  	<servlet-class>com.miforum.controllers.CommentController</servlet-class>
+   </servlet> 
+   <servlet>
+  	<servlet-name>CommentPost</servlet-name>
+  	<servlet-class>com.miforum.controllers.CommentPostController</servlet-class>
    </servlet> 
   
   <servlet-mapping>
@@ -57,6 +66,16 @@
   <servlet-mapping>
   	<servlet-name>Profile</servlet-name>
   	<url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>CommentGet</servlet-name>
+  	<url-pattern>/comments</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>CommentPost</servlet-name>
+  	<url-pattern>/commentController</url-pattern>
   </servlet-mapping>
   
   <servlet-mapping>

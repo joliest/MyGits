@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	
+	$(this).on("click", "#post_row", function() {
+		$.ajax({
+			
+		});
+	})
+	
+})

@@ -1,0 +1,70 @@
+package com.miforum.components;
+
+public class Comment implements Component{
+	
+	private Account forumOwner;
+	private Account commentOwner;
+	private String comment;
+	private int id;
+	private String date;
+	private int downVotes;
+	private int upVotes;
+	
+	public Comment(Account forumOwner, Account commentOwner, String comment) {
+		this.forumOwner = forumOwner;
+		this.commentOwner = commentOwner;
+		this.comment = comment;
+	}
+	
+	public Account getForumOwner() {
+		return forumOwner;
+	}
+	public void setForumOwner(Account forumOwner) {
+		this.forumOwner = forumOwner;
+	}
+	public Account getCommentOwner() {
+		return commentOwner;
+	}
+	public void setCommentOwner(Account commentOwner) {
+		this.commentOwner = commentOwner;
+	}
+	public String getComment() {
+		return comment;
+	}
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	public int getDownVotes() {
+		return downVotes;
+	}
+	public void setDownVotes(int downVotes) {
+		this.downVotes = downVotes;
+	}
+	public int getUpVotes() {
+		return upVotes;
+	}
+	public void setUpVotes(int upVotes) {
+		this.upVotes = upVotes;
+	}
+
+	@Override
+	public String getUniqueId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

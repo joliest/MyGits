@@ -1,0 +1,12 @@
+package com.miforum.components;
+
+public class Comment implements Component{
+	
+	private Account forumOwner;
+	private Account commentOwner;
+	private String comment;
+	private int id;
+	private String date;
+	private int downVotes;
+	private int upVotes;
+}

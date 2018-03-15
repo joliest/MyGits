@@ -10,19 +10,49 @@ public class PostServices {
 	private Post post;
 	private PostDatabase database;
 	
-	private int currentRowNumber = 1;
-	
-	private boolean enableMethod = false;
+	private int currentPageNumber;
+	private int numberOfPages;
+	private int existingRows;
+	private int numberOfRowsNeeded;
+	private int rowNumberToBegin;
+	private int rowNumberToEnd;	
+
+	private void init() {
+		//Load defaults:
+		currentPageNumber = 0;
+		existingRows = new PostDatabase().countRows();
+		numberOfRowsNeeded = 3;
+		numberOfPages = existingRows / numberOfRowsNeeded;
+		rowNumberToBegin = 1;
+	}
 	
 	public PostServices(Post post, PostDatabase database) {
 		this.post = post;
 		this.database = database;
-	}
+		init();
+	}	
 	
 	public PostServices(PostDatabase database) {
 		this.database = database;
+		init();
 	}
 	
+	public int getCurrentPageNumber() {
+		return currentPageNumber;
+	}
+
+	public void setCurrentPageNumber(int currentPageNumber) {
+		this.currentPageNumber = currentPageNumber;
+	}
+	
+	public int getNumberOfRowsNeeded() {
+		return numberOfRowsNeeded;
+	}
+
+	public void setNumberOfRowsNeeded(int numberOfRowsNeeded) {
+		this.numberOfRowsNeeded = numberOfRowsNeeded;
+	}
+
 	public void addPost() {
 		if(post != null) {
 			database.insert(post);
@@ -31,18 +61,13 @@ public class PostServices {
 		}
 	}
 	
-	
+	public Post getPostById(int id) {
+		Post thePost = (Post) database.getPostById(id);
+		return thePost;
+	}
 	
 	public void setDatabase(PostDatabase database) {
 		this.database = database;
-	}
-
-	public int getCurrentRowNumber() {
-		return currentRowNumber;
-	}
-
-	public void setCurrentRowNumber(int currentRowNumber) {
-		this.currentRowNumber = currentRowNumber;
 	}
 
 	public ArrayList<Post> getPostsByUsername(String username, int numberOfRows) {
@@ -50,58 +75,37 @@ public class PostServices {
 		return list;
 	}
 	
-	public ArrayList<Post> getNextSetOfPosts(int numberOfRowsToSelect) {
-		int rowNumberToEnd = currentRowNumber + numberOfRowsToSelect;
-		ArrayList<Post> list = database.getRecentPosts(currentRowNumber, rowNumberToEnd);
+	public ArrayList<Post> getNextPost() {
+		ArrayList<Post> posts;
+		if(rowNumberToEnd > existingRows) {
+			currentPageNumber--;
+		}
+		currentPageNumber++;
+		rowNumberToEnd = numberOfRowsNeeded * currentPageNumber; 
+		rowNumberToBegin = (rowNumberToEnd - numberOfRowsNeeded) + 1;	
 		
-		int listSize = list.size();
+		posts = database.getRecentPosts(rowNumberToBegin, rowNumberToEnd); 
 		
-		if(listSize < numberOfRowsToSelect) {
-			currentRowNumber = currentRowNumber + listSize;		
-		} else {
-			currentRowNumber = rowNumberToEnd + 1;
+		return posts;
+	}
+	
+	public ArrayList<Post> getPreviousPost() {
+		ArrayList<Post> posts;
+		currentPageNumber = currentPageNumber - 1;
+		if(currentPageNumber <= 0) {
+			currentPageNumber = 1;
+		}
+		rowNumberToEnd = numberOfRowsNeeded * currentPageNumber;
+		rowNumberToBegin = (rowNumberToEnd - numberOfRowsNeeded) + 1; 
+		if(rowNumberToBegin <= 0) {
+			rowNumberToBegin = 1;
 		}
 		
-		System.out.println("getNextSetOfPosts: Current row value is " + currentRowNumber);
-		return list;
-	}
-	
-	public ArrayList<Post> getPreviousSetOfPosts(int numberOfRowsToSelect) {
-		int rowNumberToStart = currentRowNumber - numberOfRowsToSelect;
-		ArrayList<Post> list = database.getRecentPosts(rowNumberToStart, currentRowNumber);
+		posts = database.getRecentPosts(rowNumberToBegin, rowNumberToEnd);
 		
-		int listSize = list.size();
-		
-		if(listSize > numberOfRowsToSelect) {
-			currentRowNumber = currentRowNumber - listSize;		
-		} else {
-			currentRowNumber = rowNumberToStart - 1;
-		}
-		
-		System.out.println("getPreviousSetOfPosts: Current row value is " + currentRowNumber);
-		return list;
+		return posts;
 	}
-	
-	
-	/*
-	public ArrayList<Post> getPreviousSetOfPosts(int numberOfRowsToSelect) {
-		currentRowNumber = currentRowNumber - numberOfRowsToSelect;
-		if(currentRowNumber < 0) {
-			currentRowNumber = 0;
-		}
-		ArrayList<Post> list = this.getRecentPosts(currentRowNumber, numberOfRowsToSelect);
-		return list;
-	}
-	
-	
-	public ArrayList<Post> getRecentPosts(int rowNumberToStart, int numberOfRowsToSelect) {
-		int rowNumberToEnd = rowNumberToStart + numberOfRowsToSelect;
-		ArrayList<Post> list = database.getRecentPosts(rowNumberToStart, rowNumberToEnd);
-		currentRowNumber += rowNumberToEnd + 1;
-		System.out.println("getRecentPosts: Current row value is " + currentRowNumber);
-		return list;
-	}
-	*/
-	
 	
 }
+
+

@@ -1,0 +1,6 @@
+$(document).ready(function(){
+	$(this).on("dblclick", "#attributeGroupListRow", function() {
+		
+	
+	}
+})
