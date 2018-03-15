@@ -22,7 +22,11 @@ public class PostListView {
 			<td id="post_row" postId="12345">Title</td>
 		</tr>
 		<tr>
-			<td>&#11165; : upVotes | &#11167; : downVotes | 3 comments</td>
+			<td>
+				 &#11165; : <span id="comment_post_upVote_label" postId="1"> upVotes |
+			     &#11167; : downVotes | 
+			     3 comments
+			</td>
 		</tr>
 	 */
 
