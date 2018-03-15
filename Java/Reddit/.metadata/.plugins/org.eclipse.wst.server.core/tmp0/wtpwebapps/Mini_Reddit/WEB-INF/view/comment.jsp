@@ -15,8 +15,8 @@
   <table border="1">
 		<tr>
 			<td rowspan="2">
-				&#11165; <br>
-				&#11167;
+				<span id="comment_post_up_arrow" postId="${post.id}">&#11165;</span> <br>
+				<span id="comment_post_down_arrow" postId="${post.id}">&#11167;</span>
 			</td>
 			<td>${post.title} <br>
 				by: ${post.account} <br>
@@ -46,8 +46,7 @@
    
    </table>
 	
-	<input type="button" value="&lt;" id="home_previous_post" />
-   <input type="button" value="&gt;" id="home_next_post" />
+	<strong id="show_more_comments">Show more comments</strong>
    
  </body>
 </html>

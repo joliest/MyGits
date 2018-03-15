@@ -15,7 +15,7 @@ $(document).ready(function(){
 					comment : comment,
 					username : username
 				}, function(data, status) {
-					
+					showPostComments();
 				});
 	});
 	

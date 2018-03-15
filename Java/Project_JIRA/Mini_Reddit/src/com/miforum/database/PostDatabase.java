@@ -16,7 +16,7 @@ public class PostDatabase extends Database{
 	private final String INSERT = "INSERT INTO POST VALUES(?,?,?,?,?,?,?)";
 	private final String SELECT_POSTS_BY_USERNAME = "SELECT * FROM POST WHERE USERNAME=? ORDER BY ID DESC";
 	//private static final String SELECT_POSTS_BY_ROW_RANGE = "SELECT * FROM (SELECT P.*, ROWNUM R FROM POST P) WHERE R BETWEEN ? AND ?";
-	private final String SELECT_POSTS_BY_ID_DESC = "SELECT * FROM POST ORDER BY ID DESC";
+	private final String SELECT_POSTS_ORDER_BY_ID_DESC = "SELECT * FROM POST ORDER BY ID DESC";
 	private final String SELECT_POSTS_BY_ID = "SELECT * FROM POST WHERE ID=";
 
 	@Override
@@ -135,7 +135,7 @@ public class PostDatabase extends Database{
 		try {
 			statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
 														ResultSet.CONCUR_UPDATABLE);
-			resultSet = statement.executeQuery(SELECT_POSTS_BY_ID_DESC);
+			resultSet = statement.executeQuery(SELECT_POSTS_ORDER_BY_ID_DESC);
 			resultSet.relative(rowNumberToStart);
 			
 			while(resultSet.getRow() <= rowNumberToEnd) {

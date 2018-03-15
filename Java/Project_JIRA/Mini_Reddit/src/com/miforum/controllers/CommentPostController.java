@@ -2,6 +2,7 @@ package com.miforum.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import com.miforum.components.*;
 import com.miforum.database.*;
 import com.miforum.services.*;
+import com.miforum.viewresolver.CommentView;
 
 public class CommentPostController extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -50,7 +52,18 @@ public class CommentPostController extends HttpServlet{
 			Comment comment = new Comment(post, account);
 			CommentServices services = new CommentServices(comment, database);
 			
+			ArrayList<Comment> comments = services.getCommentsByPostId(2);
 			
+			String output = "";
+			
+			for(int i = 0; i < comments.size(); i++) {
+				Comment comm = comments.get(i);
+				CommentView view = new CommentView(comm);
+				
+				output += view + "\n";
+			}
+			
+			out.println(output);
 		}
 		
 		out.close();
