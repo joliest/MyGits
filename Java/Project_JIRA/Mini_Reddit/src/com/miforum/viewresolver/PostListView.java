@@ -23,7 +23,7 @@ public class PostListView {
 		</tr>
 		<tr>
 			<td>
-				 &#11165; : <span id="comment_post_upVote_label" postId="1"> upVotes |
+				 &#11165; : <span id="comment_upVote_label" postId="1"> upVotes |
 			     &#11167; : downVotes | 
 			     3 comments
 			</td>
@@ -52,8 +52,12 @@ public class PostListView {
 		sw.append("</a>");
 		sw.append("</td> </tr>");
 		sw.append("<tr> <td>");
-		sw.append("&#11165; : " + post.getUpVotes() + " | ");
-		sw.append(" &#11167; : " + post.getDownVotes());
+		sw.append("&#11165; : ");
+		sw.append("<span id=\"comment_upVote_label\" postId=\""  + post.getId() +  "\">");
+		sw.append(post.getUpVotes() + " </span> |");
+		sw.append("&#11167; : ");
+		sw.append("<span id=\"comment_downVote_label\" postId=\""  + post.getId() +  "\">");
+		sw.append(post.getDownVotes() + " </span> |");
 		sw.append("</td></tr>");
 		
 		//System.out.println(sw.toString());
