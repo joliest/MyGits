@@ -18,6 +18,9 @@ public class PostDatabase extends Database{
 	//private static final String SELECT_POSTS_BY_ROW_RANGE = "SELECT * FROM (SELECT P.*, ROWNUM R FROM POST P) WHERE R BETWEEN ? AND ?";
 	private final String SELECT_POSTS_ORDER_BY_ID_DESC = "SELECT * FROM POST ORDER BY ID DESC";
 	private final String SELECT_POSTS_BY_ID = "SELECT * FROM POST WHERE ID=";
+	private final String UPDATE_UPVOTE_BY_ID = "UPDATE POST SET UPVOTES=? WHERE ID=?";
+	private final String UPDATE_DOWNVOTE_BY_ID = "UPDATE POST SET DOWNVOTES=? WHERE ID=?";
+	//private final String SELECT_POST_UPVOTES = "SELECT UPVOTE FROM POST WHERE ID=?";
 
 	@Override
 	public void insert(Component component) {
@@ -206,6 +209,17 @@ public class PostDatabase extends Database{
 			}
 		} catch (SQLException sEx) {
 			System.out.println("PostDatabase.getPostById() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
 		}
 		
 		return post;
@@ -240,6 +254,65 @@ public class PostDatabase extends Database{
 		
 		return count;
 		
+	}
+
+
+	public void upVote(Post p) {
+		
+		String postId = p.getId(); 
+		
+		int id = Integer.parseInt(postId);
+		int upvotes = p.getUpVotes();
+		
+		try {
+			preparedStatement = connection.prepareStatement(UPDATE_UPVOTE_BY_ID);
+			preparedStatement.setInt(1,upvotes);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();			
+		} catch(SQLException sEx) {
+			System.out.println(sEx);
+			System.out.println("PostDatabase.upVote() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+	}
+	
+	public void downVote(Post p) {
+		
+		String postId = p.getId();
+		
+		int id = Integer.parseInt(postId);
+		int downvotes = p.getDownVotes();
+		
+		try {
+			preparedStatement = connection.prepareStatement(UPDATE_DOWNVOTE_BY_ID);
+			preparedStatement.setInt(1,downvotes);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();			
+		} catch(SQLException sEx) {
+			System.out.println(sEx);
+			System.out.println("PostDatabase.downVote() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
 	}
 
 	/*

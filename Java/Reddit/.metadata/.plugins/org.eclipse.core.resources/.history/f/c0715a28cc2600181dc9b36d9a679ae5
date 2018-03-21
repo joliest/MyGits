@@ -1,9 +1,0 @@
-$(document).ready(function(){
-	
-	$(this).on("click", "#post_row", function() {
-		$.ajax({
-			url : "/Mini_Reddit/comment"
-		});
-	})
-	
-})

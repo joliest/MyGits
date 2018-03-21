@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="js/post.js"></script>
  <script src="js/comment.js"></script>
 <title>Comments : ${post.title}</title>
@@ -15,12 +15,15 @@
   <table border="1">
 		<tr>
 			<td rowspan="2">
-				<span id="comment_post_up_arrow" postId="${post.id}">&#11165;</span> <br>
-				<span id="comment_post_down_arrow" postId="${post.id}">&#11167;</span>
+				<span id="post_up_arrow" postId="${post.id}">&#11165;</span> <br>
+				<span id="post_down_arrow" postId="${post.id}">&#11167;</span>
 			</td>
 			<td>${post.title} <br>
 				by: ${post.account} <br>
-				&#11165; ${post.upVotes} | &#11167; ${post.downVotes}
+				&#11165; <span id="post_upVote_label" postId="${post.id}">${post.upVotes}</span>
+				| 
+				&#11167; <span id="post_downVote_label" postId="${post.id}">${post.downVotes}</span>
+				
 			
 			</td>
 		</tr>

@@ -26,6 +26,8 @@ public class PostController extends HttpServlet{
 		final String ADD_POST = "add_post";
 		final String DISPLAY_RECENT_POSTS= "display_recent_posts";
 		final String DISPLAY_PREVIOUS_POSTS = "display_previous_posts";
+		final String UPVOTE = "post_up_arrow";
+		final String DOWNVOTE = "post_down_arrow";
 		
 		HttpSession session = request.getSession();
 		Account account = null;
@@ -34,7 +36,6 @@ public class PostController extends HttpServlet{
 		}
 		
 		String functionality = request.getParameter("functionality");
-		String id = request.getParameter("post_id");
 		
 		Post post = null;
 		PostServices services = null;
@@ -58,7 +59,7 @@ public class PostController extends HttpServlet{
 			synchronized(session) {
 				displayServices = (PostServices) session.getAttribute("displayServices");
 			}
-			
+			 
 			if(displayServices == null) {
 				services = new PostServices(database);
 				synchronized(session) {
@@ -80,9 +81,7 @@ public class PostController extends HttpServlet{
 			}
 			
 			out.println(output);
-		}
-		
-		if(functionality.equals(DISPLAY_PREVIOUS_POSTS)) {
+		} else if(functionality.equals(DISPLAY_PREVIOUS_POSTS)) {
 			PostServices displayServices;
 			
 			synchronized(session) {
@@ -98,7 +97,7 @@ public class PostController extends HttpServlet{
 				services = displayServices;
 				services.setDatabase(database);
 			}
-			
+			 
 			ArrayList<Post> posts = services.getPreviousPost();
 
 			String output = "";
@@ -110,6 +109,30 @@ public class PostController extends HttpServlet{
 			}
 			
 			out.println(output);
+		} else if(functionality.equals(UPVOTE)) {
+			int upvotes = 0;
+			
+			services = new PostServices();
+			String postId = request.getParameter("postId");
+			
+			int id = Integer.parseInt(postId);
+			
+			post = (Post) services.getPostById(id);
+			upvotes = services.upVote(post);
+			
+			out.print(upvotes);
+		} else if(functionality.equals(DOWNVOTE)) {
+			int downvotes = 0;
+			
+			services = new PostServices();
+			String postId = request.getParameter("postId");
+			
+			int id = Integer.parseInt(postId);
+			
+			post = (Post) services.getPostById(id);
+			downvotes = services.downVote(post);
+			
+			out.print(downvotes);
 		}
 		
 		out.close();

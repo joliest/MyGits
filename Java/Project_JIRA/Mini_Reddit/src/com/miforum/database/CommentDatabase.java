@@ -16,6 +16,8 @@ public class CommentDatabase extends Database{
 	private final String INSERT = "INSERT INTO COMMENTS VALUES(?,?,?,?,?,?,?)";
 	private final String SELECT_COMMENTS_BY_POST_ID = "SELECT * FROM COMMENTS WHERE POSTID=";
 	private final String SELECT_COMMENT_BY_ID = "SELECT * FROM COMMENTS WHERE ID="; 
+	private final String UPDATE_UPVOTE_BY_ID = "UPDATE COMMENTS SET UPVOTES=? WHERE ID=?";
+	private final String UPDATE_DOWNVOTE_BY_ID = "UPDATE COMMENTS SET DOWNVOTES=? WHERE ID=?";
 	
 	@Override
 	public void insert(Component component) {
@@ -170,5 +172,95 @@ public class CommentDatabase extends Database{
 		
 		return comment;
 		
+	}
+
+	public void upVote(Comment comment) {
+		//rate(UPDATE_UPVOTE_BY_ID, comment);
+		
+		String commentId = comment.getId(); 
+		
+		int id = Integer.parseInt(commentId);
+		int upvotes = comment.getUpVotes();
+		
+		try {
+			preparedStatement = connection.prepareStatement(UPDATE_UPVOTE_BY_ID);
+			preparedStatement.setInt(1,upvotes);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();			
+		} catch(SQLException sEx) {
+			System.out.println(sEx);
+			System.out.println("CommentDatabase.upVote() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+		
+	}
+
+	public void downVote(Comment comment) {
+		//rate(UPDATE_DOWNVOTE_BY_ID, comment);
+		
+		String commentId = comment.getId(); 
+		
+		int id = Integer.parseInt(commentId);
+		int downVotes = comment.getDownVotes();
+		
+		try {
+			preparedStatement = connection.prepareStatement(UPDATE_DOWNVOTE_BY_ID);
+			preparedStatement.setInt(1,downVotes);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();			
+		} catch(SQLException sEx) {
+			System.out.println(sEx);
+			System.out.println("CommentDatabase.downVote() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+		
+	}
+	
+	private void rate(String sqlQuery, Comment comment) {
+		String commentId = comment.getId(); 
+		
+		int id = Integer.parseInt(commentId);
+		int votes = comment.getDownVotes();
+		
+		try {
+			preparedStatement = connection.prepareStatement(sqlQuery);
+			preparedStatement.setInt(1,votes);
+			preparedStatement.setInt(2, id);
+			preparedStatement.executeQuery();			
+		} catch(SQLException sEx) {
+			System.out.println(sEx);
+			System.out.println("CommentDatabase.rate() : " + sEx);
+		}  finally {
+			try {
+				if (statement != null) {
+					statement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
 	}
 }

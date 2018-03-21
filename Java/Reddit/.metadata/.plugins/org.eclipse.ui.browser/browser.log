@@ -494,3 +494,42 @@ Mar 16, 2018 03:52:42.28 [Child 5788, Chrome_ChildThread] WARNING: pipe error: 1
 Mar 16, 2018 03:52:42.67 
 Mar 16, 2018 03:52:42.67 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 Mar 16, 2018 03:52:42.67 
+
+Mar 21, 2018 20:37:19.90 NEW SESSION
+Mar 21, 2018 20:37:19.90 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:37:20.08 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:37:20.50 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:37:20.60 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:37:22.31 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:38:04.31 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:42:22.71 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 20:43:25.18 [Parent 14504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 20:43:25.18 [Child 18348, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 21:59:24.34 [Child 18348, Chrome_ChildThread] WARNING: pipe errorUnable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 22:06:45.14 [Child 11520, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 22:06:45.21 [Parent 14504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 22:07:40.25 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 22:07:41.68 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 22:24:32.78 [Parent 14504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 22:24:32.79 [Child 9192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 22:24:32.87 [Child 9192, Chrome_ChildThread] WARNING: pipe e[Parent 14504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 21, 2018 22:25:07.82 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 22:25:09.41 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 21, 2018 22:27:04.45 [Child 10916, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buiUnable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+
+Mar 22, 2018 03:47:11.63 NEW SESSION
+Mar 22, 2018 03:47:11.63 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:47:11.78 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:47:12.74 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:47:12.88 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:47:14.76 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:47:23.83 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:49:27.19 Unable to read VR Path Registry from C:\Users\Joliver-PC\AppData\Local\openvr\openvrpaths.vrpath
+Mar 22, 2018 03:49:34.00 [Parent 8336, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 22, 2018 03:49:34.02 [Parent 8336, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Mar 22, 2018 03:49:34.03 
+Mar 22, 2018 03:49:34.03 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Mar 22, 2018 03:49:34.03 
+Mar 22, 2018 03:49:34.36 [Child 13840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/c
+Mar 22, 2018 03:49:34.36 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Mar 22, 2018 03:49:34.36 

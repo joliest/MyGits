@@ -1,0 +1,80 @@
+package com.miforum.viewresolver;
+
+import java.io.StringWriter;
+
+import com.miforum.components.Account;
+import com.miforum.components.Comment;
+
+public class CommentView {
+	
+	private Comment comment;
+	private String commentOwner;
+	
+	public CommentView(Comment comment) {
+		this.comment = comment;
+		Account account = comment.getAccount();
+		commentOwner = account.getUsername();
+	}
+	
+	/*
+	    <tr>
+			<td rowspan="3">
+				<span id="comment_up_arrow" commentId="123">"
+					&#11165; 
+				</span>
+				<br>
+				<span id="comment_down_arrow" commentId="123">"
+					&#11167;
+				</span>
+			</td>
+			<td>User</td>
+		</tr>
+		<tr>
+			<td>Comment</td>
+		</tr>
+		<tr>
+			<td>
+				<span id="comment_upVote_label" commentId="12">
+					0 
+				</span>
+			upvotes | 
+				<span id="comment_downVote_label" commentId="12">
+					0 
+				</span>
+			downvotes</td>
+		</tr>
+	 */
+	@Override
+	public String toString() {
+		StringWriter sw = new StringWriter();
+		
+		sw.append("<tr> <td rowspan=\"3\">");
+		sw.append("<span id=\"comment_up_arrow\" commentId=\"" + comment.getId() + "\">");
+		sw.append("&#11165;");
+		sw.append("</span>");
+		sw.append("<br>)");
+		sw.append("<span id=\"comment_down_arrow\" commentId=\"" + comment.getId() + "\">");
+		sw.append("&#11167;");
+		sw.append("</span>");
+		
+		
+		//sw.append("&#11165; <br> &#11167;");
+		sw.append("</td>");
+		sw.append("<td>");
+		sw.append(commentOwner);
+		sw.append("</td></tr>");
+		sw.append("<tr><td>");
+		sw.append(comment.getComment());
+		sw.append("</td></tr>");
+		sw.append("<tr><td>");
+		sw.append(comment.getUpVotes().toString());
+		sw.append(" upvotes | ")
+		sw.append(comment.getDownVotes() + " downvotes ");
+		sw.append("</td></tr>");
+
+		
+		return (sw.toString() + "\n");
+	}
+	
+	
+}

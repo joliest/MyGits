@@ -11,6 +11,23 @@ public class PostView {
 	public PostView(Post post) {
 		this.post = post;
 	}
+	
+	/*
+	 	<tr> <td colspan=\"2\"> TITLE <br />
+	 							by: user
+	 		</td>
+	 	</tr>
+	 	
+	 	<tr>
+	 	 	<td colspan=\"2\"> MY MESSAGE </td> 
+	 	</tr>
+	 	 	
+	 	<tr>
+	 		<td>upVotes</td>
+	 		<td>downVotes</td>
+	 	</tr>
+	 	
+	 */
 
 	@Override
 	public String toString() {

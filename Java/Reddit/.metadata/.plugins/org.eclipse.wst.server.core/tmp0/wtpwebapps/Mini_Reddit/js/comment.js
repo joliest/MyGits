@@ -32,4 +32,34 @@ $(document).ready(function(){
 					$("#post_recent_comments").html(data);
 				});
 	}
+	
+	//upvoting
+	$(this).on("click", "#comment_up_arrow", function() {
+		var controller = "/Mini_Reddit/commentController";
+		var commentId = $(this).attr("commentId");
+		$.post(controller,
+				   { 
+						functionality : "comment_up_arrow",
+						commentId : commentId
+				   },
+				   function(data, status){
+					   //updates upvote label
+					   $("#comment_upVote_label[commentId='" + commentId +"']").html(data);
+				   })
+	})
+	
+	//downvoting
+	$(this).on("click", "#comment_down_arrow", function() {
+		var controller = "/Mini_Reddit/commentController";
+		var commentId = $(this).attr("commentId");
+		$.post(controller,
+				   { 
+						functionality : "comment_down_arrow",
+						commentId : commentId
+				   },
+				   function(data, status){
+					 //updates downvote label
+					   $("#comment_downVote_label[commentId='" + commentId +"']").html(data);
+				   })
+	})
 })

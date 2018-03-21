@@ -25,11 +25,20 @@ public class CommentServices implements Service{
 	public CommentServices(Comment comment, CommentDatabase database) {
 		this.comment = comment;
 		this.database = database;
+		
+		String id = comment.getPost().getId();		
+		postId = Integer.parseInt(id);
+		
 		init();
 	}
 	
 	public CommentServices(CommentDatabase database) {
 		this.database = database;
+		init();
+	}
+	
+	public CommentServices() {
+		this.database = new CommentDatabase();
 		init();
 	}
 	
@@ -41,8 +50,6 @@ public class CommentServices implements Service{
 		numberOfPages = existingRows / numberOfRowsNeeded;
 		rowNumberToBegin = 1;
 		
-		String id = comment.getPost().getId();		
-		postId = Integer.parseInt(id);
 	}
 	
 	@Override
@@ -75,7 +82,9 @@ public class CommentServices implements Service{
 	public ArrayList<Comment> getCommentsByPostId(int numberOfRows) {
 		
 		ArrayList<Comment> comments;
-		
+		if(rowNumberToEnd > existingRows) {
+			currentPageNumber--;
+		}
 		currentPageNumber++;
 		rowNumberToEnd = numberOfRowsNeeded * currentPageNumber; 
 		rowNumberToBegin = (rowNumberToEnd - numberOfRowsNeeded) + 1;	
@@ -89,6 +98,37 @@ public class CommentServices implements Service{
 		CommentDatabase db = new CommentDatabase();
 		Comment theComment = (Comment) db.getCommentById(id);
 		return theComment;
+	}
+
+	public int upVote(Comment comment) {
+
+		CommentDatabase database = createConnection();
+		
+		int currentUpvotes = comment.getUpVotes();
+		int upVoted = currentUpvotes + 1;
+		
+		comment.setUpVotes(upVoted);
+		
+		database.upVote(comment);
+		
+		return upVoted;
+	}
+
+	public CommentDatabase createConnection() {
+		return new CommentDatabase();
+	}
+
+	public int downVote(Comment comment) {
+		CommentDatabase database = createConnection();
+		
+		int currentUpvotes = comment.getUpVotes();
+		int upVoted = currentUpvotes + 1;
+		
+		comment.setUpVotes(upVoted);
+		
+		database.downVote(comment);
+		
+		return upVoted;
 	}
 
 }

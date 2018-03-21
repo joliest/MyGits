@@ -10,7 +10,7 @@
  
  <title>Welcome ${activeAccount.username}</title>
  </head>
- <body>
+ <body onload="displayRecentPosts">
   <a href="/Mini_Reddit/profile"> Profile </a> | 
   <a href="/Mini_Reddit/logout"> Log out </a>
  
@@ -18,11 +18,8 @@
   
   Explore: 
   
-   <table id="home_recent_posts" border="1">
-   
-   </table>
-   
-    <input type="button" value="&lt;" id="home_previous_post" />
+   <table id="home_recent_posts" border="1"></table>
+   <input type="button" value="&lt;" id="home_previous_post" />
    <input type="button" value="&gt;" id="home_next_post" />
   
   <br />

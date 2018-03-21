@@ -24,6 +24,8 @@ public class CommentPostController extends HttpServlet{
 		final String ADD_COMMENT = "add_comment";
 		final String COMMENT = "comment";
 		final String SHOW_POST_COMMENTS = "show_post_comments";
+		final String UPVOTE = "comment_up_arrow";
+		final String DOWNVOTE = "comment_down_arrow";
 		//final String USERNAME = "username";
 		
 		String functionality = request.getParameter("functionality");
@@ -45,9 +47,7 @@ public class CommentPostController extends HttpServlet{
 			CommentDatabase database = new CommentDatabase();
 			CommentServices services = new CommentServices(newComment, database);
 			services.add();
-		} 
-		
-		if(functionality.equals(SHOW_POST_COMMENTS)) {
+		} else if(functionality.equals(SHOW_POST_COMMENTS)) {
 			CommentDatabase database = new CommentDatabase();
 			Comment comment = new Comment(post, account);
 			CommentServices services = new CommentServices(comment, database);
@@ -64,6 +64,31 @@ public class CommentPostController extends HttpServlet{
 			}
 			
 			out.println(output);
+		} else if(functionality.equals(UPVOTE)) {
+			int upvotes = 0;
+			
+			System.out.print("hi");
+			CommentServices services = new CommentServices();
+			String commentId = request.getParameter("commentId");
+			
+			int id = Integer.parseInt(commentId);
+			
+			Comment comment = (Comment) services.getCommentById(id);
+			upvotes = services.upVote(comment);
+			
+			out.print(upvotes);
+		} else if(functionality.equals(DOWNVOTE)) {
+			int downvotes = 0;
+			
+			CommentServices services = new CommentServices();
+			String commentId = request.getParameter("commentId");
+			
+			int id = Integer.parseInt(commentId);
+			
+			Comment comment = (Comment) services.getCommentById(id);
+			downvotes = services.downVote(comment);
+			
+			out.print(downvotes);
 		}
 		
 		out.close();

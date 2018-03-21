@@ -37,6 +37,11 @@ public class PostServices {
 		init();
 	}
 	
+	public PostServices() {
+		this.database = createConnection();
+		init();
+	}
+	
 	public int getCurrentPageNumber() {
 		return currentPageNumber;
 	}
@@ -62,6 +67,9 @@ public class PostServices {
 	}
 	
 	public Post getPostById(int id) {
+		
+		PostDatabase database = createConnection();
+		
 		Post thePost = (Post) database.getPostById(id);
 		return thePost;
 	}
@@ -105,7 +113,37 @@ public class PostServices {
 		
 		return posts;
 	}
+
+	public int upVote(Post p) {
+		
+		PostDatabase database = createConnection();
+		
+		int currentUpvotes = p.getUpVotes();
+		int upVoted = currentUpvotes + 1;
+		
+		p.setUpVotes(upVoted);
+		
+		database.upVote(p);
+		
+		return upVoted;
+	}
 	
+	public PostDatabase createConnection() {
+		return new PostDatabase();
+	}
+	
+	public int downVote(Post p) {
+		PostDatabase database = createConnection();
+		
+		int currentDownvotes = p.getDownVotes();
+		int downVoted = currentDownvotes + 1;
+		
+		p.setDownVotes(downVoted);
+		
+		database.downVote(p);
+		
+		return downVoted;
+	}
 }
 
 
