@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.miforum.components.Account;
 import com.miforum.database.AccountDatabase;
@@ -19,8 +20,8 @@ public class AccountRegistrator extends HttpServlet{
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String username = request.getParameter("register_username");
-		String password = request.getParameter("register_password");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
 		
 		Account account = new Account(username, password);
 		AccountDatabase database = new AccountDatabase();
@@ -28,9 +29,13 @@ public class AccountRegistrator extends HttpServlet{
 		
 		services.registerAccount();
 		
-		/*
-		RequestDispatcher view = request.getRequestDispatcher("/profile.jsp");
+		HttpSession session = request.getSession();
+		synchronized (session) {
+			session.setAttribute("activeAccount", account);
+		}
+		
+
+		RequestDispatcher view = request.getRequestDispatcher("/profile.jsp");		
 		view.forward(request, response);
-		*/
 	}
 }

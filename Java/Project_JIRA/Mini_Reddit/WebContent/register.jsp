@@ -9,10 +9,18 @@
   <title>Register</title>
  </head>
  <body>
- <form method="POST" action="/Mini_Reddit/register">
-  	Username: <input type="text" id="register_username" name="register_username" /> <br />
-  	Password: <input type="password" id="register_password" name="register_password" /> <br />
-  	<input type="Submit" value="Register" />
-  </form>
+ 
+ Register account:
+ 
+ <br /> <br />
+ 
+ Welcome to Miforum
+ 
+ <br />
+ 
+  	Username: 			<input type="text" id="register_username" name="register_username" /> <br />
+  	Password: 			<input type="password" id="register_password" name="register_password" /> <br />
+  	Confirm Password:   <input type="password" id="register_confirm_password" name="register_confirm_password" /> <br />
+  	<input type="button" value="Register" id="register_button" />
  </body>
 </html>

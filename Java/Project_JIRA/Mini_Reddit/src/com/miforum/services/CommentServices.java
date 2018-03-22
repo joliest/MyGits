@@ -121,14 +121,13 @@ public class CommentServices implements Service{
 	public int downVote(Comment comment) {
 		CommentDatabase database = createConnection();
 		
-		int currentUpvotes = comment.getUpVotes();
-		int upVoted = currentUpvotes + 1;
+		int currentDownvotes = comment.getDownVotes();
+		int downVoted = currentDownvotes + 1;
 		
-		comment.setUpVotes(upVoted);
-		
+		comment.setDownVotes(downVoted);
 		database.downVote(comment);
 		
-		return upVoted;
+		return downVoted;
 	}
 
 }

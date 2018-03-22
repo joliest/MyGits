@@ -10,9 +10,13 @@
  </head>
  <body>
  <form method="POST" action="/Mini_Reddit/login">
+ 
+ 
   	Username: <input type="text" id="login_username" name="login_username"/> <br />
   	Password: <input type="password" id="login_password" name="login_password" /> <br />
-  	<input type="submit" value="Sign in" />
+  	<input type="submit" value="Sign in" /> |
+  	
+  	<a href="/Mini_Reddit/register.jsp">register</a>
   </form>
  </body>
 </html>
