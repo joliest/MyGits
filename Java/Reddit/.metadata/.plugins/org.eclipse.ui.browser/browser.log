@@ -614,3 +614,11 @@ Mar 23, 2018 02:52:33.95 [Child 6108[Child 9736, Chrome_ChildThread] WARNING: pi
 Mar 23, 2018 02:52:34.20 [Child 9736
 Mar 23, 2018 02:52:34.20 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 Mar 23, 2018 02:52:34.20 
+
+Mar 24, 2018 24:36:33.31 NEW SESSION
+Mar 24, 2018 24:36:33.31 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 24, 2018 24:36:33.92 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 24, 2018 24:36:35.03 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 24, 2018 24:36:35.03 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 24, 2018 24:36:36.36 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
+Mar 24, 2018 24:42:48.04 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath
