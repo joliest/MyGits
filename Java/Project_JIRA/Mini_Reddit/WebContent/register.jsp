@@ -17,10 +17,11 @@
  Welcome to Miforum
  
  <br />
- 
+ <form method="POST" action="/Mini_Reddit/register"">
   	Username: 			<input type="text" id="register_username" name="register_username" /> <br />
   	Password: 			<input type="password" id="register_password" name="register_password" /> <br />
   	Confirm Password:   <input type="password" id="register_confirm_password" name="register_confirm_password" /> <br />
-  	<input type="button" value="Register" id="register_button" />
+  	<input type="submit" value="Register" id="register_button" />
+  </form>
  </body>
 </html>

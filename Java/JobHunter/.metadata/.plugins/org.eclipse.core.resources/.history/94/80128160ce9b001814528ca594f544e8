@@ -1,0 +1,25 @@
+package com.jobhunter.controllers;
+
+import java.io.*;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+import com.jobhunter.components.Account;
+import com.jobhunter.database.AccountDatabase;
+
+public class ProfileController extends HttpServlet{
+	/*
+	 * When a controller detects that there's no existing profile
+	 * in a logged account, it will ask user to create one. 
+	 * It will redirect to existing profile if otherwise.
+	 * 
+	 */
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		
+	}
+}

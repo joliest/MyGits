@@ -1172,3 +1172,10 @@ Feb 27, 2018 20:34:11.76 ", source: https://mail.google.com/mail/u/0/ (0)
 Feb 27, 2018 20:34:11.76 [8340:17980:0227/203411.761:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
 Feb 27, 2018 20:34:11.76 ", source: https://mail.google.com/mail/u/0/ (0)
 Feb 27, 2018 20:39:26.55 [8340:17980:0227/203926.556:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 36.941 s
+
+Aug 08, 2018 19:36:44.86 NEW SESSION
+Aug 08, 2018 19:36:44.86 [9040:11580:0808/193644.866:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\chrome_renderer.service.exe
+Aug 08, 2018 19:36:45.20 [9040:11580:0808/193645.030:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\chrome_renderer.service.exe
+Aug 08, 2018 19:36:47.38 [9040:11580:0808/193647.389:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\content_gpu.service.exe
+Aug 08, 2018 19:36:57.33 [9040:9536:0808/193657.330:ERROR:pref_model_associator.cc(93)] Failed to deserialize preference value: Line: 1, column: 336, Syntax error.
+Aug 08, 2018 19:37:17.01 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath

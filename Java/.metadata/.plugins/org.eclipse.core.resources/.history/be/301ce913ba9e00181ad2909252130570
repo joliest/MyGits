@@ -1,0 +1,13 @@
+package Name;
+
+import java.util.Comparator;
+
+public class FirstNameSorter implements Comparator {
+
+	@Override
+	public int compare(Name a, Name b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

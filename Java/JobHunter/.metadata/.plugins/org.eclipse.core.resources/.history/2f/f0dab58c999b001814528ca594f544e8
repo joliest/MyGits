@@ -1,0 +1,32 @@
+package com.jobhunter.database;
+
+import java.sql.SQLException;
+
+import com.jobhunter.components.Account;
+
+public class AccountDatabase extends Database{
+	
+	static final String INSERT = "INSERT INTO ACCOUNT_JH VALUES(?,?)";
+	
+	public void add(Account account) {
+		String email = account.getEmailAddress();
+		String password = account.getPassword();
+		
+		try {
+			preparedStatement = connection.prepareStatement(INSERT);
+			preparedStatement.setString(1, email);
+			preparedStatement.setString(2, password);
+			preparedStatement.execute();
+		} catch (SQLException sEx) {
+			System.out.println("AccountDatabase.add(Account) : " + sEx);
+		} finally {
+			try {
+				preparedStatement.close();
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

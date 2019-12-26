@@ -34,7 +34,7 @@ public class LoginAccount extends HttpServlet{
 			}
 			response.sendRedirect("home");
 		} else {
-			view = request.getRequestDispatcher("/login.jsp");		
+			view = request.getRequestDispatcher("/login.jsp");
 			view.forward(request, response);
 		}		
 	}

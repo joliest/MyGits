@@ -1,0 +1,42 @@
+package Test;
+import java.util.*;
+
+import Name.FirstNameSorter;
+import Name.Name;
+public class Test {
+	public static void main(String[] args) {
+		//TreeSet<String> samples = new TreeSet<String>();
+		ArrayList<Name> names = new ArrayList<Name>();
+		
+		Name arlene = new Name("Arlene", "Caguin");
+		Name khaye = new Name("Khaye", "Gorres");
+		Name noel = new Name("Noel", "Bondoc");
+		Name joliver = new Name("Joliver", "Estampador");
+		Name lheng = new Name("Juliana", "Estampador");
+		Name rommar = new Name("Rommar", "Roxas");
+		Name aera = new Name("Aera", "Bcash");
+		
+		names.add(arlene);
+		names.add(khaye);
+		names.add(noel);
+		names.add(joliver);
+		names.add(lheng);
+		names.add(rommar);
+		names.add(aera);
+		
+		System.out.println("Sorting using Comparable");
+		Collections.sort(names);
+		
+		System.out.println("Sorting using FirstNameSorter");
+		FirstNameSorter sortedByFirstName = new FirstNameSorter();
+		
+		
+		/*
+		Iterator treeSet = samples.iterator();
+		
+		for(int i = 0; i < samples.size(); i++) {
+			System.out.println((i+1) + ". " + treeSet.next());
+		}
+		*/
+	}
+}

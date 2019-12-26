@@ -1,28 +1,23 @@
 $(document).ready(function(){
-	$("#register_button").click(function(){
+	$("form").submit(function(){
 		
-		var controller = "/Mini_Reddit/register";
 		var username = $("#register_username").val();
 		var password = $("#register_password").val();
 		var confirmPassword = $("#register_confirm_password").val();
 		
 		if(passwordMatched(password, confirmPassword)) {
-
-				$.post(controller,
-						{ username : username, password : password },
-						function(data, status){
-		
-						}) 
+			return true;
 		} else {
 			alert("Password didn't match");
+			return false;
 		}
-	})
-	
-	function passwordMatched(password, confirm) {
+	})	
+})
+
+function passwordMatched(password, confirm) {
 		if(password == confirm) {
 			return true;
 		} else {
 			return false;
 		}
 	}
-})

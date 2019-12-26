@@ -1,0 +1,6 @@
+package com.jobhunter.components;
+
+public class Account {
+	private String emailAddress;
+	private String password;
+}

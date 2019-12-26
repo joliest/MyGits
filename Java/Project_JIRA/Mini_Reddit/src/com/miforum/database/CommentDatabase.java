@@ -16,8 +16,13 @@ public class CommentDatabase extends Database{
 	private final String INSERT = "INSERT INTO COMMENTS VALUES(?,?,?,?,?,?,?)";
 	private final String SELECT_COMMENTS_BY_POST_ID = "SELECT * FROM COMMENTS WHERE POSTID=";
 	private final String SELECT_COMMENT_BY_ID = "SELECT * FROM COMMENTS WHERE ID="; 
-	private final String UPDATE_UPVOTE_BY_ID = "UPDATE COMMENTS SET UPVOTES=? WHERE ID=?";
-	private final String UPDATE_DOWNVOTE_BY_ID = "UPDATE COMMENTS SET DOWNVOTES=? WHERE ID=?";
+	private final String UPDATE_UPVOTE_BY_COMMENTID = "UPDATE COMMENTS SET UPVOTES=? WHERE ID=?";
+	private final String UPDATE_DOWNVOTE_BY_COMMENTID = "UPDATE COMMENTS SET DOWNVOTES=? WHERE ID=?";
+			
+	private final String SELECT_COMMENTVOTES_BY_VOTER_AND_COMMENTID = "SELECT * FROM COMMENTVOTES WHERE VOTER=? AND COMMENTID=?";
+	private final String UPDATE_COMMENTVOTES_BY_COMMENTID_VOTER = "UPDATE COMMENTVOTES SET VOTE=? WHERE VOTER=? AND COMMENTID=?";
+	private final String INSERT_COMMENTVOTES = "INSERT INTO COMMENTVOTES VALUES(?,?,?,?)";
+	private final String COUNT_COMMENTVOTES = "SELECT COUNT(VOTE) FROM COMMENTVOTES WHERE COMMENTID=? AND VOTE=?";
 	
 	@Override
 	public void insert(Component component) {
@@ -173,87 +178,25 @@ public class CommentDatabase extends Database{
 		return comment;
 		
 	}
-
-	public void upVote(Comment comment) {
-		//rate(UPDATE_UPVOTE_BY_ID, comment);
-		
-		String commentId = comment.getId(); 
-		
-		int id = Integer.parseInt(commentId);
-		int upvotes = comment.getUpVotes();
-		
-		try {
-			preparedStatement = connection.prepareStatement(UPDATE_UPVOTE_BY_ID);
-			preparedStatement.setInt(1,upvotes);
-			preparedStatement.setInt(2, id);
-			preparedStatement.executeQuery();			
-		} catch(SQLException sEx) {
-			System.out.println(sEx);
-			System.out.println("CommentDatabase.upVote() : " + sEx);
-		}  finally {
-			try {
-				if (statement != null) {
-					statement.close();
-				}
-				if (connection != null) {
-					connection.close();
-				}
-			} catch (SQLException ex) {
-				System.out.println(ex);
-			}			
-		}
-		
-	}
-
-	public void downVote(Comment comment) {
-		//rate(UPDATE_DOWNVOTE_BY_ID, comment);
-		
-		String commentId = comment.getId(); 
-		
-		int id = Integer.parseInt(commentId);
-		int downVotes = comment.getDownVotes();
-		
-		try {
-			preparedStatement = connection.prepareStatement(UPDATE_DOWNVOTE_BY_ID);
-			preparedStatement.setInt(1,downVotes);
-			preparedStatement.setInt(2, id);
-			preparedStatement.executeQuery();			
-		} catch(SQLException sEx) {
-			System.out.println(sEx);
-			System.out.println("CommentDatabase.downVote() : " + sEx);
-		}  finally {
-			try {
-				if (statement != null) {
-					statement.close();
-				}
-				if (connection != null) {
-					connection.close();
-				}
-			} catch (SQLException ex) {
-				System.out.println(ex);
-			}			
-		}
-		
-	}
 	
-	private void rate(String sqlQuery, Comment comment) {
-		String commentId = comment.getId(); 
-		
-		int id = Integer.parseInt(commentId);
-		int votes = comment.getDownVotes();
-		
+	public boolean isUserVoteExists(int commentId, String voter) {
+		boolean isExisting = false;		
 		try {
-			preparedStatement = connection.prepareStatement(sqlQuery);
-			preparedStatement.setInt(1,votes);
-			preparedStatement.setInt(2, id);
-			preparedStatement.executeQuery();			
+			preparedStatement = connection.prepareStatement(SELECT_COMMENTVOTES_BY_VOTER_AND_COMMENTID);
+			preparedStatement.setString(1, voter);
+			preparedStatement.setInt(2, commentId);
+			resultSet = preparedStatement.executeQuery();		
+			
+			if(resultSet.next()) {
+				return true;
+			}
 		} catch(SQLException sEx) {
 			System.out.println(sEx);
-			System.out.println("CommentDatabase.rate() : " + sEx);
+			System.out.println("CommentDatabase.isUserVoteExists() : " + sEx);
 		}  finally {
 			try {
-				if (statement != null) {
-					statement.close();
+				if (preparedStatement != null) {
+					preparedStatement.close();
 				}
 				if (connection != null) {
 					connection.close();
@@ -262,5 +205,116 @@ public class CommentDatabase extends Database{
 				System.out.println(ex);
 			}			
 		}
+		
+		return isExisting;
 	}
+
+	public void updateVote(int commentId, String upVoter, int voteValue) {
+		try {
+			//UPDATE COMMENTVOTES SET VOTE=? WHERE VOTER=? AND COMMENTID=?
+			preparedStatement = connection.prepareStatement(UPDATE_COMMENTVOTES_BY_COMMENTID_VOTER);
+			preparedStatement.setInt(1, voteValue);
+			preparedStatement.setString(2, upVoter);
+			preparedStatement.setInt(3, commentId);
+			preparedStatement.executeUpdate();	
+		} catch(SQLException sEx) {
+			System.out.println("CommentDatabase.updateVote() : " + sEx);
+		}  finally {
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}			
+		}
+		
+	}
+
+	public void addVote(int commentId, String upVoter, int voteValue, String date) {
+		try {
+			//INSERT INTO COMMENTVOTES VALUES(?,?,?,?)
+			preparedStatement = connection.prepareStatement(INSERT_COMMENTVOTES);
+			preparedStatement.setString(1, upVoter);
+			preparedStatement.setInt(2, commentId);
+			preparedStatement.setInt(3, voteValue);
+			preparedStatement.setString(4, date);
+			preparedStatement.executeQuery();
+		} catch(SQLException sEx) {
+			System.out.println("CommentDatabase.addVote() : " + sEx);
+		}  finally {
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}	
+		}
+	}
+
+	public void updateCommentVotes(int commentId, int voteValue, int voteCount) {
+		try {
+			//"UPDATE COMMENT SET DOWNVOTE=? WHERE ID=?";
+			if(voteValue == 1) {
+				preparedStatement = connection.prepareStatement(UPDATE_UPVOTE_BY_COMMENTID);
+			} else {
+				preparedStatement = connection.prepareStatement(UPDATE_DOWNVOTE_BY_COMMENTID);
+			}
+			preparedStatement.setInt(1, voteCount);
+			preparedStatement.setInt(2, commentId);
+			preparedStatement.executeQuery();
+		} catch(SQLException sEx) {
+			System.out.println("CommentDatabase.updateCommentVotes() : " + sEx);
+		}  finally {
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}	
+		}
+	}
+
+	public int getNumberOfVotes(int commentId, int voteValue) {
+		
+		int count = 0;
+		
+		try {
+			//"SELECT COUNT(VOTE) FROM COMMENTVOTE WHERE COMMENTID=? AND VOTE=?";
+			preparedStatement = connection.prepareStatement(COUNT_COMMENTVOTES);
+			preparedStatement.setInt(1, commentId);
+			preparedStatement.setInt(2, voteValue);
+			resultSet = preparedStatement.executeQuery();
+			
+			if(resultSet.next()) {
+				int numberOfVotes = resultSet.getInt(1);
+				count = numberOfVotes;				
+			}
+		} catch(SQLException sEx) {
+			System.out.println("CommentDatabase.getNumberOfVotes() : " + sEx);
+		}  finally {
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException ex) {
+				System.out.println(ex);
+			}	
+		}
+		return count;
+	}	
 }

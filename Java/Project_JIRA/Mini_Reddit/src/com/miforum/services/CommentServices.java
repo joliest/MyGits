@@ -2,6 +2,7 @@ package com.miforum.services;
 
 import java.util.ArrayList;
 
+import com.miforum.components.Account;
 import com.miforum.components.Comment;
 import com.miforum.components.Component;
 import com.miforum.components.Post;
@@ -93,41 +94,75 @@ public class CommentServices implements Service{
 		 
 		return comments;
 	}
+
 	
 	public Comment getCommentById(int id) {
 		CommentDatabase db = new CommentDatabase();
 		Comment theComment = (Comment) db.getCommentById(id);
 		return theComment;
 	}
-
-	public int upVote(Comment comment) {
-
+	
+	private boolean isUserVoteExists(int commentId, String voter) {
+		boolean isExisting = false;
+		
+		CommentDatabase checker = new CommentDatabase();
+		isExisting = checker.isUserVoteExists(commentId, voter);
+		
+		return isExisting;
+	}
+	
+	public void upVote(Comment comment, Account voter) {
+		//change this to order by date
+		
+		final int voteValue = 1;
+		vote(comment, voter, voteValue);
+		
+		//return 0;
+	}
+	public void downVote(Comment comment, Account voter) {
+		//change this to order by date
+		
+		final int voteValue = -1;
+		vote(comment, voter, voteValue);
+		
+		//return 0;
+	}
+	
+	private void vote(Comment comment, Account voter, int voteValue) {
 		CommentDatabase database = createConnection();
 		
-		int currentUpvotes = comment.getUpVotes();
-		int upVoted = currentUpvotes + 1;
+		int commentId = Integer.parseInt(comment.getId());
+		String votee = voter.getUsername();
 		
-		comment.setUpVotes(upVoted);
+		String date = "";
 		
-		database.upVote(comment);
+		if(isUserVoteExists(commentId, votee)) {
+			database.updateVote(commentId, votee, voteValue);
+		} else {
+			database.addVote(commentId, votee, voteValue, date);
+		}
 		
-		return upVoted;
+		int upVoteCount = getNumberOfVotes(commentId, 1);
+		int downVoteCount = getNumberOfVotes(commentId, -1);
+		updateCommentVotes(commentId, 1, upVoteCount);
+		updateCommentVotes(commentId, -1, downVoteCount);
+		
+	}
+	
+	private int getNumberOfVotes(int commentId, int voteValue) {
+		int count = 0;
+		CommentDatabase counter = createConnection();
+		count = counter.getNumberOfVotes(commentId, voteValue);
+		return count;
+	}
+	
+	private void updateCommentVotes(int commentId, int voteValue, int voteCount) {
+		CommentDatabase updater = createConnection();
+		updater.updateCommentVotes(commentId, voteValue, voteCount);
 	}
 
 	public CommentDatabase createConnection() {
 		return new CommentDatabase();
-	}
-
-	public int downVote(Comment comment) {
-		CommentDatabase database = createConnection();
-		
-		int currentDownvotes = comment.getDownVotes();
-		int downVoted = currentDownvotes + 1;
-		
-		comment.setDownVotes(downVoted);
-		database.downVote(comment);
-		
-		return downVoted;
 	}
 
 }

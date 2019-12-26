@@ -1,0 +1,13 @@
+$(document).ready(function(){
+
+	function validateLogin() {
+		
+		var username = $("#login_username").val();
+		
+		if(username == "") {
+			alert("Username is blank");
+			return false;
+		}
+		//return true;
+	}
+})

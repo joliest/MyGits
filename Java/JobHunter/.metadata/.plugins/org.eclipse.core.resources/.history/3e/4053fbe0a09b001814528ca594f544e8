@@ -1,0 +1,34 @@
+package com.jobhunter.controllers;
+
+import java.io.*;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+import com.jobhunter.components.Account;
+import com.jobhunter.database.AccountDatabase;
+import com.jobhunter.services.AccountServices;
+
+public class AccountController extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		String emailFromClient = request.getParameter("email");
+		String passwordFromClient = request.getParameter("password");
+		
+		String errorMessage = "Invalid email address and password";
+		
+		Account account = new Account(emailFromClient, passwordFromClient);
+		AccountServices services = new AccountServices();
+		
+		boolean validAccount = services.authenticate(account);
+		
+		if(validAccount) {
+			HttpSession session = request.getSession();
+		} else {
+			out.println(errorMessage);
+		}
+	}
+}

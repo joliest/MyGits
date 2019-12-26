@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		ArrayList<String> samples = new ArrayList<String>();
+		
+		samples.add("Joliver");
+		samples.add("Khaye");
+		samples.add("Arlene");
+		
+		System.out.println(sample);
+		
+		Iterator samples = sample.iterator();
+		
+		if
+	}
+}

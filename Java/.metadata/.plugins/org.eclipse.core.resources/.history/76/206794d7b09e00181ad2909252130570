@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		ArrayList<String> samples = new ArrayList<String>();
+		
+		samples.add("Joliver");
+		samples.add("Khaye");
+		samples.add("Arlene");
+		
+		for(int i = 1; i < samples.size(); i++) {
+			System.out.println(i + ". " + samples.get(1));
+		}
+	}
+}

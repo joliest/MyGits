@@ -1,14 +1,21 @@
 $(document).ready(function(){
-	$("#register_button").click(function(){
+	$("form").submit(function(){
+		var username = $("#login_username").val();
+		var password = $("#login_password").val();
 		
-		var controller = "/Mini_Reddit/register";
-		var username = $("#register_username").val();
-		var password = $("#register_password").val();
-		
-		$.post(controller,
-			   { username : username, password : password },
-			   function(data, status){
-					
-				})
+		if(username == "") {
+			alert("Username is blank");
+			return false;
+		} else if(password == "") {
+			alert("Password is blank");
+			return false;
+		} else if(password == "" && username == "") {
+			alert("Login details are blank");
+			return false;
+		} else {
+			return true;
+		}
+			
 	})
 })
+

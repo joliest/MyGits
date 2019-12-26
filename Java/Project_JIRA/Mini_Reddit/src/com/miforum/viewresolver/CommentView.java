@@ -23,6 +23,8 @@ public class CommentView {
 					&#11165; 
 				</span>
 				<br>
+				TotalNum
+				<br>
 				<span id="comment_down_arrow" commentId="123">"
 					&#11167;
 				</span>
@@ -49,12 +51,21 @@ public class CommentView {
 		StringWriter sw = new StringWriter();
 		
 		String commentBody = comment.getComment();
-		String upVotes = Integer.toString(comment.getUpVotes());
-		String downVotes = Integer.toString(comment.getDownVotes());
+		int upVote = comment.getUpVotes();
+		int downVote = comment.getDownVotes();
+		int numberOfVotes = upVote - downVote;
+		
+		String numOfVotes = Integer.toString(numberOfVotes);
+		String upVotes = Integer.toString(upVote);
+		String downVotes = Integer.toString(downVote);
 		
 		sw.append("<tr> <td rowspan=\"3\">");
 		sw.append("<span id=\"comment_up_arrow\" commentId=\"" + comment.getId() + "\">");
 		sw.append("&#11165;");
+		sw.append("</span>");
+		sw.append("<br>");
+		sw.append("<span id=\"number_of_votes\" commentId=\"" + comment.getId() + "\">");
+		sw.append(numOfVotes);
 		sw.append("</span>");
 		sw.append("<br>");
 		sw.append("<span id=\"comment_down_arrow\" commentId=\"" + comment.getId() + "\">");

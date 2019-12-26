@@ -37,14 +37,16 @@ $(document).ready(function(){
 	$(this).on("click", "#comment_up_arrow", function() {
 		var controller = "/Mini_Reddit/commentController";
 		var commentId = $(this).attr("commentId");
+		var numberOfVotes =  $("#number_of_votes[commentId='" + commentId +"']").html();
 		$.post(controller,
 				   { 
 						functionality : "comment_up_arrow",
-						commentId : commentId
+						commentId : commentId,
+						numberOfVotes : numberOfVotes
 				   },
 				   function(data, status){
 					   //updates upvote label
-					   $("#comment_upVote_label[commentId='" + commentId +"']").html(data);
+					   $("#number_of_votes[commentId='" + commentId +"']").html(data);
 				   })
 	})
 	
@@ -59,7 +61,7 @@ $(document).ready(function(){
 				   },
 				   function(data, status){
 					 //updates downvote label
-					   $("#comment_downVote_label[commentId='" + commentId +"']").html(data);
+					   $("#number_of_votes[commentId='" + commentId +"']").html(data);
 				   })
 	})
 })

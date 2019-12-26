@@ -18,7 +18,7 @@
 <fullyQualifiedTypeName name="com.miforum.database.CommentDatabase"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.miforum.components.Account"/>
 <fullyQualifiedTypeName name="com.miforum.viewresolver.CommentView"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.miforum.components.Account"/>
 </qualifiedTypeNameHistroy>

@@ -5,12 +5,13 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- <script src="js/login.js"></script>   -->
+  <script src="js/login.js"></script> 
   <title>Log In</title>
  </head>
  <body>
  <form method="POST" action="/Mini_Reddit/login">
  
+ 	${alert.toString}
  
   	Username: <input type="text" id="login_username" name="login_username"/> <br />
   	Password: <input type="password" id="login_password" name="login_password" /> <br />

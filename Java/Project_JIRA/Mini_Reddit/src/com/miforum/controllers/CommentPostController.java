@@ -67,14 +67,17 @@ public class CommentPostController extends HttpServlet{
 		} else if(functionality.equals(UPVOTE)) {
 			int upvotes = 0;
 			
-			System.out.print("hi");
 			CommentServices services = new CommentServices();
 			String commentId = request.getParameter("commentId");
+			String numberOfVotes = request.getParameter("numberOfVotes");
 			
 			int id = Integer.parseInt(commentId);
+			int parsedNumOfVotes = Integer.parseInt(numberOfVotes);
 			
 			Comment comment = (Comment) services.getCommentById(id);
-			upvotes = services.upVote(comment);
+			services.upVote(comment, account);
+			
+			upvotes = parsedNumOfVotes + 1;
 			
 			out.print(upvotes);
 		} else if(functionality.equals(DOWNVOTE)) {
@@ -82,11 +85,15 @@ public class CommentPostController extends HttpServlet{
 			
 			CommentServices services = new CommentServices();
 			String commentId = request.getParameter("commentId");
+			String numberOfVotes = request.getParameter("numberOfVotes");
 			
 			int id = Integer.parseInt(commentId);
+			int parsedNumOfVotes = Integer.parseInt(numberOfVotes);
 			
 			Comment comment = (Comment) services.getCommentById(id);
-			downvotes = services.downVote(comment);
+			services.downVote(comment, account);
+			
+			downvotes = parsedNumOfVotes - 1;
 			
 			out.print(downvotes);
 		}

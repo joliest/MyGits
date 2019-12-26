@@ -1,0 +1,19 @@
+package com.jobhunter.services;
+
+import com.jobhunter.components.Account;
+import com.jobhunter.database.AccountDatabase;
+
+public class AccountServices {
+	
+	private AccountDatabase database;
+	
+	public boolean authenticate(Account account) {
+		String email = account.getEmailAddress();
+		String password = account.getPassword();
+		
+		database = new AccountDatabase();
+		Account accountFromDatabase = database.getAccountByEmailAddress(email);
+		String emailFromDatabase = accountFromDatabase.getEmailAddress();
+		String passwordFromDatabase = accountFromDatabase.getPassword();
+	}
+}

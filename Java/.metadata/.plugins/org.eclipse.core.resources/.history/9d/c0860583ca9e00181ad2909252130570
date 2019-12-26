@@ -1,0 +1,16 @@
+package Main;
+
+import java.io.*;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			FileOutputStream fileStream = new FileOutputStream("test.txt");
+			ObjectOutputStream os = new ObjectOutputStream(fileStream);
+			os.writeObject("HEY!");
+			os.close():
+		} catch (IOException e) {
+			
+		}
+	}
+}

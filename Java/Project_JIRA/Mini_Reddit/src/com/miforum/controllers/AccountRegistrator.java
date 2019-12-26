@@ -20,8 +20,8 @@ public class AccountRegistrator extends HttpServlet{
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		String username = request.getParameter("register_username");
+		String password = request.getParameter("register_password");
 		
 		Account account = new Account(username, password);
 		AccountDatabase database = new AccountDatabase();
@@ -35,7 +35,7 @@ public class AccountRegistrator extends HttpServlet{
 		}
 		
 
-		RequestDispatcher view = request.getRequestDispatcher("/profile.jsp");		
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/view/profile.jsp");		
 		view.forward(request, response);
 	}
 }
