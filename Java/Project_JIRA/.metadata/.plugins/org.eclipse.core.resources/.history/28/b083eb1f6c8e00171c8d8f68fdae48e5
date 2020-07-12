@@ -1,8 +1,0 @@
-package com.project1.db;
-
-import java.sql.*;
-
-public class DBConnector {	
-	public static void connect(String driverName, String connectionName)
-	
-}

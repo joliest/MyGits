@@ -1,7 +1,0 @@
-package com.example.web;
-import javax.servlet.*;
-import javax.http.*;
-
-public class MyTester {
-
-}

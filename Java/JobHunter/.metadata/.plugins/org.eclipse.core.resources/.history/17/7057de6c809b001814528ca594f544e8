@@ -1,0 +1,15 @@
+package com.jobhunter.controllers;
+
+import java.io.*;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class AccountRegistrator extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		response.getContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+	}
+}

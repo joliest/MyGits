@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<html>
+	<head>
+		<title>Attribute Page</title>
+	</head>
+	<body>
+		<div id="AttributeListBox">
+			<ul id="RoleList">
+				<li>Value 1</li>
+			</ul>
+			
+		</div>
+		
+		<div id="AttributeTextFieldsBox">
+			<table>
+				<tr>
+					<td>Group</td>
+					<td><input type="text" name="group"></td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>Data Type</td>
+					<td><input type="text" name="dataType"></td>
+				</tr>
+				<tr>
+					<td>Length</td>
+					<td><input type="text" name="length"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="button" value="Add Attribute" id="addAttribute" onClick="addAttribute(add)">
+						<input type="button" value="Cancel">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

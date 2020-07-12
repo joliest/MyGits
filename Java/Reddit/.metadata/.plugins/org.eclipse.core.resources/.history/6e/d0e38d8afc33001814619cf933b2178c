@@ -1,0 +1,17 @@
+$(document).ready(function(){
+
+	var username = $("#login_username").val();
+	
+	if(username == "") {
+		
+	}
+	//return true;
+	
+	$("form").submit(function(){	
+			
+			alert("Username is blank");
+			return false;
+			
+	})
+})
+

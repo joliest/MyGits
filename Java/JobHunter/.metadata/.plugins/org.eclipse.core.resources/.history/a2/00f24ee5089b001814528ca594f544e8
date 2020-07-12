@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Jobhunter</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h2>Job Hunter</h2>
+			</div>	
+			 <div class="pull-left"> Find Jobs | Post Jobs </div>
+			 <div class="pull-right"> Login | Sign up </div>
+			 
+			<br>
+			
+			<table>
+				<tr>
+					<td>
+				</td>
+			
+			</table>
+				<label for="search">Search:</label>
+				<input type="text" class="form-control" id="search">
+				<label for="where">Location:</label>
+				<input type="text" class="form-control" id="where">
+				<button type="button" class="btn btn-default">Find Jobs</button>
+			
+			
+			
+		</div>
+		
+		
+		
+		
+	</body>
+</html>

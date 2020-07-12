@@ -1,0 +1,10 @@
+package com.example;
+
+import javax.servlet.http.HttpServlet;
+
+public class UsingScriptlets extends HttpServlet{
+
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
+	}
+}

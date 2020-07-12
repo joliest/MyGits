@@ -1,0 +1,7 @@
+package com.jobhunter.services;
+
+public class AccountServices {
+	public bool authenticate(Account account) {
+		
+	}
+}

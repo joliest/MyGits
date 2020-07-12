@@ -1,0 +1,5 @@
+127.0.0.1 - - [07/Oct/2017:01:49:47 +0800] "GET / HTTP/1.1" 404 1070
+0:0:0:0:0:0:0:1 - - [07/Oct/2017:01:49:48 +0800] "GET /Project_BugTracker/web/index.jsp HTTP/1.1" 200 263
+0:0:0:0:0:0:0:1 - - [07/Oct/2017:01:49:48 +0800] "GET /favicon.ico HTTP/1.1" 404 1081
+0:0:0:0:0:0:0:1 - - [07/Oct/2017:01:49:53 +0800] "GET /Project_BugTracker/web/attribute/Attribute.jsp HTTP/1.1" 200 1355
+0:0:0:0:0:0:0:1 - - [07/Oct/2017:01:49:53 +0800] "GET /Project_BugTracker/web/attribute/Attribute.js HTTP/1.1" 200 796

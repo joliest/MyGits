@@ -1,0 +1,14 @@
+package Main;
+
+import java.io.*;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			FileWriter file = new FileWriter("foo.txt");
+			file.write("Hello World");
+		} catch (IOException e) {
+			
+		}
+	}
+}

@@ -1,0 +1,1181 @@
+
+Sep 05, 2017 20:53:24.11 NEW SESSION
+Sep 05, 2017 20:53:24.11 [5692:2732:0905/205324.109:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.24 [5692:2732:0905/212006.248:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.249:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:20:06.25 [5692:2732:0905/212006.250:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Sep 05, 2017 21:26:08.93 [5692:2732:0905/212608.938:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -100
+Sep 05, 2017 21:50:45.78 [5692:2732:0905/215045.784:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+Sep 05, 2017 22:04:56.96 [5692:2732:0905/220456.963:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Sep 05, 2017 22:22:46.80 [5692:2732:0905/222246.803:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+
+Sep 13, 2017 15:59:26.12 NEW SESSION
+Sep 13, 2017 15:59:26.12 [6428:3864:0913/155926.121:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 15:59:46.50 [6428:3864:0913/155946.500:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 15:59:58.49 [6428:9772:0913/155958.492:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 13, 2017 15:59:58.49 [6428:9772:0913/155958.492:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 13, 2017 16:00:44.31 [6428:3864:0913/160044.314:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:02:06.86 [6428:3864:0913/160206.863:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:03:06.68 [6428:9772:0913/160306.680:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:03:32.12 [6428:9772:0913/160332.126:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:04:28.19 [6428:9772:0913/160428.196:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:05:46.54 [6428:3864:0913/160546.542:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:06:17.40 [6428:9772:0913/160617.407:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:10:12.54 [6428:9772:0913/161012.546:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:11:17.32 [6428:3864:0913/161117.328:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:17:41.03 [6428:9772:0913/161741.031:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 16:21:17.33 [6428:3864:0913/162117.330:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:53:10.56 [6428:3864:0913/165310.566:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 16:53:10.82 [6428:9772:0913/165310.827:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 13, 2017 17:03:10.56 [6428:3864:0913/170310.568:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 13, 2017 17:03:10.83 [6428:9772:0913/170310.835:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+Sep 14, 2017 13:21:11.82 NEW SESSION
+Sep 14, 2017 13:21:11.82 [12464:9408:0914/132111.825:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:21:40.32 [12464:9408:0914/132140.321:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:21:45.83 [12464:12468:0914/132145.838:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 14, 2017 13:21:45.83 [12464:12468:0914/132145.838:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 14, 2017 13:22:29.01 [12464:9408:0914/132229.015:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:24:21.61 [12464:9408:0914/132421.614:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:25:30.61 [12464:12468:0914/132530.616:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:25:57.99 [12464:12468:0914/132557.992:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:26:49.75 [12464:12468:0914/132649.751:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:27:31.74 [12464:9408:0914/132731.745:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:28:36.43 [12464:12468:0914/132836.434:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:30:49.61 [6452:13264:0914/133049.615:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:31:13.89 [6452:13264:0914/133113.892:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:31:23.52 [6452:32:0914/133123.526:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 14, 2017 13:31:23.52 [6452:32:0914/133123.526:ERROR:account_tracker.cc(328)] OnGetTokenFailure: Connection failed (-106).
+Sep 14, 2017 13:32:11.67 [6452:13264:0914/133211.677:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:33:46.74 [6452:13264:0914/133346.741:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:36:02.12 [6452:32:0914/133602.123:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:36:26.85 [6452:32:0914/133626.856:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:37:24.85 [6452:32:0914/133724.853:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:37:32.76 [6452:13264:0914/133732.768:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:38:50.28 [6452:32:0914/133850.284:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:41:34.66 [6452:32:0914/134134.663:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:45:26.30 [6452:13264:0914/134526.300:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:48:18.32 [6452:32:0914/134818.320:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 13:55:26.30 [6452:13264:0914/135526.305:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 13:58:18.32 [6452:32:0914/135818.329:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 14:05:26.30 [6452:13264:0914/140526.302:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 14:08:18.32 [6452:32:0914/140818.323:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Sep 14, 2017 14:15:26.30 [6452:13264:0914/141526.309:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+Sep 14, 2017 14:18:18.32 [6452:32:0914/141818.326:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+Nov 03, 2017 21:06:23.20 NEW SESSION
+Nov 03, 2017 21:06:23.20 [9540:12796:1103/210623.195:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+Nov 03, 2017 21:10:04.76 [9540:9616:1103/211004.764:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Nov 03, 2017 21:10:04.76 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509714604012&_gfid=I0_1509714604012&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=59942854 (0)
+Nov 03, 2017 21:10:04.76 [9540:9616:1103/211004.766:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Nov 03, 2017 21:10:04.76 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509714604012&_gfid=I0_1509714604012&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=59942854 (0)
+Nov 03, 2017 21:10:04.76 [9540:9616:1103/211004.767:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Nov 03, 2017 21:10:04.76 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509714604012&_gfid=I0_1509714604012&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=59942854 (0)
+Nov 03, 2017 21:44:10.55 [9540:12796:1103/214410.553:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Nov 03, 2017 22:15:39.70 [9540:12796:1103/221539.707:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Nov 03, 2017 22:27:30.47 [9540:9616:1103/222730.479:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Nov 03, 2017 22:27:30.48 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509719250445&_gfid=I0_1509719250445&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=36827935 (0)
+Nov 03, 2017 22:27:30.48 [9540:9616:1103/222730.484:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Nov 03, 2017 22:27:30.48 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509719250445&_gfid=I0_1509719250445&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=36827935 (0)
+Nov 03, 2017 22:27:30.48 [9540:9616:1103/222730.486:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Nov 03, 2017 22:27:30.48 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509719250445&_gfid=I0_1509719250445&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=36827935 (0)
+Nov 03, 2017 22:55:36.10 [9540:9616:1103/225536.099:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Nov 03, 2017 22:55:36.10 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509720936059&_gfid=I0_1509720936059&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=20321654 (0)
+Nov 03, 2017 22:55:36.10 [9540:9616:1103/225536.102:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Nov 03, 2017 22:55:36.10 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509720936059&_gfid=I0_1509720936059&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=20321654 (0)
+Nov 03, 2017 22:55:36.10 [9540:9616:1103/225536.104:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-l16JGMBuETOW9NoLA6N5XCW9OSw' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Nov 03, 2017 22:55:36.10 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.-B1JI5BnpkY.O%2Fm%3D__features__%2Fam%3DAAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo-J_489p3irekFx--jdEVsS-UunRg#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1509720936059&_gfid=I0_1509720936059&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=20321654 (0)
+
+Dec 07, 2017 20:30:23.65 NEW SESSION
+Dec 07, 2017 20:30:23.65 [12524:10932:1207/203023.649:ERROR:CONSOLE(145)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://facebook.com') does not match the recipient window's origin ('https://www.google.com.ph').", source: chrome-search://most-visited/single.js (145)
+Dec 07, 2017 22:27:07.39 [10464:10788:1207/222707.393:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 07, 2017 22:41:19.46 [10464:10852:1207/224119.465:ERROR:CONSOLE(145)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('http://facebook.com') does not match the recipient window's origin ('https://www.google.com.ph').", source: chrome-search://most-visited/single.js (145)
+Dec 08, 2017 24:13:09.42 [10464:10788:1208/001309.426:ERROR:ssl_client_socket_impl.cc(1091)] handshake failed; returned -1, SSL error code 1, net_error -100
+Dec 08, 2017 01:24:38.55 [10464:10788:1208/012438.551:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 08, 2017 01:29:56.65 [10464:10788:1208/012956.656:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 08, 2017 01:49:44.05 [10464:10788:1208/014944.057:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 08, 2017 03:52:38.53 [10464:10788:1208/035238.527:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+
+Dec 12, 2017 20:09:15.35 NEW SESSION
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:09:15.35 [10724:1876:1212/200915.353:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:11:15.36 [10724:1876:1212/201115.363:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:11:15.36 [10724:1876:1212/201115.363:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:11:15.36 [10724:1876:1212/201115.363:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:11:15.36 [10724:1876:1212/201115.363:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:13:15.37 [10724:1876:1212/201315.372:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:13:15.37 [10724:1876:1212/201315.372:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:13:15.37 [10724:1876:1212/201315.372:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:13:15.37 [10724:1876:1212/201315.372:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:15:15.38 [10724:1876:1212/201515.384:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:17:15.40 [10724:1876:1212/201715.400:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:17:15.40 [10724:1876:1212/201715.400:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:17:15.40 [10724:1876:1212/201715.400:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:17:15.40 [10724:1876:1212/201715.400:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:19:15.41 [10724:1876:1212/201915.414:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:21:15.42 [10724:1876:1212/202115.423:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:21:15.42 [10724:1876:1212/202115.423:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:21:15.42 [10724:1876:1212/202115.423:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:21:15.42 [10724:1876:1212/202115.423:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:23:15.42 [10724:1876:1212/202315.424:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:23:15.42 [10724:1876:1212/202315.424:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:23:15.42 [10724:1876:1212/202315.424:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:23:15.42 [10724:1876:1212/202315.424:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:23:43.89 [10724:14280:1212/202343.890:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Dec 12, 2017 20:23:43.89 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513081423867&_gfid=I0_1513081423867&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=53918985 (0)
+Dec 12, 2017 20:23:43.89 [10724:14280:1212/202343.893:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Dec 12, 2017 20:23:43.89 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513081423867&_gfid=I0_1513081423867&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=53918985 (0)
+Dec 12, 2017 20:23:43.89 [10724:14280:1212/202343.894:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Dec 12, 2017 20:23:43.89 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513081423867&_gfid=I0_1513081423867&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=53918985 (0)
+Dec 12, 2017 20:25:15.44 [10724:1876:1212/202515.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:25:15.44 [10724:1876:1212/202515.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:25:15.44 [10724:1876:1212/202515.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:25:15.44 [10724:1876:1212/202515.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:25:15.44 [10724:1876:1212/202515.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:27:15.44 [10724:1876:1212/202715.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:27:15.44 [10724:1876:1212/202715.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:27:15.44 [10724:1876:1212/202715.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:27:15.44 [10724:1876:1212/202715.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:27:15.44 [10724:1876:1212/202715.442:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:29:15.45 [10724:1876:1212/202915.453:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:31:15.46 [10724:1876:1212/203115.467:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:32:56.12 [10724:1876:1212/203256.126:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 20:32:56.15 [10724:1876:1212/203256.153:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 20:33:15.46 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:33:15.46 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:33:15.46 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:33:15.46 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:33:15.47 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:33:15.47 [10724:1876:1212/203315.469:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:35:15.47 [10724:1876:1212/203515.470:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:37:15.48 [10724:1876:1212/203715.480:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:39:15.48 [10724:1876:1212/203915.483:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:41:15.49 [10724:1876:1212/204115.494:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:43:15.51 [10724:1876:1212/204315.510:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:45:15.51 [10724:1876:1212/204515.511:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:47:15.51 [10724:1876:1212/204715.512:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:49:15.51 [10724:1876:1212/204915.514:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:51:15.51 [10724:1876:1212/205115.515:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:53:15.51 [10724:1876:1212/205315.516:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.51 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.51 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.51 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.51 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.52 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:55:15.52 [10724:1876:1212/205515.517:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.51 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.51 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.51 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.51 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.51 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:57:15.52 [10724:1876:1212/205715.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.51 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.52 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.52 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.52 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.52 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 20:59:15.52 [10724:1876:1212/205915.519:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:01:15.52 [10724:1876:1212/210115.520:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:03:15.52 [10724:1876:1212/210315.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:05:15.52 [10724:1876:1212/210515.521:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:07:15.52 [10724:1876:1212/210715.522:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:09:15.52 [10724:1876:1212/210915.523:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:11:15.52 [10724:1876:1212/211115.526:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:13:15.53 [10724:1876:1212/211315.536:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:15:15.54 [10724:1876:1212/211515.542:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:17:15.54 [10724:1876:1212/211715.543:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:19:15.54 [10724:1876:1212/211915.544:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:21:15.54 [10724:1876:1212/212115.546:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:23:15.54 [10724:1876:1212/212315.547:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.54 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:25:15.55 [10724:1876:1212/212515.549:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:27:15.55 [10724:1876:1212/212715.550:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.551:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:29:15.55 [10724:1876:1212/212915.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:31:15.55 [10724:1876:1212/213115.552:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:33:15.55 [10724:1876:1212/213315.554:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:15.56 [10724:1876:1212/213515.562:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:35:33.47 [10724:1876:1212/213533.475:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 21:35:33.49 [10724:1876:1212/213533.494:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:37:15.56 [10724:1876:1212/213715.564:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:39:15.56 [10724:1876:1212/213915.565:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.577:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.577:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.577:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.577:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.578:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.57 [10724:1876:1212/214115.578:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:41:15.58 [10724:1876:1212/214115.578:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:43:15.57 [10724:1876:1212/214315.579:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:45:15.58 [10724:1876:1212/214515.584:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:47:15.59 [10724:1876:1212/214715.598:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:49:15.60 [10724:1876:1212/214915.603:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:51:15.61 [10724:1876:1212/215115.614:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:53:15.62 [10724:1876:1212/215315.628:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:55:15.63 [10724:1876:1212/215515.630:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:57:15.63 [10724:1876:1212/215715.634:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:58:34.49 [10724:14280:1212/215834.496:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Dec 12, 2017 21:58:34.49 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513087114462&_gfid=I0_1513087114462&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=35834878 (0)
+Dec 12, 2017 21:58:34.50 [10724:14280:1212/215834.500:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Dec 12, 2017 21:58:34.50 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513087114462&_gfid=I0_1513087114462&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=35834878 (0)
+Dec 12, 2017 21:58:34.50 [10724:14280:1212/215834.501:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Dec 12, 2017 21:58:34.50 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513087114462&_gfid=I0_1513087114462&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=35834878 (0)
+Dec 12, 2017 21:58:45.37 [10724:1876:1212/215845.370:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 21:59:15.63 [10724:1876:1212/215915.636:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:01:15.64 [10724:1876:1212/220115.648:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.64 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:03:15.65 [10724:1876:1212/220315.649:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:05:15.65 [10724:1876:1212/220515.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:12.63 [10724:1876:1212/220712.631:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:15.65 [10724:1876:1212/220715.650:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:07:19.35 [10724:1876:1212/220719.359:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.652:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:09:15.65 [10724:1876:1212/220915.653:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:11:15.65 [10724:1876:1212/221115.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:13:15.65 [10724:1876:1212/221315.654:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:15:15.65 [10724:1876:1212/221515.655:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.65 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.66 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.66 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:17:15.66 [10724:1876:1212/221715.657:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.65 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.65 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.658:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.659:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.659:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.659:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:19:15.66 [10724:1876:1212/221915.659:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.660:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.660:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:21:15.66 [10724:1876:1212/222115.661:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:15.66 [10724:1876:1212/222315.662:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:23:41.57 [10724:1876:1212/222341.579:ERROR:native_message_process_host.cc(322)] Error when writing to Native Messaging host: -101
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:25:15.67 [10724:1876:1212/222515.670:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:27:15.67 [10724:1876:1212/222715.671:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.677:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:29:15.67 [10724:1876:1212/222915.678:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:31:15.68 [10724:1876:1212/223115.689:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:33:15.70 [10724:1876:1212/223315.699:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:35:15.70 [10724:1876:1212/223515.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:37:15.70 [10724:1876:1212/223715.702:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:39:15.70 [10724:1876:1212/223915.703:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:41:15.71 [10724:1876:1212/224115.718:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:43:15.73 [10724:1876:1212/224315.734:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.73 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.73 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.73 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.74 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.74 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:45:15.74 [10724:1876:1212/224515.738:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:47:15.74 [10724:1876:1212/224715.740:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:49:15.74 [10724:1876:1212/224915.746:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:51:15.74 [10724:1876:1212/225115.748:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:53:15.75 [10724:1876:1212/225315.751:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:55:15.75 [10724:1876:1212/225515.752:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:57:15.75 [10724:1876:1212/225715.755:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:57:15.75 [10724:1876:1212/225715.755:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:57:15.75 [10724:1876:1212/225715.755:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:57:15.75 [10724:1876:1212/225715.755:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:57:15.75 [10724:1876:1212/225715.755:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.76 [10724:1876:1212/225915.768:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.76 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.77 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.77 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.77 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.77 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 22:59:15.77 [10724:1876:1212/225915.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.76 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.77 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.77 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.77 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.77 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:01:15.77 [10724:1876:1212/230115.769:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:03:15.78 [10724:1876:1212/230315.782:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:03:15.78 [10724:1876:1212/230315.782:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:03:15.78 [10724:1876:1212/230315.782:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:03:15.78 [10724:1876:1212/230315.782:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:05:15.78 [10724:1876:1212/230515.789:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:05:15.78 [10724:1876:1212/230515.789:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:05:15.78 [10724:1876:1212/230515.789:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:05:15.78 [10724:1876:1212/230515.789:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:05:15.78 [10724:1876:1212/230515.789:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:07:15.79 [10724:1876:1212/230715.796:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:07:15.79 [10724:1876:1212/230715.796:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:07:15.79 [10724:1876:1212/230715.796:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:07:15.79 [10724:1876:1212/230715.796:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:07:15.79 [10724:1876:1212/230715.796:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:09:15.80 [10724:1876:1212/230915.808:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:09:15.80 [10724:1876:1212/230915.808:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:09:15.80 [10724:1876:1212/230915.808:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:09:15.80 [10724:1876:1212/230915.808:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:09:15.80 [10724:1876:1212/230915.808:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:11:15.82 [10724:1876:1212/231115.824:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:11:15.82 [10724:1876:1212/231115.824:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:11:15.82 [10724:1876:1212/231115.824:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:11:15.82 [10724:1876:1212/231115.824:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:11:15.82 [10724:1876:1212/231115.824:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:13:15.83 [10724:1876:1212/231315.833:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:13:15.83 [10724:1876:1212/231315.833:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:13:15.83 [10724:1876:1212/231315.833:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:13:15.83 [10724:1876:1212/231315.833:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:13:15.83 [10724:1876:1212/231315.833:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:15:15.84 [10724:1876:1212/231515.844:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:15:15.84 [10724:1876:1212/231515.844:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:15:15.84 [10724:1876:1212/231515.844:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:15:15.84 [10724:1876:1212/231515.844:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:15:15.84 [10724:1876:1212/231515.844:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:17:15.85 [10724:1876:1212/231715.857:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:17:15.85 [10724:1876:1212/231715.857:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:17:15.85 [10724:1876:1212/231715.857:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:17:15.85 [10724:1876:1212/231715.857:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:17:15.85 [10724:1876:1212/231715.857:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:19:15.86 [10724:1876:1212/231915.868:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:21:15.87 [10724:1876:1212/232115.873:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:21:15.87 [10724:1876:1212/232115.873:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:21:15.87 [10724:1876:1212/232115.873:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:21:15.87 [10724:1876:1212/232115.873:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:21:15.87 [10724:1876:1212/232115.873:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:23:15.88 [10724:1876:1212/232315.885:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:23:15.88 [10724:1876:1212/232315.885:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:23:15.88 [10724:1876:1212/232315.885:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:23:15.88 [10724:1876:1212/232315.885:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:23:15.88 [10724:1876:1212/232315.885:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:25:15.90 [10724:1876:1212/232515.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:25:15.90 [10724:1876:1212/232515.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:25:15.90 [10724:1876:1212/232515.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:25:15.90 [10724:1876:1212/232515.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:25:15.90 [10724:1876:1212/232515.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:27:15.90 [10724:1876:1212/232715.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:27:15.90 [10724:1876:1212/232715.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:27:15.90 [10724:1876:1212/232715.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:27:15.90 [10724:1876:1212/232715.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:27:15.90 [10724:1876:1212/232715.902:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:29:15.90 [10724:1876:1212/232915.904:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:31:15.90 [10724:1876:1212/233115.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:31:15.90 [10724:1876:1212/233115.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:31:15.90 [10724:1876:1212/233115.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:31:15.90 [10724:1876:1212/233115.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:31:15.90 [10724:1876:1212/233115.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:33:15.90 [10724:1876:1212/233315.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:33:15.90 [10724:1876:1212/233315.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:33:15.90 [10724:1876:1212/233315.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:33:15.90 [10724:1876:1212/233315.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:33:15.90 [10724:1876:1212/233315.905:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:35:15.90 [10724:1876:1212/233515.906:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:35:15.90 [10724:1876:1212/233515.906:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:35:15.90 [10724:1876:1212/233515.906:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:35:15.90 [10724:1876:1212/233515.906:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:35:54.37 [10724:14280:1212/233554.376:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Dec 12, 2017 23:35:54.37 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513092954345&_gfid=I0_1513092954345&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=30641175 (0)
+Dec 12, 2017 23:35:54.37 [10724:14280:1212/233554.379:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Dec 12, 2017 23:35:54.37 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513092954345&_gfid=I0_1513092954345&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=30641175 (0)
+Dec 12, 2017 23:35:54.38 [10724:14280:1212/233554.381:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Dec 12, 2017 23:35:54.38 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513092954345&_gfid=I0_1513092954345&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=30641175 (0)
+Dec 12, 2017 23:37:15.91 [10724:1876:1212/233715.914:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:37:15.91 [10724:1876:1212/233715.914:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:37:15.91 [10724:1876:1212/233715.914:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:37:15.91 [10724:1876:1212/233715.914:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:37:15.91 [10724:1876:1212/233715.914:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:39:15.92 [10724:1876:1212/233915.928:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:09.01 [10724:14280:1212/234109.015:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'object-src'.
+Dec 12, 2017 23:41:09.01 ", source: https://mail.google.com/mail/u/0/ (0)
+Dec 12, 2017 23:41:09.01 [10724:14280:1212/234109.016:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Dec 12, 2017 23:41:09.02 ", source: https://mail.google.com/mail/u/0/ (0)
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.934:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.934:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.934:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.934:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:15.93 [10724:1876:1212/234115.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:41:39.98 [10724:14280:1212/234139.982:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Dec 12, 2017 23:41:39.98 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513093299955&_gfid=I0_1513093299955&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=86820280 (0)
+Dec 12, 2017 23:41:39.98 [10724:14280:1212/234139.984:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'report-sample' 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://gc.kis.v2.scr.kaspersky-labs.com wss://gc.kis.v2.scr.kaspersky-labs.com". 'strict-dynamic' is present, so host-based whitelisting is disabled.
+Dec 12, 2017 23:41:39.98 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513093299955&_gfid=I0_1513093299955&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=86820280 (0)
+Dec 12, 2017 23:41:39.98 [10724:14280:1212/234139.986:ERROR:CONSOLE(0)] "Refused to load the script 'https://gc.kis.v2.scr.kaspersky-labs.com/BF565AFC-B3B9-D441-8ECA-ED88AF183FEB/main.js' because it violates the following Content Security Policy directive: "script-src 'nonce-KATJpLYX9+eEPwBD5Ew+Hvo+1AM' 'self' 'unsafe-eval' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com".
+Dec 12, 2017 23:41:39.98 ", source: https://notifications.google.com/u/0/widget?sourceid=243&hl=en&origin=https%3A%2F%2Fwww.google.com.ph&uc=1&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.gapi.en.yoTdpQipo6s.O%2Fm%3D__features__%2Fam%3DAAE%2Frt%3Dj%2Fd%3D1%2Frs%3DAHpOoo9_VhuRoUovwpPPf5LqLZd-dmCnxw#pid=243&_methods=onError%2ConInfo%2ChideNotificationWidget%2CpostSharedMessage%2Creauth%2CsetNotificationWidgetHeight%2CsetNotificationWidgetSize%2CswitchTo%2CnavigateTo%2CsetNotificationText%2CsetNotificationAnimation%2CgetNotificationText%2CvalidateUser%2C_ready&id=I0_1513093299955&_gfid=I0_1513093299955&parent=https%3A%2F%2Fwww.google.com.ph&pfname=&rpctoken=86820280 (0)
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:43:15.93 [10724:1876:1212/234315.936:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:45:15.94 [10724:1876:1212/234515.940:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.94 [10724:1876:1212/234715.946:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.94 [10724:1876:1212/234715.947:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.94 [10724:1876:1212/234715.947:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.94 [10724:1876:1212/234715.947:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.94 [10724:1876:1212/234715.947:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:47:15.95 [10724:1876:1212/234715.947:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:49:15.96 [10724:1876:1212/234915.960:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:51:15.96 [10724:1876:1212/235115.961:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:53:15.97 [10724:1876:1212/235315.970:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:55:15.98 [10724:1876:1212/235515.980:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:57:15.98 [10724:1876:1212/235715.985:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.98 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.99 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.99 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 12, 2017 23:59:15.99 [10724:1876:1212/235915.987:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:01:15.99 [10724:1876:1213/000115.994:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:03:16.00 [10724:1876:1213/000316.009:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:05:16.01 [10724:1876:1213/000516.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:06:18.00 [10724:1876:1213/000618.000:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 13, 2017 24:06:18.02 [10724:1876:1213/000618.028:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:07:16.02 [10724:1876:1213/000716.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:09:16.02 [10724:1876:1213/000916.020:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:11:16.03 [10724:1876:1213/001116.035:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:13:16.05 [10724:1876:1213/001316.058:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:15:16.06 [10724:1876:1213/001516.061:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:17:16.06 [10724:1876:1213/001716.063:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:17:16.06 [10724:1876:1213/001716.063:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:17:16.06 [10724:1876:1213/001716.063:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:17:16.06 [10724:1876:1213/001716.063:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:17:16.06 [10724:1876:1213/001716.063:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:19:16.06 [10724:1876:1213/001916.064:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:21:16.06 [10724:1876:1213/002116.067:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.06 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.06 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.06 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.07 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.07 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:23:16.07 [10724:1876:1213/002316.068:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:25:16.07 [10724:1876:1213/002516.070:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Dec 13, 2017 24:27:16.07 [10724:1876:1213/002716.071:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+
+Jan 02, 2018 21:08:46.00 NEW SESSION
+Jan 02, 2018 21:08:46.00 [5024:8496:0102/210846.003:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:08:46.01 [5024:8496:0102/210846.003:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:08:46.02 [5024:8496:0102/210846.003:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:08:46.02 [5024:8496:0102/210846.003:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:10:46.00 [5024:8496:0102/211046.004:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:10:46.01 [5024:8496:0102/211046.004:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:10:46.02 [5024:8496:0102/211046.004:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:10:46.03 [5024:8496:0102/211046.004:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:12:46.00 [5024:8496:0102/211246.006:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:12:46.02 [5024:8496:0102/211246.006:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:12:46.03 [5024:8496:0102/211246.006:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:12:46.04 [5024:8496:0102/211246.006:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:21.30 [5024:4208:0102/211421.308:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'object-src'.
+Jan 02, 2018 21:14:21.32 ", source: https://mail.google.com/mail/u/0/ (0)
+Jan 02, 2018 21:14:21.36 [5024:4208:0102/211421.309:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Jan 02, 2018 21:14:21.37 ", source: https://mail.google.com/mail/u/0/ (0)
+Jan 02, 2018 21:14:46.00 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.02 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.03 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.04 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.06 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.06 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:14:46.07 [5024:8496:0102/211446.007:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.00 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.02 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.02 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.03 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.03 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.04 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:16:46.05 [5024:8496:0102/211646.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.00 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.02 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.04 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.05 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.06 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.07 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.08 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:18:46.09 [5024:8496:0102/211846.008:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.01 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.03 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.05 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.06 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.07 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.08 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.09 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:20:46.10 [5024:8496:0102/212046.010:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.01 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.02 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.03 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.03 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.04 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.05 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:22:46.06 [5024:8496:0102/212246.011:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.01 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.02 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.03 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.03 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.04 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.05 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:24:46.05 [5024:8496:0102/212446.012:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:25:47.77 [5024:8496:0102/212547.777:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Jan 02, 2018 21:26:46.01 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:26:46.02 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:26:46.03 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:26:46.04 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:26:46.05 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:26:46.06 [5024:8496:0102/212646.013:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:28:46.01 [5024:8496:0102/212846.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:28:46.02 [5024:8496:0102/212846.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:28:46.03 [5024:8496:0102/212846.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:28:46.04 [5024:8496:0102/212846.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:28:46.05 [5024:8496:0102/212846.014:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:30:46.01 [5024:8496:0102/213046.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:30:46.02 [5024:8496:0102/213046.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:30:46.03 [5024:8496:0102/213046.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:30:46.04 [5024:8496:0102/213046.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:30:46.05 [5024:8496:0102/213046.015:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:32:46.01 [5024:8496:0102/213246.016:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:32:46.02 [5024:8496:0102/213246.016:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:32:46.03 [5024:8496:0102/213246.016:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:32:46.03 [5024:8496:0102/213246.016:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:34:46.01 [5024:8496:0102/213446.017:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:34:46.03 [5024:8496:0102/213446.017:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:34:46.04 [5024:8496:0102/213446.017:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:34:46.05 [5024:8496:0102/213446.017:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:34:46.06 [5024:8496:0102/213446.017:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:36:46.01 [5024:8496:0102/213646.018:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:36:46.02 [5024:8496:0102/213646.018:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:36:46.02 [5024:8496:0102/213646.018:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:36:46.03 [5024:8496:0102/213646.018:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:36:46.04 [5024:8496:0102/213646.018:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:38:46.02 [5024:8496:0102/213846.027:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:38:46.02 [5024:8496:0102/213846.027:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:38:46.02 [5024:8496:0102/213846.027:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:38:46.04 [5024:8496:0102/213846.027:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:38:46.04 [5024:8496:0102/213846.027:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:39:43.76 [5024:8496:0102/213943.769:ERROR:ssl_client_socket_impl.cc(1084)] handshake failed; returned -1, SSL error code 1, net_error -101
+Jan 02, 2018 21:39:45.46 [5024:8496:0102/213945.464:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Jan 02, 2018 21:39:45.47 [5024:8496:0102/213945.479:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Jan 02, 2018 21:40:46.03 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:40:46.03 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:40:46.04 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:40:46.05 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:40:46.05 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:40:46.06 [5024:8496:0102/214046.029:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:42:46.03 [5024:8496:0102/214246.037:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:42:46.04 [5024:8496:0102/214246.037:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:42:46.05 [5024:8496:0102/214246.037:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:42:46.05 [5024:8496:0102/214246.037:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:44:46.04 [5024:8496:0102/214446.042:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:44:46.05 [5024:8496:0102/214446.042:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:44:46.05 [5024:8496:0102/214446.042:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:44:46.07 [5024:8496:0102/214446.042:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:46:46.05 [5024:8496:0102/214646.054:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:46:46.07 [5024:8496:0102/214646.054:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:46:46.07 [5024:8496:0102/214646.054:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:46:46.09 [5024:8496:0102/214646.054:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:48:46.06 [5024:8496:0102/214846.060:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:48:46.07 [5024:8496:0102/214846.060:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:48:46.07 [5024:8496:0102/214846.060:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:48:46.09 [5024:8496:0102/214846.060:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:50:46.07 [5024:8496:0102/215046.076:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:50:46.07 [5024:8496:0102/215046.076:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:50:46.09 [5024:8496:0102/215046.076:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:50:46.10 [5024:8496:0102/215046.076:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:52:24.02 [5024:8496:0102/215224.021:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+Jan 02, 2018 21:52:46.08 [5024:8496:0102/215246.087:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:52:46.08 [5024:8496:0102/215246.087:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:52:46.10 [5024:8496:0102/215246.087:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:52:46.12 [5024:8496:0102/215246.087:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:54:46.09 [5024:8496:0102/215446.091:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:54:46.09 [5024:8496:0102/215446.091:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:54:46.10 [5024:8496:0102/215446.091:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:54:46.12 [5024:8496:0102/215446.091:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:56:46.10 [5024:8496:0102/215646.105:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:56:46.12 [5024:8496:0102/215646.105:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:56:46.12 [5024:8496:0102/215646.105:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:56:46.13 [5024:8496:0102/215646.105:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:56:46.15 [5024:8496:0102/215646.105:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:58:46.11 [5024:8496:0102/215846.113:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:58:46.11 [5024:8496:0102/215846.113:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:58:46.12 [5024:8496:0102/215846.113:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:58:46.14 [5024:8496:0102/215846.113:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 21:58:46.14 [5024:8496:0102/215846.113:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:00:46.13 [5024:8496:0102/220046.131:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:00:46.13 [5024:8496:0102/220046.131:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:00:46.13 [5024:8496:0102/220046.131:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:00:46.15 [5024:8496:0102/220046.131:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:02:46.13 [5024:8496:0102/220246.134:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:02:46.13 [5024:8496:0102/220246.134:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:02:46.13 [5024:8496:0102/220246.134:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+Jan 02, 2018 22:02:46.15 [5024:8496:0102/220246.134:ERROR:process_metrics.cc(105)] NOT IMPLEMENTED
+
+Feb 27, 2018 19:47:03.45 NEW SESSION
+Feb 27, 2018 19:47:03.45 [8340:17980:0227/194703.457:ERROR:pref_model_associator.cc(92)] Failed to deserialize preference value: Line: 1, column: 336, Syntax error.
+Feb 27, 2018 20:07:46.86 [8340:17980:0227/200746.863:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 1.976 s
+Feb 27, 2018 20:32:48.08 [8340:17980:0227/203248.081:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'object-src'.
+Feb 27, 2018 20:32:48.08 ", source: https://mail.google.com/mail/u/0/ (0)
+Feb 27, 2018 20:32:48.08 [8340:17980:0227/203248.081:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Feb 27, 2018 20:32:48.08 ", source: https://mail.google.com/mail/u/0/ (0)
+Feb 27, 2018 20:34:11.76 [8340:17980:0227/203411.761:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'object-src'.
+Feb 27, 2018 20:34:11.76 ", source: https://mail.google.com/mail/u/0/ (0)
+Feb 27, 2018 20:34:11.76 [8340:17980:0227/203411.761:ERROR:CONSOLE(0)] "Ignoring duplicate Content-Security-Policy directive 'report-uri'.
+Feb 27, 2018 20:34:11.76 ", source: https://mail.google.com/mail/u/0/ (0)
+Feb 27, 2018 20:39:26.55 [8340:17980:0227/203926.556:ERROR:page_load_metrics_update_dispatcher.cc(208)] Invalid first_meaningful_paint (unset) for time_to_interactive 36.941 s
+
+Aug 08, 2018 19:36:44.86 NEW SESSION
+Aug 08, 2018 19:36:44.86 [9040:11580:0808/193644.866:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\chrome_renderer.service.exe
+Aug 08, 2018 19:36:45.20 [9040:11580:0808/193645.030:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\chrome_renderer.service.exe
+Aug 08, 2018 19:36:47.38 [9040:11580:0808/193647.389:ERROR:service_manager_context.cc(250)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.84\content_gpu.service.exe
+Aug 08, 2018 19:36:57.33 [9040:9536:0808/193657.330:ERROR:pref_model_associator.cc(93)] Failed to deserialize preference value: Line: 1, column: 336, Syntax error.
+Aug 08, 2018 19:37:17.01 Unable to read VR Path Registry from C:\Users\Joliver\AppData\Local\openvr\openvrpaths.vrpath

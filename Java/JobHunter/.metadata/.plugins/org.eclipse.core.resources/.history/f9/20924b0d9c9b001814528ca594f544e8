@@ -1,0 +1,9 @@
+package com.jobhunter.services;
+
+import com.jobhunter.components.Account;
+
+public class AccountServices {
+	public boolean authenticate(Account account) {
+		
+	}
+}

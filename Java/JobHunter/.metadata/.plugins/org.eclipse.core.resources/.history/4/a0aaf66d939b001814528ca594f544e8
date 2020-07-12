@@ -1,0 +1,15 @@
+package com.jobhunter.database;
+
+import java.sql.DriverManager;
+
+public class Database {
+	
+	public Database() {		 
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "System", "Sql12345");
+		} catch (Exception exception) {
+			System.out.println(exception);
+		}
+	}
+}

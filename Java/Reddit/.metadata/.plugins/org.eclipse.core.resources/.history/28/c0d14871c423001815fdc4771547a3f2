@@ -1,0 +1,7 @@
+package com.miforum.viewresolver;
+
+public class PostView {
+	public PostView(Post post) {
+		
+	}
+}

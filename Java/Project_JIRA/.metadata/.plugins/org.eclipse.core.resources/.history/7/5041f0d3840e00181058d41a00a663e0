@@ -1,0 +1,10 @@
+package com.miforum.controllers;
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+
+public class AccountController extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+}

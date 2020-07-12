@@ -1,0 +1,8 @@
+$(document).ready(function(){
+	.
+	var username = $("#login_username").val();
+}
+	function validateLogin() {
+		if()
+	}
+})

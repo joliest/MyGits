@@ -1,0 +1,18 @@
+package com.jobhunter.components;
+
+public class Profile {
+	private String firstName;
+	private String lastName;
+	private String middleName;
+	private String jobTitle;
+	private String address;
+	private String mobileNumber;
+	private String desiredJobTitle;
+	private String jobPreference;
+	private String jobType;
+	private String skills;
+	private String company;
+	private ArrayList<AccountWorkExperience> workExperiences;
+	private ArrayList<AccountEducation> workExperiences
+	
+}

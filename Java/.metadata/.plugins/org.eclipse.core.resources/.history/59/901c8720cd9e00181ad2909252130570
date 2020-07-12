@@ -1,0 +1,17 @@
+package Main;
+
+import java.io.*;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			InputStreamReader isr = new InputStreamReader(System.in);
+			BufferedReader input = new BufferedReader(isr);
+			
+			String i = "Name: " + input.readLine();
+			
+		} catch (IOException e) {
+			
+		}
+	}
+}

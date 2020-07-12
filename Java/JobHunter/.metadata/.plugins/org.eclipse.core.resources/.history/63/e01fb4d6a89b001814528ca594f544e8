@@ -1,0 +1,10 @@
+package com.jobhunter.components;
+
+public class AccountWorkExperience {
+	private String emailAddress;
+	private String company;
+	private String fromYear;
+	private String toYear;
+	private String description;
+	
+}

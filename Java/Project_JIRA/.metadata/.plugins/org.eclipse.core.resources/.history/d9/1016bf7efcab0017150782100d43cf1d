@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		<ul>
+			<li>Home</li>
+			<li><a href="Attribute.do">At</a>tribute</li>
+		</ul>
+	</body>
+</html>

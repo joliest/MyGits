@@ -1,0 +1,10 @@
+package Main;
+
+import java.io.*;
+
+public class test {
+	public static void main(String[] args) {
+		FileOutputStream fileStream = new FileOutputStream("test.txt");
+		ObjectOutputStream os = new ObjectOutputStream(fileStream);
+	}
+}

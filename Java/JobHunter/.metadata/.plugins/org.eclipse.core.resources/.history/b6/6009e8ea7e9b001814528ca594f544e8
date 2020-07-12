@@ -1,0 +1,7 @@
+package com.jobhunter.controllers;
+
+import javax.servlet.http.HttpServlet;
+
+public class AccountRegistrator extends HttpServlet{
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+}

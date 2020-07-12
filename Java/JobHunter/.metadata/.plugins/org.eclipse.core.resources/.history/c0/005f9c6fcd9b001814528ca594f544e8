@@ -1,0 +1,10 @@
+package com.jobhunter.controllers;
+
+public class ProfileController extends HttpServlet{
+	/*
+	 * When a controller detects that there's no existing profile
+	 * in a logged in account, it will ask user to create one. 
+	 * Will redirect to existing profile if otherwise.
+	 * 
+	 */
+}

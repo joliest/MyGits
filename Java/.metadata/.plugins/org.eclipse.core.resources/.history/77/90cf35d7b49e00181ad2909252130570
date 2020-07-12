@@ -1,0 +1,18 @@
+package Name;
+
+public class Name {
+	
+	public Name(String fname, String lname) {
+		setName(name);
+	}
+	
+	private String fname;
+	private String lname;
+
+
+	
+	public String toString() {
+		return 
+	}
+	
+}

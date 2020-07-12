@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		ArrayList<String> samples = new ArrayList<String>();
+		
+		samples.add("Joliver");
+		samples.add("Khaye");
+		samples.add("Arlene");
+		
+		System.out.println(samples);
+		
+		Iterator sample = samples.iterator();
+		int i = 1;
+		while(sample.hasNext()) {
+			System.out.println(i + ". " + sample.toString());
+			i++;
+		}
+	}
+}

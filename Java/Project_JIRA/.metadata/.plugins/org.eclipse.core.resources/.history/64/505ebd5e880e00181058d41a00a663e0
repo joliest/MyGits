@@ -1,0 +1,7 @@
+package com.miforum.services;
+
+public class AccountServices {
+	public void addAccount() {
+		
+	}
+}

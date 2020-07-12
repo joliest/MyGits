@@ -1,0 +1,17 @@
+package Name;
+
+import java.util.Comparator;
+
+public class FirstNameSorter implements Comparator<Name> {
+
+	public int compare(Name a, Name b) {
+		return a.getFname().compareTo(b.getFname());
+	}
+
+	@Override
+	public int compare(Song o1, Song o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

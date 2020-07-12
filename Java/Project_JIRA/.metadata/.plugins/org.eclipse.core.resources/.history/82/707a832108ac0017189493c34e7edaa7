@@ -1,0 +1,10 @@
+package com.tracker.DatabaseHelper;
+
+public class DatabaseHelper {
+	public DatabaseHelper(String driver, String ConnectionURL) {
+		try {
+			Class.forName(driver);
+			Connection connection = 
+		}
+	}
+}

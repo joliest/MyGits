@@ -6,11 +6,37 @@
   
   	<servlet>
   		<servlet-name>Role Controller</servlet-name>
-  		<servlet-class>com.project1.userandrole.controller.Test</servlet-class>
+  		<servlet-class>com.project1.userandrole.controller.RoleController</servlet-class>
   	</servlet>
   	<servlet-mapping>
   		<servlet-name>Role Controller</servlet-name>
   		<url-pattern>/Role.do</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>User Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.UserController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>User Controller</servlet-name>
+  		<url-pattern>/User.do</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<servlet-class>com.project1.userandrole.controller.Administration</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Admin Controller</servlet-name>
+  		<url-pattern>/Admin.do</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<servlet-class>com.project1.attribute.controller.AttributeController</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Attribute Controller</servlet-name>
+  		<url-pattern>/Attribute.do</url-pattern>
   	</servlet-mapping>
   
   	<context-param>  		

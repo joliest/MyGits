@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<jsp:include page="chunks/header.jsp">
+			<jsp:param name="theTitle" value="Profile" />
+	</jsp:include>
+</head>
+<body>
+	<div class="container">
+  <h2>Personal Details</h2>
+  <div class="well">
+	<table class=".table">
+		<tr>
+			<th>First Name Last Name</th>
+		</tr>
+		<tr>
+			<td>Job Title</td>
+		</tr>
+		<tr>
+			<td>123 Brgy. Address, City, Province, Country</td>
+		</tr>
+		<tr>
+			<td>emailaddress@domain.com</td>
+		</tr>
+		<tr>
+			<td>(000) 123 456 789</td>
+		</tr>
+	</table>
+  </div>
+  
+  <h2>Job Preference</h2>
+  
+  <div class="well">
+	<table class=".table">
+		<tr>
+			<th>Desired Job Title</th>
+		</tr>
+		<tr>
+			<td>job_preference</td>
+		</tr>
+		<tr>
+			<td>(full_time)</td>
+		</tr>
+	</table>
+  </div>
+</div>
+	
+</body>
+</html>

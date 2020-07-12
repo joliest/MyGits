@@ -1,9 +1,0 @@
-package com.example.web;
-import javax.servlet.*;
-import javax.servlet.http.*;
-
-public class MyTester extends HttpServlet {
-	public void doGet(HttpServletRequest req, HttpServletResponse res) {
-		
-	}
-}

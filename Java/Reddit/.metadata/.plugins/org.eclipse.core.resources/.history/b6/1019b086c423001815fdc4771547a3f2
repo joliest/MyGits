@@ -1,0 +1,13 @@
+package com.miforum.viewresolver;
+
+import com.miforum.components.Post;
+
+public class PostView {
+	public PostView(Post post) {
+		
+	}
+	
+	public String toString() {
+		
+	}
+}

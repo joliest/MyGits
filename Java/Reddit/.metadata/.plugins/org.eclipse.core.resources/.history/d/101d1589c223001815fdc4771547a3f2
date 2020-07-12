@@ -1,0 +1,12 @@
+package com.miforum.viewresolver;
+
+public class Table {
+	
+	public String createTable() {
+		return null;
+	}
+	
+	public String createRow() {
+		new Row()
+	}
+}
